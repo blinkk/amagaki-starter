@@ -1,0 +1,6 @@
+$path: /${doc.basename}/
+$view: /views/base.njk
+$localization:
+  path: /intl/${doc.locale.id}/${doc.basename}/
+  locales:
+  - en

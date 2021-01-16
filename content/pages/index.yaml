@@ -1,0 +1,49 @@
+$path: /
+$localization:
+  path: /intl/${doc.locale.id}/
+title: Home
+description: Page description
+partials:
+- partial: hero
+- partial: spacer
+  options:
+  - large
+- partial: columns-50x50-simple
+  options:
+  - reversed
+  columns:
+  - primary:
+      title: Magna do magna occaecat irure.
+      body: Esse in dolor anim excepteur incididunt laborum pariatur consequat. Occaecat officia elit nisi Lorem ex ex mollit aliqua ipsum fugiat quis amet sit. Mollit dolore cillum ea commodo ullamco cillum minim nisi et reprehenderit consectetur aute fugiat.
+  - asset:
+      url: https://placeholder-dot-madebygoog.appspot.com/4x3.svg
+  title: 5050 title
+  body: Body content
+  buttons:
+  - label: Learn more
+    url: https://example.com
+  assets:
+  - url: 'test'
+- partial: spacer
+  options:
+  - medium
+- partial: columns-50x50-simple
+  columns:
+  - primary:
+      title: Magna do magna occaecat irure.
+      body: Esse in dolor anim excepteur incididunt laborum pariatur consequat. Occaecat officia elit nisi Lorem ex ex mollit aliqua ipsum fugiat quis amet sit. Mollit dolore cillum ea commodo ullamco cillum minim nisi et reprehenderit consectetur aute fugiat.
+      buttons:
+      - label: Learn more
+        url: https://example.com
+  - asset:
+      url: https://placeholder-dot-madebygoog.appspot.com/4x3.svg
+  title: 5050 title
+  body: Body content
+  buttons:
+  - label: Learn more
+    url: https://example.com
+  assets:
+  - url: 'test'
+- partial: spacer
+  options:
+  - medium
