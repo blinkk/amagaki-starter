@@ -1,0 +1,27 @@
+@import '../utils/grid'
+@import '../utils/spacing'
+@import '../utils/type'
+
+.promo-banner
+    background: #efefef
+    padding: $spacing-20
+
+.promo-banner__wrap
+    +grid-container
+    max-width: 700px
+
+.promo-banner__wrap__assets
+    +grid-range(1, 4)
+    display: flex
+
+.promo-banner__wrap__content
+    +grid-range(5, 12)
+    align-items: center
+    display: flex
+
+.promo-banner__wrap__content__title
+
+.promo-banner__wrap__content__body
+
+.promo-banner__wrap__content__assets
+    margin-top: $spacing-60

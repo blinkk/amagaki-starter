@@ -1,3 +1,5 @@
+{% import "/views/macros/renderPartial.njk" as renderPartial with context %}
+
 <!DOCTYPE html>
 <html lang="{{doc.locale}}">
 <head>
@@ -10,15 +12,10 @@
 <body>
 <div class="main">
     {% set partial = doc.pod.doc('/content/partials/header.yaml').fields %}
-    {% include "/views/partials/header.njk" %}
+    {{renderPartial.renderPartial(partial)}}
     {% if doc.fields.partials %}
         {% for partial in doc.fields.partials %}
-            <div class="help">{{partial.partial}}</div>
-            {% set staticFile = a.static('/dist/css/' + partial.partial + '.min.css') %}
-            {% if doc.pod.fileExists(staticFile.podPath) %}
-            <link rel="stylesheet" href="{{staticFile.url.path}}">
-            {% endif %}
-            {% include "/views/partials/" ~ partial.partial ~ ".njk" %}
+            {{renderPartial.renderPartial(partial)}}
         {% endfor %}
     {% else %}
         <div class="main__body">
@@ -26,5 +23,5 @@
         </div>
     {% endif %}
     {% set partial = doc.pod.doc('/content/partials/footer.yaml').fields %}
-    {% include "/views/partials/footer.njk" %}
+    {{renderPartial.renderPartial(partial)}}
 </div>

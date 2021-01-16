@@ -1,3 +1,7 @@
+=between($min, $max)
+  @media (min-width: $min) and (max-width: $max)
+    @content
+    
 =gt($width)
   @media (min-width: $width)
     @content
@@ -6,44 +10,44 @@
   @media (max-width: $width)
     @content
 
-// medium: Only the "medium" breakpoint.
-// medium-gt: The "medium" breakpoint and everything greater.
-// medium-lt: The "medium" breakpoint and everything lower.
+// laptop: Only the "laptop" breakpoint.
+// laptop-gt: The "laptop" breakpoint and everything greater.
+// laptop-lt: The "laptop" breakpoint and everything lower.
 
-=small
+=mobile
   +lt(599px)
     @content
-=small-gt
+=mobile-gt
   @content
-=small-lt
+=mobile-lt
   +lt(599px)
     @content
 
-=medium
+=tablet
   +between(600px, 1023px)
     @content
-=medium-gt
+=tablet-gt
   +gt(600px)
     @content
-=medium-lt
+=tablet-lt
   +lt(1023px)
     @content
 
-=large
+=laptop
   +between(1024px, 1439px)
     @content
-=large-gt
+=laptop-gt
   +gt(1024px)
     @content
-=large-lt
+=laptop-lt
   +lt(1439px)
     @content
 
-=extra-large
+=desktop
   +gt(1440px)
     @content
-=extra-large-gt
+=desktop-gt
   +gt(1440px)
     @content
-=extra-large-lt
+=desktop-lt
   @content

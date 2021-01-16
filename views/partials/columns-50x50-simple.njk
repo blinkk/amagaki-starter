@@ -3,17 +3,20 @@
 
 <div class="{{partial.partial}} {% for option in partial.options %}{{partial.partial}}--{{option}}{% endfor %}">
     {% for column in partial.columns %}
-        <div class="{{partial.partial}}__column">
+        <div class="columns-50x50-simple__column
+            {% if column.primary %}columns-50x50-simple__column--primary{% endif %}
+            {% if column.asset %}columns-50x50-simple__column--assets{% endif %}
+            ">
             {% if column.primary %}
-                <div class="{{partial.partial}}__column__primary">
-                    <div class="{{partial.partial}}__column__primary__title">
-                        {{column.primary.title|t}}
+                <div class="columns-50x50-simple__column__primary">
+                    <div class="columns-50x50-simple__column__primary__title">
+                        {{column.primary.title}}
                     </div>
-                    <div class="{{partial.partial}}__column__primary__body">
-                        {{column.primary.body|t}}
+                    <div class="columns-50x50-simple__column__primary__body">
+                        {{column.primary.body}}
                     </div>
                     {% if column.primary.buttons %}
-                        <div class="{{partial.partial}}__column__primary__buttons">
+                        <div class="columns-50x50-simple__column__primary__buttons">
                             {% for item in column.primary.buttons %}
                                 {{button.button(item)}}
                             {% endfor %}
@@ -22,7 +25,11 @@
                 </div>
             {% endif %}
             {% if column.asset %}
-                {{asset.asset(column.asset)}}
+                <div class="columns-50x50-simple__column__assets">
+                    <div class="columns-50x50-simple__column__assets__asset">
+                        {{asset.asset(column.asset)}}
+                    </div>
+                </div>
             {% endif %}
         </div>
     {% endfor %}
