@@ -5,12 +5,15 @@ module.exports = {
         './src/js/main.js',
     ].concat(glob.sync(
         './src/sass/**/*.sass',
+        {ignore: ['./src/sass/**/_*']}
     )),
     module: {
         rules: [
             {
                 test: /\.s[ac]ss$/i,
-                exclude: /node_modules/,
+                exclude: [
+                    /node_modules/,
+                ],
                 use: [
                     {
                         loader: 'file-loader',
