@@ -14,6 +14,10 @@ module.exports = function (pod) {
         path: '/static/',
         staticDir: '/src/static/',
       },
+      {
+        path: '/static/css/',
+        staticDir: '/dist/css/',
+      },
     ],
   });
   // Shortcut method for adding custom nunjucks filter and global.

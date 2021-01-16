@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<meta charset="utf-8">
-<title>{{doc.fields.title}}</title>
-<meta name="description" value="{{doc.fields.description}}">
-<link href="//fonts.googleapis.com/css?family=Nunito&amp;display=swap" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="{{a.static('/source/static/main.css').url.path}}">
+<html lang="{{doc.locale}}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{doc.fields.title}}</title>
+    <meta name="description" value="{{doc.fields.description}}">
+    <link rel="stylesheet" href="{{a.static('/dist/css/main.min.css').url.path}}">
+</head>
 <body>
 <div class="main">
     {% set partial = doc.pod.doc('/content/partials/header.yaml').fields %}
@@ -11,6 +14,10 @@
     {% if doc.fields.partials %}
         {% for partial in doc.fields.partials %}
             <div class="help">{{partial.partial}}</div>
+            {% set staticFile = a.static('/dist/css/' + partial.partial + '.min.css') %}
+            {% if doc.pod.fileExists(staticFile.podPath) %}
+            <link rel="stylesheet" href="{{staticFile.url.path}}">
+            {% endif %}
             {% include "/views/partials/" ~ partial.partial ~ ".njk" %}
         {% endfor %}
     {% else %}
