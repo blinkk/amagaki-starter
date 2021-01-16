@@ -12,6 +12,7 @@ partials:
 
 - partial: hero
   title: Lorem ipsum dolor.
+  body: Eu mollit ullamco nisi eu ipsum aliqua occaecat excepteur ullamco magna consectetur. Adipisicing ipsum laborum sunt eu qui laborum pariatur aliqua duis dolore id.
   assets:
   - asset:
     url: https://placeholder-dot-madebygoog.appspot.com/16x9.svg?bgColor=FFEFA4

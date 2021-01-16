@@ -5,9 +5,15 @@
     text-align: center
 
 .hero__content
+    margin: 0 auto
+    max-width: 1440px
 
 .hero__content__title
-    +type-h1
+    +type-heading-1
+
+    & + .hero__content__body
+        +type-body-large
+        margin-top: $spacing-40
 
 .hero__content__assets
     display: flex
