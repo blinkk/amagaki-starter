@@ -5,6 +5,7 @@ title: Home
 description: Page description
 partials:
 - partial: hero
+  title: Lorem ipsum dolor.
 - partial: spacer
   options:
   - large

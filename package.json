@@ -1,10 +1,12 @@
 {
   "scripts": {
-    "browser-sync": "browser-sync start --proxy localhost:8080 --files dist",
+    "browsersync:reload": "browser-sync reload",
+    "browsersync:start": "browser-sync start --proxy localhost:8080 --files dist",
     "compile": "webpack --mode development",
-    "dev": "concurrently -k \"npm:watch\" \"npm:start\" \"npm:browser-sync\"",
+    "dev": "concurrently -k \"npm:watch:src\" \"npm:watch:views\" \"npm:start\" \"npm:browsersync:start\"",
     "start": "amagaki serve .",
-    "watch": "nodemon --watch src -e js,sass --exec npm run compile"
+    "watch:src": "nodemon --watch src -e js,sass --exec npm run compile",
+    "watch:views": "nodemon --watch views -e njk --exec npm run browsersync:reload"
   },
   "devDependencies": {
     "@amagaki/amagaki": "file:../amagaki",

@@ -1,0 +1,49 @@
+=gt($width)
+  @media (min-width: $width)
+    @content
+
+=lt($width)
+  @media (max-width: $width)
+    @content
+
+// medium: Only the "medium" breakpoint.
+// medium-gt: The "medium" breakpoint and everything greater.
+// medium-lt: The "medium" breakpoint and everything lower.
+
+=small
+  +lt(599px)
+    @content
+=small-gt
+  @content
+=small-lt
+  +lt(599px)
+    @content
+
+=medium
+  +between(600px, 1023px)
+    @content
+=medium-gt
+  +gt(600px)
+    @content
+=medium-lt
+  +lt(1023px)
+    @content
+
+=large
+  +between(1024px, 1439px)
+    @content
+=large-gt
+  +gt(1024px)
+    @content
+=large-lt
+  +lt(1439px)
+    @content
+
+=extra-large
+  +gt(1440px)
+    @content
+=extra-large-gt
+  +gt(1440px)
+    @content
+=extra-large-lt
+  @content
