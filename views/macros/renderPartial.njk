@@ -1,3 +1,5 @@
+{% set _loadedStylesheets = [] %}
+
 {% macro renderPartial(partial) %}
     <div class="help">
         <u>Template:</u> {{partial.partial}}
@@ -5,9 +7,11 @@
         <u>Options:</u> {{partial.options|join(', ')}}
         {% endif %}
     </div>
+    {# Load partial CSS only once per page. #}
     {% set staticFile = a.static('/dist/css/' + partial.partial + '.min.css') %}
-    {% if doc.pod.fileExists(staticFile.podPath) %}
+    {% if doc.pod.fileExists(staticFile.podPath) and staticFile.url.path not in _loadedStylesheets %}
     <link rel="stylesheet" href="{{staticFile.url.path}}">
+    {% set _loadedStylesheets = _loadedStylesheets.push(staticFile.url.path) %}
     {% endif %}
     {% include "/views/partials/" ~ partial.partial ~ ".njk" %}
 {% endmacro %}

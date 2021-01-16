@@ -1,9 +1,11 @@
 const glob = require('glob');
+const WebpackNotifierPlugin = require('webpack-notifier');
 
 module.exports = {
   entry: ["./src/ts/main.ts"].concat(
     glob.sync("./src/sass/**/*.sass", { ignore: ["./src/sass/**/_*"] })
   ),
+  plugins: [new WebpackNotifierPlugin()],
   module: {
     // Sass
     rules: [

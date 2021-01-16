@@ -1,5 +1,7 @@
+# amagaki-starter
 
-## Setup
+[![GitHub Actions][https://github.com/blinkkcode/amagaki-starter/workflows/Run%20tests/badge.svg]][https://github.com/blinkkcode/amagaki-starter/actions]
+## Usage
 
 ```
 # Install dependencies.

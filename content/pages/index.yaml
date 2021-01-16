@@ -2,7 +2,7 @@ $path: /
 $localization:
   path: /intl/${doc.locale.id}/
 title: Home
-description: Page description
+description: Page description.
 
 partials:
 
@@ -13,13 +13,17 @@ partials:
 - partial: hero
   title: Lorem ipsum dolor.
   body: Eu mollit ullamco nisi eu ipsum aliqua occaecat excepteur ullamco magna consectetur. Adipisicing ipsum laborum sunt eu qui laborum pariatur aliqua duis dolore id.
+  buttons:
+  - label: Learn more
+    url: https://example.com
+    options: []
   assets:
   - asset:
-    url: https://placeholder-dot-madebygoog.appspot.com/16x9.svg?bgColor=FFEFA4
+    url: /static/placeholder/16x9.svg?bgColor=FFEFA4
 
 - partial: spacer
   options:
-  - large
+  - medium
 
 - partial: simple-intro
   title: Lorem ipsum dolor.
@@ -36,14 +40,12 @@ partials:
       title: Magna do magna occaecat irure.
       body: Esse in dolor anim excepteur incididunt laborum pariatur consequat. Occaecat officia elit nisi Lorem ex ex mollit aliqua ipsum fugiat quis amet sit. Mollit dolore cillum ea commodo ullamco cillum minim nisi et reprehenderit consectetur aute fugiat.
   - asset:
-      url: https://placeholder-dot-madebygoog.appspot.com/1x1.svg
+      url: /static/placeholder/1x1.svg
   title: 5050 title
   body: Body content
   buttons:
   - label: Learn more
     url: https://example.com
-  assets:
-  - url: 'test'
 
 - partial: spacer
   options:
@@ -52,8 +54,11 @@ partials:
 - partial: promo-banner
   assets:
   - asset:
-    url: https://placeholder-dot-madebygoog.appspot.com/1x1.svg?bgColor=F3492F
+    url: /static/placeholder/1x1.svg?bgColor=F3492F
   body: Aute amet voluptate voluptate proident ullamco. Pariatur cupidatat aute officia ea exercitation reprehenderit.
+  buttons:
+  - url: '#'
+    label: Learn more
 
 - partial: spacer
   options:
@@ -75,14 +80,12 @@ partials:
       - label: Learn more
         url: https://example.com
   - asset:
-      url: https://placeholder-dot-madebygoog.appspot.com/9x16.svg
+      url: /static/placeholder/9x16.svg
   title: 5050 title
   body: Body content
   buttons:
   - label: Learn more
     url: https://example.com
-  assets:
-  - url: 'test'
 
 - partial: spacer
   options:
@@ -98,14 +101,12 @@ partials:
       - label: Learn more
         url: https://example.com
   - asset:
-      url: https://placeholder-dot-madebygoog.appspot.com/9x16.svg
+      url: /static/placeholder/9x16.svg
   title: 5050 title
   body: Body content
   buttons:
   - label: Learn more
     url: https://example.com
-  assets:
-  - url: 'test'
 
 - partial: spacer
   options:

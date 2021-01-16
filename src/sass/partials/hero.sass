@@ -10,9 +10,20 @@
 
 .hero__content__title
     +type-heading-1
+    max-width: $spacing-max-headline-width
+    margin-left: auto
+    margin-right: auto
 
     & + .hero__content__body
         +type-body-large
+        margin-top: $spacing-40
+
+.hero__content__body
+    margin-left: auto
+    margin-right: auto
+    max-width: $spacing-max-body-width
+
+    & + .hero__content__buttons
         margin-top: $spacing-40
 
 .hero__content__assets

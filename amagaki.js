@@ -1,9 +1,10 @@
-// const yaml = require('js-yaml');
+const placeholder = require('./plugins/placeholder');
+const placeholderPlugin = require('./plugins/placeholder');
 
 module.exports = function (pod) {
   pod.configure({
     metadata: {
-      name: 'Amagaki Example',
+      name: 'Amagaki Starter',
     },
     localization: {
       defaultLocale: 'en',
@@ -20,8 +21,5 @@ module.exports = function (pod) {
       },
     ],
   });
-  // Shortcut method for adding custom nunjucks filter and global.
-  const nunjucksPlugin = pod.plugins.get('NunjucksPlugin');
-  nunjucksPlugin.addFilter('testShortcutFilter', value => `${value}--SHORTCUT`);
-  nunjucksPlugin.addGlobal('copyrightYear', () => new Date().getFullYear());
+  placeholderPlugin.register(pod);
 };
