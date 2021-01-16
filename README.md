@@ -1,5 +1,5 @@
 
-### Setup
+## Setup
 
 ```
 # Install dependencies.
