@@ -10,10 +10,12 @@
     display: flex
 
 .columns-50x50-simple__column--primary
-    +grid-range(1, 6)
+    +laptop-gt
+        +grid-range(1, 6)
 
 .columns-50x50-simple__column--assets
-    +grid-range(7, 12)
+    +laptop-gt
+        +grid-range(7, 12)
     display: flex
     justify-content: center
 
@@ -24,6 +26,7 @@
         margin-top: $spacing-20
 
 .columns-50x50-simple__column__primary__body
+    max-width: $spacing-max-body-width
     & + .columns-50x50-simple__column__primary__buttons
         margin-top: $spacing-20
 

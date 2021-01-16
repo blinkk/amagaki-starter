@@ -2,28 +2,32 @@
 @import inspect
 
 =type-font-family-primary
-  font-family: 'Google Sans', arial, sans-serif
+  font-family: 'Open Sans', arial, sans-serif
 
 =type-font-family-secondary
   font-family: 'Roboto', Arial, Helvetica, sans-serif
 
 =type-heading-1
   +inspect-annotation('type-heading-1')
+  +type-font-family-primary
   font-size: 60px
   line-height: 72px
 
 =type-heading-2
   +inspect-annotation('type-heading-2')
+  +type-font-family-primary
   font-size: 48px
   line-height: 56px
 
 =type-heading-3
   +inspect-annotation('type-heading-3')
+  +type-font-family-primary
   font-size: 36px
   line-height: 44px
 
 =type-heading-4
   +inspect-annotation('type-heading-4')
+  +type-font-family-primary
   font-size: 28px
   line-height: 36px
 
@@ -33,19 +37,19 @@
 
 =type-body-large
   +inspect-annotation('type-body-large')
-  font-family: Roboto, sans-serif
+  +type-font-family-secondary
   font-size: 18px
   line-height: 28px
 
 =type-body
   +inspect-annotation('type-body')
-  font-family: Roboto, sans-serif
+  +type-font-family-secondary
   font-size: 16px
   line-height: 24px
 
 =type-small
   +inspect-annotation('type-small')
-  font-family: Roboto, sans-serif
+  +type-font-family-secondary
   font-size: 12px
   line-height: 24px
 
@@ -57,7 +61,7 @@
   line-height: 20px
 
 =type-label
-  font-family: Roboto, sans-serif
+  +type-font-family-secondary
   font-size: 11px
   letter-spacing: 0.5px
   line-height: 16px
@@ -71,7 +75,7 @@
 =type-caption
   font-size: 14px
   line-height: 24px
-  font-family: Roboto, sans-serif
+  +type-font-family-secondary
 
 =type-nav-item
   +type-font-family-primary
