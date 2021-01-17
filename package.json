@@ -9,7 +9,8 @@
     "browsersync:start": "browser-sync start --proxy localhost:8080 --files dist",
     "build": "npm run build:src; amagaki build",
     "build:src": "webpack --mode development",
-    "dev": "concurrently -k \"npm:watch:src\" \"npm:watch:pages\" \"npm:start\" \"npm:browsersync:start\"",
+    "build:src:quiet": "webpack --mode development --env quiet",
+    "dev": "npm run build:src:quiet; concurrently -k \"npm:watch:src\" \"npm:watch:pages\" \"npm:start\" \"npm:browsersync:start\"",
     "start": "amagaki serve",
     "watch:src": "nodemon --watch src -e js,sass --exec npm run build:src",
     "watch:pages": "nodemon --watch content --watch views -e njk,yaml --exec npm run browsersync:reload"
