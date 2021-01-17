@@ -6,7 +6,7 @@ module.exports = env => {
     entry: ['./src/ts/main.ts'].concat(
       glob.sync('./src/sass/**/*.sass', {ignore: ['./src/sass/**/_*']})
     ),
-    plugins: env.quiet ? [] : [new WebpackNotifierPlugin()],
+    plugins: env.notify ? [new WebpackNotifierPlugin()] : [],
     module: {
       // Sass
       rules: [
