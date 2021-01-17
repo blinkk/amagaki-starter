@@ -1,5 +1,5 @@
 // TODO: Fix Amagak's publishing to flatten the `dist/src` folder.
-const router = require('@amagaki/amagaki/dist/src/router');
+const router = require('@amagaki/amagaki/src/router');
 
 class PlaceholderRouteProvider extends router.RouteProvider {
   constructor(router, options) {
