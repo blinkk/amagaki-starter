@@ -18,6 +18,10 @@ module.exports = function (pod) {
         path: '/static/css/',
         staticDir: '/dist/css/',
       },
+      {
+        path: '/static/',
+        staticDir: '/dist/',
+      },
     ],
   });
 

@@ -1,12 +1,18 @@
 const glob = require('glob');
 const WebpackNotifierPlugin = require('webpack-notifier');
+const path = require('path');
 
 module.exports = env => {
   return {
     entry: ['./src/ts/main.ts'].concat(
-      glob.sync('./src/sass/**/*.sass', {ignore: ['./src/sass/**/_*']})
+      glob.sync('./src/sass/**/*.sass', { ignore: ['./src/sass/**/_*'] })
     ),
     plugins: env.notify ? [new WebpackNotifierPlugin()] : [],
+    mode: 'development',
+    resolve: {
+      extensions: ['.ts'],
+      modules: [path.resolve(__dirname, 'src'), 'node_modules']
+    },
     module: {
       // Sass
       rules: [
@@ -17,25 +23,25 @@ module.exports = env => {
             {
               loader: 'file-loader',
               options: {
-                outputPath: 'css/',
+                outputPath: path.resolve(__dirname, '/css/'),
                 name: '[name].min.css',
               },
             },
             'sass-loader',
           ],
         },
-        /* TODO: Fix me.
+
         {
-          test: /\.ts$/,
-          loader: 'ts-loader',
-          options: {
-            configFile: './tsconfig.json',
-          },
-          include: ['./src/ts/'],
+          test: /\.ts|\.tsx$/,
+          use: 'ts-loader',
           exclude: /node_modules/,
-        },
-        */
+        }
       ],
     },
+    output: {
+      path: path.resolve(__dirname, 'dist'),
+      filename: '[name].min.js',
+    },
+
   };
 };
