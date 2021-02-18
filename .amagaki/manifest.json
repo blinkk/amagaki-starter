@@ -1,47 +1,55 @@
 {
   "branch": null,
   "commit": null,
-  "built": "Tue Jan 19 2021 03:06:12 GMT+0000 (Coordinated Universal Time)",
+  "built": "Thu Feb 18 2021 02:27:48 GMT+0000 (Coordinated Universal Time)",
   "files": [
     {
+      "path": "/static/js/main.d.ts",
+      "sha": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+    },
+    {
       "path": "/index.html",
-      "sha": "3bac07ba629ace3a8c96af99cd6a98d277b5b920"
+      "sha": "80dbe86c804483d6ff6a06ecde83f86ebdf46671"
     },
     {
       "path": "/static/css/button.min.css",
-      "sha": "df2540dc6e29ff54fa6d35f097e9971a7fbd184d"
+      "sha": "7da16c474bbabe5ca433da9f2b9c5f7a35cd1173"
     },
     {
       "path": "/static/css/columns-50x50-simple.min.css",
-      "sha": "747075ddb683c73d38f05a5acc1d7e5705037493"
+      "sha": "904b227641063b7e01e89f43b91d7f3cf8d1b1ee"
     },
     {
       "path": "/static/css/footer.min.css",
-      "sha": "5656ee4b57364a61d66d4dc09b867dd3ec001604"
+      "sha": "6c9411b2783d68f2165db81532a350c8b11bf2ce"
     },
     {
       "path": "/static/css/header.min.css",
-      "sha": "0b48a1d1ada082809dd9a34c0999746ac96de180"
+      "sha": "a1ef8fd2382089faac0ac2b9d96ba07645a10400"
     },
     {
       "path": "/static/css/hero.min.css",
-      "sha": "914a56af4bdd9224351bf3bdff7ffacabaa5b1f7"
+      "sha": "927243e29bcf21870df17214e47d2fc8a0b5fdd0"
     },
     {
       "path": "/static/css/main.min.css",
-      "sha": "23c30d2efed7c06d9f6162947c7becbb5a0c9de1"
+      "sha": "9484896440424677b5b540f6dc1cd4d547c16750"
     },
     {
       "path": "/static/css/promo-banner.min.css",
-      "sha": "37f89a8abe1620fe0aa3aa6bf797f4038078ec41"
+      "sha": "af37c95b0a46c88ce3b378b10dd6a87ef921c701"
     },
     {
       "path": "/static/css/simple-intro.min.css",
-      "sha": "26df5771fc6e350d4248c58e5f53053ffd0f42b3"
+      "sha": "5abde71484557acb32ffadc2c569530d677f7d86"
     },
     {
       "path": "/static/css/spacer.min.css",
-      "sha": "0142ac8838d1d925217fc1447ad2ae0950e4d3f2"
+      "sha": "9e7c0c8ed87b95c504a6415e1062eaaeea64243c"
+    },
+    {
+      "path": "/static/main.min.js",
+      "sha": "3af019cfb4bd2ca5ff088090407f9928afea016e"
     },
     {
       "path": "/static/placeholder/16x9.svg",
