@@ -1,11 +1,17 @@
 const glob = require('glob');
 const WebpackNotifierPlugin = require('webpack-notifier');
+const path = require('path');
 
 module.exports = {
-  entry: ["./src/ts/main.ts"].concat(
-    glob.sync("./src/sass/**/*.sass", { ignore: ["./src/sass/**/_*"] })
+  entry: ['./src/ts/main.ts'].concat(
+    glob.sync('./src/sass/**/*.sass', { ignore: ['./src/sass/**/_*'] })
   ),
-  plugins: [new WebpackNotifierPlugin()],
+  plugins: process.env.notify ? [new WebpackNotifierPlugin()] : [],
+  mode: 'development',
+  resolve: {
+    extensions: ['.ts', '.tsx', '.js'],
+    modules: [path.resolve(__dirname, 'src'), 'node_modules'],
+  },
   module: {
     // Sass
     rules: [
@@ -14,26 +20,25 @@ module.exports = {
         exclude: /node_modules/,
         use: [
           {
-            loader: "file-loader",
+            loader: 'file-loader',
             options: {
-              outputPath: "css/",
-              name: "[name].min.css",
+              outputPath: path.resolve(__dirname, '/css/'),
+              name: '[name].min.css',
             },
           },
-          "sass-loader",
+          'sass-loader',
         ],
       },
-      /* TODO: Fix me.
+
       {
-        test: /\.ts$/,
-        loader: 'ts-loader',
-        options: {
-          configFile: './tsconfig.json',
-        },
-        include: ['./src/ts/'],
+        test: /\.ts|\.tsx$/,
+        use: 'ts-loader',
         exclude: /node_modules/,
       },
-      */
     ],
+  },
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'js/[name].min.js',
   },
 };

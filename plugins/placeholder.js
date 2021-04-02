@@ -1,5 +1,5 @@
 // TODO: Fix Amagak's publishing to flatten the `dist/src` folder.
-const router = require('@amagaki/amagaki/dist/src/router');
+const router = require('@amagaki/amagaki/src/router');
 
 const sizes = ['16x9', '1x1', '9x16', '7x3'];
 
@@ -32,6 +32,9 @@ class PlaceholderRoute extends router.Route {
   }
   get urlPath() {
     return `/static/placeholder/${this.options.size}.svg`;
+  }
+  get path() {
+    return this.urlPath;
   }
   async build() {
     const parts = this.options.size.split('x');
