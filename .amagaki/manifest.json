@@ -1,15 +1,11 @@
 {
   "branch": null,
   "commit": null,
-  "built": "Thu Feb 18 2021 02:27:48 GMT+0000 (Coordinated Universal Time)",
+  "built": "Fri Apr 02 2021 20:05:41 GMT+0000 (Coordinated Universal Time)",
   "files": [
     {
-      "path": "/static/js/main.d.ts",
-      "sha": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
-    },
-    {
       "path": "/index.html",
-      "sha": "80dbe86c804483d6ff6a06ecde83f86ebdf46671"
+      "sha": "3bac07ba629ace3a8c96af99cd6a98d277b5b920"
     },
     {
       "path": "/static/css/button.min.css",
@@ -46,10 +42,6 @@
     {
       "path": "/static/css/spacer.min.css",
       "sha": "9e7c0c8ed87b95c504a6415e1062eaaeea64243c"
-    },
-    {
-      "path": "/static/main.min.js",
-      "sha": "3af019cfb4bd2ca5ff088090407f9928afea016e"
     },
     {
       "path": "/static/placeholder/16x9.svg",
