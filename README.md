@@ -1,6 +1,7 @@
 # amagaki-starter
 
-[![GitHub Actions][https://github.com/blinkkcode/amagaki-starter/workflows/Run%20tests/badge.svg]][https://github.com/blinkkcode/amagaki-starter/actions]
+[![GitHub Actions](https://github.com/blinkkcode/amagaki-starter/workflows/Build%20site/badge.svg)](https://github.com/blinkkcode/amagaki-starter/actions)
+
 ## Usage
 
 ```

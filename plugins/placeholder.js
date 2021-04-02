@@ -1,17 +1,16 @@
 // TODO: Fix Amagak's publishing to flatten the `dist/src` folder.
 const router = require('@amagaki/amagaki/src/router');
 
-const sizes = ['16x9', '1x1', '9x16', '7x3'];
-
 class PlaceholderRouteProvider extends router.RouteProvider {
-  constructor(router) {
+  constructor(router, options) {
     super(router);
     this.type = 'placeholder';
+    this.options = options;
   }
 
   get routes() {
     const routes = [];
-    sizes.forEach(size => {
+    this.options.sizes.forEach(size => {
       const options = {
         size: size,
       };
@@ -30,11 +29,11 @@ class PlaceholderRoute extends router.Route {
   get contentType() {
     return 'image/svg+xml';
   }
-  get urlPath() {
-    return `/static/placeholder/${this.options.size}.svg`;
-  }
   get path() {
     return this.urlPath;
+  }
+  get urlPath() {
+    return `/static/placeholder/${this.options.size}.svg`;
   }
   async build() {
     const parts = this.options.size.split('x');
@@ -76,8 +75,8 @@ class PlaceholderRoute extends router.Route {
   }
 }
 
-const register = pod => {
-  pod.router.addProvider(new PlaceholderRouteProvider(pod.router));
+const register = (pod, options) => {
+  pod.router.addProvider(new PlaceholderRouteProvider(pod.router, options));
 };
 
 module.exports = {

@@ -1,4 +1,3 @@
-const placeholder = require('./plugins/placeholder');
 const placeholderPlugin = require('./plugins/placeholder');
 
 module.exports = function (pod) {
@@ -17,5 +16,7 @@ module.exports = function (pod) {
       },
     ],
   });
-  placeholderPlugin.register(pod);
+  placeholderPlugin.register(pod, {
+    sizes: ['16x9', '1x1', '9x16', '7x3'],
+  });
 };
