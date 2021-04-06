@@ -3,6 +3,12 @@
   "compilerOptions": {
     "rootDir": "src/ts/",
     "outDir": "dist/js/",
+    "declaration": false,
+    "esModuleInterop": true,
+    "lib": [
+      "es6",
+      "dom"
+    ],
     "types": [
       "node"
     ]
