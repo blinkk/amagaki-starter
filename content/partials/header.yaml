@@ -1,8 +1,8 @@
 partial: header
 logo:
-  doc: !a.Doc /content/pages/index.yaml
+  doc: !pod.doc /content/pages/index.yaml
   title: 'Logo'
   image:
     url: /static/placeholder/7x3.svg
 nav:
-- !a.Doc /content/pages/index.yaml
+- !pod.doc /content/pages/index.yaml
