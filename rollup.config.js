@@ -1,6 +1,7 @@
 import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import { terser } from 'rollup-plugin-terser';
+import notify from 'rollup-plugin-notify';
 
 
 // Production state is based on whether we are watching for changes or not.
@@ -13,6 +14,7 @@ export default [
             file: 'dist/js/main.min.js',
         },
         plugins: [
+            notify(),
             resolve(),
             commonjs(),
             production && terser()
