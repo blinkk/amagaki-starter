@@ -8,7 +8,7 @@
         {% endif %}
     </div>
     {# Load partial CSS only once per page. #}
-    {% set staticFile = pod.staticFile('/dist/css/' + partial.partial + '.min.css') %}
+    {% set staticFile = a.static('/dist/css/partials/' + partial.partial + '.css') %}
     {% if pod.fileExists(staticFile.podPath) and staticFile.url.path not in _loadedStylesheets %}
     <link rel="stylesheet" href="{{staticFile.url.path}}">
     {% set _loadedStylesheets = _loadedStylesheets.push(staticFile.url.path) %}
