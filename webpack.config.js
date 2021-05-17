@@ -4,7 +4,7 @@ const path = require('path');
 
 module.exports = {
   entry: ['./src/ts/main.ts'].concat(
-    glob.sync('./src/sass/**/*.sass', { ignore: ['./src/sass/**/_*'] })
+    glob.sync('./src/sass/**/*.sass', {ignore: ['./src/sass/**/_*']})
   ),
   plugins: process.env.notify ? [new WebpackNotifierPlugin()] : [],
   mode: 'development',
