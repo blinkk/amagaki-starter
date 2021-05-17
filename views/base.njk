@@ -9,8 +9,8 @@
     <meta name="description" value="{{doc.fields.description}}">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{pod.staticFile('/dist/css/main.min.css').url.path}}">
-    <script src="{{pod.staticFile('/dist/js/main.min.js').url.path}}?cb={{cb()}}"></script>
+    <link rel="stylesheet" href="{{a.static('/dist/css/main.css').url.path}}">
+    <script src="{{a.static('/dist/js/main.min.js').url.path}}?cb={{cb()}}"></script>
 </head>
 <body>
 <div class="main">
