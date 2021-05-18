@@ -1,51 +1,51 @@
 {
   "branch": null,
   "commit": null,
-  "built": "Wed May 05 2021 03:58:00 GMT+0000 (Coordinated Universal Time)",
+  "built": "Tue May 18 2021 00:58:21 GMT+0000 (Coordinated Universal Time)",
   "files": [
     {
       "path": "/index.html",
-      "sha": "79475f20dc1ab9a5c721954da2797c576da1e70d"
+      "sha": "24fd16c2538761be6676ca8650b64b0718e1d1ac"
     },
     {
-      "path": "/static/css/button.min.css",
-      "sha": "7da16c474bbabe5ca433da9f2b9c5f7a35cd1173"
+      "path": "/static/css/main.css",
+      "sha": "96d4b3807a23be3400f5987b4eb8842d7a9e6592"
     },
     {
-      "path": "/static/css/columns-50x50-simple.min.css",
-      "sha": "904b227641063b7e01e89f43b91d7f3cf8d1b1ee"
+      "path": "/static/css/partials/button.css",
+      "sha": "13fbad42e3d3b1ef21da13851a3541775a1e4292"
     },
     {
-      "path": "/static/css/footer.min.css",
-      "sha": "6c9411b2783d68f2165db81532a350c8b11bf2ce"
+      "path": "/static/css/partials/columns-50x50-simple.css",
+      "sha": "d30787d9e9a9dd6c8914da10c6d0084bf8552ad8"
     },
     {
-      "path": "/static/css/header.min.css",
-      "sha": "a1ef8fd2382089faac0ac2b9d96ba07645a10400"
+      "path": "/static/css/partials/footer.css",
+      "sha": "66168b7fdfb9557f036f0718b7057698902af32d"
     },
     {
-      "path": "/static/css/hero.min.css",
-      "sha": "927243e29bcf21870df17214e47d2fc8a0b5fdd0"
+      "path": "/static/css/partials/header.css",
+      "sha": "07e745183621329de25f8b143fb18474b53d9b04"
     },
     {
-      "path": "/static/css/main.min.css",
-      "sha": "9484896440424677b5b540f6dc1cd4d547c16750"
+      "path": "/static/css/partials/hero.css",
+      "sha": "7eb476b73ba0194b77f181b20b73363723037b1d"
     },
     {
-      "path": "/static/css/promo-banner.min.css",
-      "sha": "af37c95b0a46c88ce3b378b10dd6a87ef921c701"
+      "path": "/static/css/partials/promo-banner.css",
+      "sha": "fdab9b63e94fed16d7586491368931b34d33e476"
     },
     {
-      "path": "/static/css/simple-intro.min.css",
-      "sha": "5abde71484557acb32ffadc2c569530d677f7d86"
+      "path": "/static/css/partials/simple-intro.css",
+      "sha": "a788a8a70942cf3d24f8337e0027e727f82c521b"
     },
     {
-      "path": "/static/css/spacer.min.css",
-      "sha": "9e7c0c8ed87b95c504a6415e1062eaaeea64243c"
+      "path": "/static/css/partials/spacer.css",
+      "sha": "5d234b4fad667db8aed7fbdfcce551e32ee71bb8"
     },
     {
       "path": "/static/js/main.min.js",
-      "sha": "9fdd4e7ee299e7fbd0efe933a4ace3d92666e2ba"
+      "sha": "03d1e75131ca06ae030e93fce86d8870e4a78c57"
     },
     {
       "path": "/static/placeholder/16x9.svg",
