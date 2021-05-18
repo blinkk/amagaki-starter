@@ -26,7 +26,7 @@
   },
   "dependencies": {
     "@amagaki/amagaki": "^0.4.0",
-    "@blinkk/degu": "0.0.346",
+    "@blinkk/degu": "0.0.347",
     "browser-sync": "^2.26.13",
     "concurrently": "^5.3.0",
     "glob": "^7.1.6",
@@ -38,6 +38,7 @@
   "devDependencies": {
     "@rollup/plugin-commonjs": "^19.0.0",
     "@rollup/plugin-node-resolve": "^13.0.0",
+    "@rollup/plugin-typescript": "^8.2.1",
     "npm-run-all": "^4.1.5",
     "rollup": "^2.48.0",
     "rollup-plugin-browsersync": "^1.3.1",
