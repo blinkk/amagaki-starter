@@ -10,9 +10,9 @@
   {% if params.url %}
     {% set url = params.url %}
   {% elif params.file %}
-    {% set url = params.file.url.path %}
+    {% set url = params.file %}
   {% endif %}
-  {{_image(url, params)}}
+  {{_image(url|url, params)}}
 {% endmacro %}
 
 {% macro _renderImage(url, params) %}

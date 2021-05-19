@@ -1,13 +1,13 @@
 {
-  "name": "@amagaki/amagaki",
-  "version": "0.2.0",
+  "name": "@amagaki/amagaki-starter",
+  "version": "0.2.1",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git://github.com/blinkkcode/amagaki-starter.git"
   },
   "engines": {
-    "node": ">=11.14.0"
+    "node": ">=12.0.0"
   },
   "scripts": {
     "browsersync:reload": "browser-sync reload",
