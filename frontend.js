@@ -77,14 +77,14 @@ class amagakiFeBuilder {
    */
   buildEs() {
     return new Promise(resolve => {
-      exec('tsc -noEmit', (error, stderr) => {
+      exec('tsc', (error, stderr) => {
         if (stderr) {
           console.error('Typescript errors');
           console.error(stderr);
         } else {
           esbuild
             .build({
-              entryPoints: ['src/ts/main.ts'],
+              entryPoints: ['dist/js/main.js'],
               outfile: 'dist/js/main.min.js',
               bundle: true,
               platform: 'browser',
