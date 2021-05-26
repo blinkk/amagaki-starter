@@ -32,7 +32,7 @@ class amagakiFeBuilder {
 
     // Watch view files.
     bs.watch('*.yaml', this.reloadBrowserSync);
-    bs.watch('*.nkj', this.reloadBrowserSync);
+    bs.watch('*.njk', this.reloadBrowserSync);
 
     // Watch Sass files.
     this.watchSass();
