@@ -21,9 +21,8 @@ const ENTRIES = {
 };
 
 /**
- * Runs tsc and then esBuild.  esBuild does not do type checks and can build with
- * type errors so we first run `tsc` and generate a JS file.  ssBuild is then run
- * on the outputted JS file.
+ * esBuild does not do type checks and can build with type errors so we first run
+ * `tsc` and generate a JS file.  esBuild is then run on the outputted JS file.
  *
  * The entry point of tsc compilation is configured in tsconfig `include`.
  */
