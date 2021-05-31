@@ -8,7 +8,8 @@ sass.compiler = require('sass');
 
 const ENTRIES = {
   js: {
-    src: ['./src/ts/main.js'],
+    // File location for tsc output.  Based on tsconfig output settings.
+    tsc_out: ['./src/ts/main.js'],
     out: './dist/js/main.min.js',
     watch: ['./src/ts/**/*.ts'],
   },
@@ -19,6 +20,13 @@ const ENTRIES = {
   },
 };
 
+/**
+ * Runs tsc and then esBuild.  esBuild does not do type checks and can build with
+ * type errors so we first run `tsc` and generate a JS file.  ssBuild is then run
+ * on the outputted JS file.
+ *
+ * The entry point of tsc compilation is configured in tsconfig `include`.
+ */
 const runEsBuild = async prod => {
   return new Promise(resolve => {
     exec('tsc', async (error, stderr) => {
@@ -27,7 +35,7 @@ const runEsBuild = async prod => {
         console.error(stderr);
       } else {
         await esbuild.build({
-          entryPoints: ENTRIES.js.src,
+          entryPoints: ENTRIES.js.tsc_out,
           outfile: ENTRIES.js.out,
           bundle: true,
           platform: 'browser',
