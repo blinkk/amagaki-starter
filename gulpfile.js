@@ -9,7 +9,7 @@ sass.compiler = require('sass');
 const ENTRIES = {
   js: {
     // File location for tsc output.  Based on tsconfig output settings.
-    tsc_out: ['./dist/ts/main.js'],
+    tsc_out: ['./dist/js/main.js'],
     out: './dist/js/main.min.js',
     watch: ['./src/ts/**/*.ts'],
   },
@@ -27,12 +27,12 @@ const ENTRIES = {
  * The entry point of tsc compilation is configured in tsconfig `include`.
  */
 const runEsBuild = async prod => {
-  return new Promise(resolve => {
+  return new Promise((resolve, reject) => {
     exec('tsc', async (error, stderr) => {
       if (stderr) {
         console.error('Typescript errors');
         console.error(stderr);
-        resolve();
+        reject();
       } else {
         await esbuild.build({
           entryPoints: ENTRIES.js.tsc_out,
