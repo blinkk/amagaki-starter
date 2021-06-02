@@ -9,7 +9,7 @@ sass.compiler = require('sass');
 const ENTRIES = {
   js: {
     // File location for tsc output.  Based on tsconfig output settings.
-    tsc_out: ['./src/ts/main.js'],
+    tsc_out: ['./dist/ts/main.js'],
     out: './dist/js/main.min.js',
     watch: ['./src/ts/**/*.ts'],
   },
