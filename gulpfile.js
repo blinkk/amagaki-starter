@@ -32,6 +32,7 @@ const runEsBuild = async prod => {
       if (stderr) {
         console.error('Typescript errors');
         console.error(stderr);
+        resolve();
       } else {
         await esbuild.build({
           entryPoints: ENTRIES.js.tsc_out,
