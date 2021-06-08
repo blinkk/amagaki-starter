@@ -1,14 +1,26 @@
 // TODO: Fix Amagak's publishing to flatten the `dist/src` folder.
-const router = require('@amagaki/amagaki/src/router');
+import {Pod, Route, RouteProvider, Router} from '@amagaki/amagaki';
 
-class PlaceholderRouteProvider extends router.RouteProvider {
-  constructor(router, options) {
+interface PlaceholderRouteProviderOptions {
+  sizes: Array<string>;
+}
+
+interface PlaceholderRouteOptions {
+  bgColor?: string;
+  icon?: boolean;
+  size: string;
+}
+
+class PlaceholderRouteProvider extends RouteProvider {
+  options: PlaceholderRouteProviderOptions;
+
+  constructor(router: Router, options: PlaceholderRouteProviderOptions) {
     super(router);
     this.type = 'placeholder';
     this.options = options;
   }
 
-  get routes() {
+  async routes() {
     const routes = [];
     this.options.sizes.forEach(size => {
       const options = {
@@ -20,8 +32,10 @@ class PlaceholderRouteProvider extends router.RouteProvider {
   }
 }
 
-class PlaceholderRoute extends router.Route {
-  constructor(provider, options) {
+class PlaceholderRoute extends Route {
+  options: PlaceholderRouteOptions;
+
+  constructor(provider: RouteProvider, options: PlaceholderRouteOptions) {
     super(provider);
     this.provider = provider;
     this.options = options;
@@ -52,7 +66,8 @@ class PlaceholderRoute extends router.Route {
     let fontStyle = '';
     let textColor;
     if (icon) {
-      fontSize = width > height ? parseInt(height / 4) : parseInt(width / 4);
+      fontSize =
+        width > height ? Math.floor(height / 4) : Math.floor(width / 4);
       textColor = '#000000';
     } else if (isAbsoluteSize) {
       fontSize = 12;
@@ -60,7 +75,8 @@ class PlaceholderRoute extends router.Route {
       textColor = '#000000';
       width = originalWidth;
     } else {
-      fontSize = width > height ? parseInt(height / 11) : parseInt(width / 11);
+      fontSize =
+        width > height ? Math.floor(height / 11) : Math.floor(width / 11);
       fontStyle = 'letter-spacing: 1px; font-weight: 500';
       fontWeight = 'medium';
       textColor = '#999999';
@@ -75,10 +91,6 @@ class PlaceholderRoute extends router.Route {
   }
 }
 
-const register = (pod, options) => {
+export const register = (pod: Pod, options) => {
   pod.router.addProvider(new PlaceholderRouteProvider(pod.router, options));
-};
-
-module.exports = {
-  register: register,
 };
