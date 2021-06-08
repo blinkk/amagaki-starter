@@ -9,9 +9,10 @@ A minimal starter project that uses the [Amagaki](https://amagaki.dev) website g
 ## Features
 
 - Reusable partial HTML templates (Nunjucks).
+- Responsive image macro using a combination of `srcset` and `media`.
 - Per-partial CSS splitting.
+- TypeScript compilation with tree-shaking for minimal payloads.
 - Opinionated autofixing and linting.
-- Responsive image macro using a combination of `srcset` and `media`. 
 
 ## Usage
 
