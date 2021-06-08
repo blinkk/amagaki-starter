@@ -4,10 +4,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/blinkkcode/amagaki-starter.git"
+    "url": "git://github.com/blinkk/amagaki-starter.git"
   },
   "engines": {
-    "node": ">=12.0.0"
+    "node": ">=14.0.0"
   },
   "scripts": {
     "browsersync:reload": "browser-sync reload",
