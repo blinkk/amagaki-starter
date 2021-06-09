@@ -1,4 +1,3 @@
-// TODO: Fix Amagak's publishing to flatten the `dist/src` folder.
 import {Pod, Route, RouteProvider, Router} from '@amagaki/amagaki';
 
 interface PlaceholderRouteProviderOptions {
