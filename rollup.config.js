@@ -18,7 +18,9 @@ export default [
         plugins: [
             notify(),
             resolve(),
-            typescript(),
+            typescript({
+                noEmitOnError: false
+            }),
             commonjs(),
             production && terser()
         ]
