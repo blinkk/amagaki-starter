@@ -14,7 +14,7 @@
 </head>
 <body>
 <div class="main">
-    {% set partial = pod.doc('/content/partials/header.yaml').fields %}
+    {% set partial = pod.doc('/content/partials/header.yaml', doc.locale).fields %}
     {{renderPartial.renderPartial(partial)}}
     {% if doc.fields.partials %}
         {% for partial in doc.fields.partials %}
@@ -25,6 +25,6 @@
             {{doc.body|markdown|safe}}
         </div>
     {% endif %}
-    {% set partial = pod.doc('/content/partials/footer.yaml').fields %}
+    {% set partial = pod.doc('/content/partials/footer.yaml', doc.locale).fields %}
     {{renderPartial.renderPartial(partial)}}
 </div>
