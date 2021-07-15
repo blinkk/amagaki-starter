@@ -1,11 +1,11 @@
 {
   "branch": null,
   "commit": null,
-  "built": "Wed Jul 07 2021 02:49:31 GMT+0000 (Coordinated Universal Time)",
+  "built": "Thu Jul 15 2021 19:05:30 GMT+0000 (Coordinated Universal Time)",
   "files": [
     {
       "path": "/index.html",
-      "sha": "23d487034c8c82dd46c06cab1dc677d3acd8b027"
+      "sha": "a5cb23776a3d5e704f5619fc8654b5aba20eaced"
     },
     {
       "path": "/static/css/main.css",
@@ -45,7 +45,7 @@
     },
     {
       "path": "/static/js/main.min.js",
-      "sha": "8870e121818459c1a08ea4e9972b0d696828f17d"
+      "sha": "d01e4d47b972fdc89cc9218ed1a61e01a9be45a6"
     },
     {
       "path": "/static/placeholder/16x9.svg",
