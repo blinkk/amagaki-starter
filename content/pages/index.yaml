@@ -1,6 +1,3 @@
-$path: /
-$localization:
-  path: /intl/${doc.locale.id}/
 title: Home
 description: Page description.
 
