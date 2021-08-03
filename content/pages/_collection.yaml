@@ -1,6 +1,6 @@
-$path: /${doc.basename}/
+$path: /${doc.collectionPath}/${doc.basename}/
 $view: /views/base.njk
 $localization:
-  path: /intl/${doc.locale.id}/${doc.basename}/
+  path: /intl/${doc.locale.id}/${doc.collectionPath}/${doc.basename}/
   locales:
   - en
