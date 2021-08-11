@@ -14,17 +14,18 @@ export default [
         input: 'src/ts/main.ts',
         output: {
             file: 'dist/js/main.min.js',
-            format: 'iife'
+            format: 'iife',
+            sourcemap: true
         },
         plugins: [
             notify(),
             resolve(),
             typescript({
                 noEmitOnError: false
+                sourcemap: false
             }),
             commonjs(),
             production && terser()
         ],
-        sourcemap: true
     },
 ];
