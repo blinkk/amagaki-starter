@@ -22,7 +22,7 @@ export default [
             resolve(),
             typescript({
                 noEmitOnError: false
-                sourcemap: false
+                sourceMap: false
             }),
             commonjs(),
             production && terser()
