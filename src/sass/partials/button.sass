@@ -1,13 +1,12 @@
-@import ../utils/breakpoints
-@import ../utils/color
-@import ../utils/spacing
-@import ../utils/type
+@use '../utils/color'
+@use '../utils/spacing'
+@use '../utils/type'
 
-$button-primary-color: $color-primary
-$button-primary-hover-color: $color-primary-hover
+$button-primary-color: color.$primary
+$button-primary-hover-color: color.$primary-hover
 
 .button
-  +type-button
+  +type.button
   align-items: center
   appearance: none
   background-color: $button-primary-color
@@ -113,4 +112,4 @@ $button-primary-hover-color: $color-primary-hover
       background-color: transparent
 
   & + &
-    margin-left: $spacing-10
+    margin-left: spacing.$size-10

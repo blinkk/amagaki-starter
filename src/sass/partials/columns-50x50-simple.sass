@@ -1,34 +1,35 @@
-@import '../utils/spacing'
-@import '../utils/type'
-@import '../utils/grid'
+@use '../utils/breakpoints'
+@use '../utils/grid'
+@use '../utils/spacing'
+@use '../utils/type'
 
 .columns-50x50-simple
-    +grid-container
+    +grid.container
 
 .columns-50x50-simple__column
     align-items: center
     display: flex
 
 .columns-50x50-simple__column--primary
-    +laptop-gt
-        +grid-range(1, 6)
+    +breakpoints.laptop-gt
+        +grid.range(1, 6)
 
 .columns-50x50-simple__column--assets
-    +laptop-gt
-        +grid-range(7, 12)
+    +breakpoints.laptop-gt
+        +grid.range(7, 12)
     display: flex
     justify-content: center
 
 .columns-50x50-simple__column__primary__title
-    +type-heading-3
+    +type.heading-3
 
     & + .columns-50x50-simple__column__primary__body
-        margin-top: $spacing-20
+        margin-top: spacing.$size-20
 
 .columns-50x50-simple__column__primary__body
-    max-width: $spacing-max-body-width
+    max-width: spacing.$max-body-width
     & + .columns-50x50-simple__column__primary__buttons
-        margin-top: $spacing-20
+        margin-top: spacing.$size-20
 
 .columns-50x50-simple__column__assets
     background: red
@@ -41,4 +42,4 @@
     width: 400px
 
 .columns-50x50-simple--reversed
-    +grid-reversed
+    +grid.reversed

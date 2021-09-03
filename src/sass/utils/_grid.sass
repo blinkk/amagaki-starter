@@ -1,3 +1,5 @@
+@use 'breakpoints'
+
 $grid-column-gap-mobile: 24px
 $grid-column-gap-tablet: 24px
 $grid-column-gap-laptop: 24px
@@ -10,44 +12,40 @@ $grid-horizontal-padding-laptop: 24px
 $grid-max-width-tablet: 600px
 $grid-max-width-desktop: 1392px
 
-=grid-column-gap
-  +mobile
+=column-gap
+  +breakpoints.mobile
     column-gap: $grid-column-gap-mobile
-  +tablet
+  +breakpoints.tablet
     column-gap: $grid-column-gap-tablet
-  +laptop
+  +breakpoints.laptop
     column-gap: $grid-column-gap-laptop
-  +desktop
+  +breakpoints.desktop
     column-gap: $grid-column-gap-desktop
 
-=grid-container
+=container
   display: grid
-  +grid-column-gap
-  +mobile
-    // http://www.gstatic.com/store/images/living_styleguide/gstore-grid-rules-320px.png
+  +column-gap
+  +breakpoints.mobile
     grid-template-columns: repeat(4, 1fr)
     padding: 0 $grid-horizontal-padding-mobile
-  +tablet
-    // http://www.gstatic.com/store/images/living_styleguide/gstore-grid-rules-600px.png
+  ++breakpoints.tablet
     grid-template-columns: repeat(12, 1fr)
     padding: 0 $grid-horizontal-padding-tablet
     max-width: $grid-max-width-tablet
     margin: 0 auto
-  +laptop
-    // http://www.gstatic.com/store/images/living_styleguide/gstore-grid-rules-1024px.png
+  +breakpoints.laptop
     grid-template-columns: repeat(12, 1fr)
     padding: 0 $grid-horizontal-padding-laptop
-  +desktop
-    // http://www.gstatic.com/store/images/living_styleguide/gstore-grid-rules-1440px.png
+  +breakpoints.desktop
     grid-template-columns: repeat(12, 1fr)
     margin: 0 auto
     max-width: $grid-max-width-desktop
 
-=grid-range($start, $end)
+=range($start, $end)
   grid-column-start: #{$start}
   grid-column-end: span #{$end - $start + 1}
 
-=grid-reversed
+=reversed
   direction: rtl
   & > *
     direction: ltr
