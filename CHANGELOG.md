@@ -1,5 +1,16 @@
 # Changelog
 
+### [1.0.1](https://www.github.com/blinkk/amagaki-starter/compare/v1.0.0...v1.0.1) (2021-09-03)
+
+
+### Bug Fixes
+
+* add missing parenthesis ([f2d064c](https://www.github.com/blinkk/amagaki-starter/commit/f2d064c1d45a38eb9a3e6f462fba79fc6e1c56bd))
+* collection path in collection paths ([7e26d13](https://www.github.com/blinkk/amagaki-starter/commit/7e26d13960fee4eb2bb695dca2421c48b9429adb))
+* ensure documents are localized when used with renderPartial ([947954d](https://www.github.com/blinkk/amagaki-starter/commit/947954d35df374743b7056b94fbba0039b71eb45))
+* remove manual overrides for index ([56efc7f](https://www.github.com/blinkk/amagaki-starter/commit/56efc7f832430dc24937095b2b06a57b7a24b714))
+* use iife format for rollup ([2514af8](https://www.github.com/blinkk/amagaki-starter/commit/2514af8e610fd5d4ebafaf7dd5236394a58bb9c6))
+
 ## 1.0.0 (2021-06-08)
 
 
