@@ -1,23 +1,23 @@
 {
   "branch": null,
   "commit": null,
-  "built": "Tue Aug 24 2021 15:56:22 GMT+0000 (Coordinated Universal Time)",
+  "built": "Fri Sep 03 2021 18:34:53 GMT+0000 (Coordinated Universal Time)",
   "files": [
     {
       "path": "/index.html",
-      "sha": "a5cb23776a3d5e704f5619fc8654b5aba20eaced"
+      "sha": "16284550522ad57208cfcfb0579301d501412fb7"
     },
     {
       "path": "/static/css/main.css",
-      "sha": "96d4b3807a23be3400f5987b4eb8842d7a9e6592"
+      "sha": "03896e41f1fdaa557e6536e002e92c59162340e7"
     },
     {
       "path": "/static/css/partials/button.css",
-      "sha": "13fbad42e3d3b1ef21da13851a3541775a1e4292"
+      "sha": "d507db85a31c6b414343d2afd37b0b979bc137a4"
     },
     {
       "path": "/static/css/partials/columns-50x50-simple.css",
-      "sha": "d30787d9e9a9dd6c8914da10c6d0084bf8552ad8"
+      "sha": "e67cba696d7085797ad559692f029c3713e3b082"
     },
     {
       "path": "/static/css/partials/footer.css",
@@ -29,15 +29,15 @@
     },
     {
       "path": "/static/css/partials/hero.css",
-      "sha": "7eb476b73ba0194b77f181b20b73363723037b1d"
+      "sha": "b5c80c87e0db7985dbd299f6d384a8654b9d5ecd"
     },
     {
       "path": "/static/css/partials/promo-banner.css",
-      "sha": "fdab9b63e94fed16d7586491368931b34d33e476"
+      "sha": "ab963965e3e8463d0649c504b8fc46df8baa236f"
     },
     {
       "path": "/static/css/partials/simple-intro.css",
-      "sha": "a788a8a70942cf3d24f8337e0027e727f82c521b"
+      "sha": "4b32613c690e480403d30dffff0f48bfcfae88e3"
     },
     {
       "path": "/static/css/partials/spacer.css",
