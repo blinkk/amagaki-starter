@@ -10,6 +10,12 @@ interface PlaceholderRouteOptions {
   size: string;
 }
 
+export class PlaceholderPlugin {
+  static register(pod: Pod, options: PlaceholderRouteProviderOptions): void {
+    pod.router.addProvider(new PlaceholderRouteProvider(pod.router, options));
+  }
+}
+
 class PlaceholderRouteProvider extends RouteProvider {
   options: PlaceholderRouteProviderOptions;
 
@@ -89,7 +95,3 @@ class PlaceholderRoute extends Route {
     `;
   }
 }
-
-export const register = (pod: Pod, options) => {
-  pod.router.addProvider(new PlaceholderRouteProvider(pod.router, options));
-};

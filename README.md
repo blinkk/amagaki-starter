@@ -27,6 +27,14 @@ npm run dev
 npm run build
 ```
 
+## Details
+
+`amagaki-starter` uses the
+[`@amagaki/amagaki-plugin-page-builder`](https://github.com/blinkk/amagaki-plugin-page-builder).
+The page builder plugin generates the core markup for each page and manages
+partials. Partials are standalone, isolated modules that can be mixed and
+matched to approach page building by assembling reusable modules.
+
 [github-image]: https://github.com/blinkk/amagaki-starter/workflows/Build%20site/badge.svg
 [github-url]: https://github.com/blinkk/amagaki-starter/actions
 [npm-image]: https://img.shields.io/npm/v/@amagaki/amagaki-starter.svg
