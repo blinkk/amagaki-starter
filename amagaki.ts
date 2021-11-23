@@ -1,12 +1,21 @@
-import * as placeholderPlugin from './plugins/placeholder';
-
 import {Document, NunjucksPlugin, Pod, StaticFile, Url} from '@amagaki/amagaki';
 
+import {PageBuilder} from '@amagaki/amagaki-plugin-page-builder';
+import {PlaceholderPlugin} from './plugins/placeholder';
+
 export default (pod: Pod) => {
-  pod.configure({
-    meta: {
-      name: 'Amagaki Starter',
+  PageBuilder.register(pod, {
+    head: {
+      siteName: 'Starter',
+      scripts: [pod.staticFile('/dist/js/main.min.js')],
+      stylesheets: [
+        'https://fonts.googleapis.com/css?family=Open+Sans:400,500,600,700|Roboto:400,500,600,700|Material+Icons&amp;display=swap',
+        pod.staticFile('/dist/css/main.css'),
+      ],
     },
+  });
+
+  pod.configure({
     localization: {
       defaultLocale: 'en',
       locales: ['en'],
@@ -21,11 +30,16 @@ export default (pod: Pod) => {
         staticDir: '/dist/js/',
       },
     ],
+    environments: {
+      prod: {},
+    },
   });
 
-  placeholderPlugin.register(pod, {
-    sizes: ['16x9', '1x1', '9x16', '7x3'],
-  });
+  if (pod.env.name !== 'prod') {
+    PlaceholderPlugin.register(pod, {
+      sizes: ['16x9', '1x1', '9x16', '7x3'],
+    });
+  }
 
   const nunjucksPlugin = pod.plugins.get('NunjucksPlugin') as NunjucksPlugin;
   type Urlable = StaticFile | Document | string;
