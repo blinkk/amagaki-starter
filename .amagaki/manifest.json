@@ -1,15 +1,15 @@
 {
   "branch": null,
   "commit": null,
-  "built": "Fri Sep 03 2021 18:34:53 GMT+0000 (Coordinated Universal Time)",
+  "built": "Tue Nov 23 2021 23:18:52 GMT+0000 (Coordinated Universal Time)",
   "files": [
     {
       "path": "/index.html",
-      "sha": "16284550522ad57208cfcfb0579301d501412fb7"
+      "sha": "7e1a9124d03b516253f3e7c69aff46b6b663a90c"
     },
     {
       "path": "/static/css/main.css",
-      "sha": "03896e41f1fdaa557e6536e002e92c59162340e7"
+      "sha": "3269f46477fa7d3b193acba4725f837a0fd46eb5"
     },
     {
       "path": "/static/css/partials/button.css",
@@ -44,8 +44,28 @@
       "sha": "5d234b4fad667db8aed7fbdfcce551e32ee71bb8"
     },
     {
+      "path": "/static/js/main.js",
+      "sha": "6dc2aa244a851beb0a98a3b60960580cb1ddcd42"
+    },
+    {
+      "path": "/static/js/main.js.map",
+      "sha": "afd9ca1fd54d3a9f91ee8097db198425943383c8"
+    },
+    {
       "path": "/static/js/main.min.js",
-      "sha": "d01e4d47b972fdc89cc9218ed1a61e01a9be45a6"
+      "sha": "1198896e0ee9351161a66a18077909cb215f7790"
+    },
+    {
+      "path": "/robots.txt",
+      "sha": "dcc2a847c89e16da771b902581de3c91ebe76859"
+    },
+    {
+      "path": "/sitemap.xml",
+      "sha": "b1b7c010bde3ed56478f33ad227fa2b35340a0fe"
+    },
+    {
+      "path": "/_page-builder/page-builder-ui.min.js",
+      "sha": "a4e46a7476140619c978f7a857ef652d3d31c285"
     },
     {
       "path": "/static/placeholder/16x9.svg",
