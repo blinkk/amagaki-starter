@@ -1,11 +1,11 @@
 {
   "branch": null,
   "commit": null,
-  "built": "Wed Nov 24 2021 07:40:52 GMT+0000 (Coordinated Universal Time)",
+  "built": "Wed Nov 24 2021 21:12:12 GMT+0000 (Coordinated Universal Time)",
   "files": [
     {
       "path": "/index.html",
-      "sha": "7e1a9124d03b516253f3e7c69aff46b6b663a90c"
+      "sha": "9c0bdaf051b8e4f0c4725be40e8fcbbd978940f8"
     },
     {
       "path": "/static/css/main.css",
@@ -62,10 +62,6 @@
     {
       "path": "/sitemap.xml",
       "sha": "b1b7c010bde3ed56478f33ad227fa2b35340a0fe"
-    },
-    {
-      "path": "/_page-builder/page-builder-ui.min.js",
-      "sha": "a4e46a7476140619c978f7a857ef652d3d31c285"
     },
     {
       "path": "/static/placeholder/16x9.svg",

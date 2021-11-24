@@ -1,9 +1,9 @@
 {
   "localesToNumMissingTranslations": {},
-  "memoryUsage": 11990360,
-  "numDocumentRoutes": 8,
+  "memoryUsage": 11918616,
+  "numDocumentRoutes": 7,
   "numMissingTranslations": 0,
   "numStaticRoutes": 12,
-  "outputSizeDocuments": 41425,
+  "outputSizeDocuments": 12683,
   "outputSizeStaticFiles": 15766
 }
