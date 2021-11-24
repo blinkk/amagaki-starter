@@ -13,21 +13,19 @@
     "browsersync:reload": "browser-sync reload",
     "browsersync:start": "browser-sync start --proxy localhost:8080 --files dist",
     "build": "npm run build:src; amagaki build",
-    "build:src": "npm run gulp:build; npm run sass:build",
+    "build:src": "npm run gulp:build",
     "gulp:watch": "gulp watch",
     "gulp:build": "gulp build",
-    "dev": "npm-run-all --parallel watch:pages start gulp:watch sass:watch browsersync:start",
-    "sass:build": "sass --no-source-map ./src/sass/:./dist/css --style compressed",
-    "sass:watch": "sass --watch --no-source-map ./src/sass/:./dist/css --style compressed",
+    "dev": "npm-run-all --parallel watch:pages gulp:watch browsersync:start start",
     "fix": "npm run fix:sass",
     "fix:sass": "sass-lint-auto-fix -c .sasslintrc.fix.yaml",
+    "postinstall": "npm run build:src",
     "start": "amagaki serve",
     "watch:src": "nodemon --watch src -e ts,js,sass --exec npm run browsersync:reload",
     "watch:pages": "nodemon --watch content --watch views -e njk,yaml --exec npm run browsersync:reload"
   },
   "dependencies": {
     "@amagaki/amagaki-plugin-page-builder": "^1.0.0",
-    "@amagaki/amagaki": "^1.7.0",
     "@blinkk/degu": "0.0.347",
     "@types/gulp-autoprefixer": "0.0.33",
     "@types/gulp-dart-sass": "^1.0.1",
@@ -45,5 +43,8 @@
     "npm-run-all": "^4.1.5",
     "sass": "^1.37.5",
     "typescript": "^4.3.5"
+  },
+  "devDependencies": {
+    "@amagaki/amagaki": "^1.7.2"
   }
 }
