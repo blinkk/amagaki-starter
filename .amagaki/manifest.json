@@ -1,7 +1,7 @@
 {
   "branch": null,
   "commit": null,
-  "built": "Tue Nov 23 2021 23:18:52 GMT+0000 (Coordinated Universal Time)",
+  "built": "Wed Nov 24 2021 07:38:17 GMT+0000 (Coordinated Universal Time)",
   "files": [
     {
       "path": "/index.html",
@@ -9,39 +9,39 @@
     },
     {
       "path": "/static/css/main.css",
-      "sha": "3269f46477fa7d3b193acba4725f837a0fd46eb5"
+      "sha": "319d07953736ab6509e7faf8af57c22b03770434"
     },
     {
       "path": "/static/css/partials/button.css",
-      "sha": "d507db85a31c6b414343d2afd37b0b979bc137a4"
+      "sha": "40b29e04444d86373cf8d893c3cae0c93a3daf49"
     },
     {
       "path": "/static/css/partials/columns-50x50-simple.css",
-      "sha": "e67cba696d7085797ad559692f029c3713e3b082"
+      "sha": "dad41eda7f6c07ece40794bd8c4e30465f69def3"
     },
     {
       "path": "/static/css/partials/footer.css",
-      "sha": "66168b7fdfb9557f036f0718b7057698902af32d"
+      "sha": "6c9411b2783d68f2165db81532a350c8b11bf2ce"
     },
     {
       "path": "/static/css/partials/header.css",
-      "sha": "07e745183621329de25f8b143fb18474b53d9b04"
+      "sha": "a1ef8fd2382089faac0ac2b9d96ba07645a10400"
     },
     {
       "path": "/static/css/partials/hero.css",
-      "sha": "b5c80c87e0db7985dbd299f6d384a8654b9d5ecd"
+      "sha": "59d0240eb3c1c6ca6921b4114bfe8ef7fe78f95c"
     },
     {
       "path": "/static/css/partials/promo-banner.css",
-      "sha": "ab963965e3e8463d0649c504b8fc46df8baa236f"
+      "sha": "7ed15d89d72a95a8bac3e70b0c94db547feb0de8"
     },
     {
       "path": "/static/css/partials/simple-intro.css",
-      "sha": "4b32613c690e480403d30dffff0f48bfcfae88e3"
+      "sha": "d40fa419ef08b198cfbca53974b3140b41d2abc6"
     },
     {
       "path": "/static/css/partials/spacer.css",
-      "sha": "5d234b4fad667db8aed7fbdfcce551e32ee71bb8"
+      "sha": "9e7c0c8ed87b95c504a6415e1062eaaeea64243c"
     },
     {
       "path": "/static/js/main.js",
