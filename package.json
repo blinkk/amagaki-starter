@@ -26,7 +26,7 @@
   },
   "dependencies": {
     "@amagaki/amagaki": "^1.7.2",
-    "@amagaki/amagaki-plugin-page-builder": "^1.1.1",
+    "@amagaki/amagaki-plugin-page-builder": "^1.1.2",
     "@blinkk/degu": "0.0.347",
     "browser-sync": "^2.27.5",
     "esbuild": "^0.13.15",
