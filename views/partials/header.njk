@@ -1,11 +1,7 @@
-{% import "/views/macros/asset.njk" as asset with context %}
-
 <div class="header {% for option in partial.options %}header--{{option}}{% endfor %}">
     <div class="header__logo">
         <a href="{{partial.logo.doc.url.path}}">
-            {{asset.asset(partial.logo.image, {
-                'class': 'header__logo__image'
-            })}}
+            {{degu.asset(partial.logo.image)}}
         </a>
     </div>
     <div class="header__links">

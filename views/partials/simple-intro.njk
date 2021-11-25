@@ -1,4 +1,3 @@
-{% import "/views/macros/asset.njk" as asset %}
 {% import "/views/macros/button.njk" as button %}
 
 <div class="simple-intro {{partial.class}}">
@@ -23,7 +22,7 @@
         {% if partial.images %}
             <div class="simple-intro__content__images">
                 {% for image in partial.images %}
-                    {{asset.asset(image)}}
+                    {{degu.asset(image)}}
                 {% endfor %}
             </div>
         {% endif %}

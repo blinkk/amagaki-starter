@@ -1,4 +1,3 @@
-{% import "/views/macros/asset.njk" as asset %}
 {% import "/views/macros/button.njk" as button %}
 
 <div class="{{partial.partial}} {% for option in partial.options %}{{partial.partial}}--{{option}}{% endfor %}">
@@ -27,7 +26,7 @@
             {% if column.asset %}
                 <div class="columns-50x50-simple__column__assets">
                     <div class="columns-50x50-simple__column__assets__asset">
-                        {{asset.asset(column.asset)}}
+                        {{degu.asset(column.asset)}}
                     </div>
                 </div>
             {% endif %}
