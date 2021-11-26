@@ -5,35 +5,34 @@
 import {NunjucksTemplateEngine, Pod} from '@amagaki/amagaki';
 
 import {SafeString} from 'nunjucks/src/runtime';
-import {escape} from 'nunjucks/src/lib';
-
-/** Template tag function for escaping values for use with Nunjucks templates. */
-const html = (literals: TemplateStringsArray, ...substitutions: unknown[]) => {
-  let result = '';
-  for (const [i, substitution] of substitutions.entries()) {
-    // Avoid double-escaping when using ternary or nested expressions.
-    if (substitution instanceof SafeString) {
-      result += literals[i] + substitution;
-    } else {
-      result += literals[i] + escape(substitution);
-    }
-  }
-  result += literals[literals.length - 1];
-  return new SafeString(result.trim());
-};
 
 export class DeguPlugin {
-  static register(pod: Pod) {
-    const engine = pod.engines.getEngineByExtension(
+  pod: Pod;
+  engine: NunjucksTemplateEngine;
+
+  constructor(pod: Pod) {
+    this.pod = pod;
+    this.engine = pod.engines.getEngineByExtension(
       '.njk'
     ) as NunjucksTemplateEngine;
-    engine.env.addGlobal('degu', {
-      asset: DeguPlugin.asset,
+  }
+
+  static register(pod: Pod) {
+    const plugin = new DeguPlugin(pod);
+    plugin.engine.env.addGlobal('degu', {
+      asset: (options => plugin.asset(options)) as any,
     });
   }
 
-  /** Returns a `<degu-image>` or `<degu-video>` depending requested file. */
-  static asset(options: {
+  /** Returns a safe string that can be used within a page. */
+  markup(html: string, context: Record<string, any>): SafeString {
+    return new SafeString(
+      this.engine.env.renderString(html.trim(), {options: context})
+    );
+  }
+
+  /** Returns a `<degu-image>` or `<degu-video>` depending on the . */
+  asset(options: {
     url: string;
     altText: string;
     width?: number;
@@ -42,14 +41,23 @@ export class DeguPlugin {
   }) {
     // TODO: When `degu-video` is available, check `url` extension and output
     // the appropriate element.
-    return html`
-      <degu-image
-        src="${options.url}"
-        alt="${options.altText ?? ''}"
-        ${options.class ? html`class="${options.class}"` : ''}
-        ${options.width ? html`width="${options.width}"` : ''}
-        ${options.height ? html`height="${options.height}"` : ''}
-      ></degu-image>
-    `;
+    return this.markup(
+      `
+        <degu-image
+          src="{{options.url}}"
+          alt="{{options.altText|default('')}}"
+          {% if options.class %}
+            class="{{options.class}}"
+          {% endif %}
+          {% if options.width %}
+            width="{{options.width}}"
+          {% endif %}
+          {% if options.height %}
+            height="{{options.height}}"
+          {% endif %}
+        ></degu-image>
+      `,
+      options
+    );
   }
 }
