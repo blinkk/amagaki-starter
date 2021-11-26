@@ -2,7 +2,7 @@ partial: header
 logo:
   doc: !pod.doc /content/pages/index.yaml
   image:
-    alt: 'Logo'
+    altText: 'Logo'
     class: header__logo__image
     url: /static/placeholder/7x3.svg
 nav:
