@@ -7,19 +7,16 @@ import {NunjucksTemplateEngine, Pod} from '@amagaki/amagaki';
 import {SafeString} from 'nunjucks/src/runtime';
 import {escape} from 'nunjucks/src/lib';
 
-/** Template tag function for escaping values for use with Nunjucks templates. */
+/** Template tag function for escaping values used with Nunjucks templates. */
 const html = (literals: TemplateStringsArray, ...substitutions: unknown[]) => {
-  let result = '';
-  for (const [i, substitution] of substitutions.entries()) {
+  const result = [];
+  for (const [i, value] of substitutions.entries()) {
+    result.push(literals[i]);
     // Avoid double-escaping when using ternary or nested expressions.
-    if (substitution instanceof SafeString) {
-      result += literals[i] + substitution;
-    } else {
-      result += literals[i] + escape(substitution);
-    }
+    result.push(value instanceof SafeString ? value : escape(value));
   }
-  result += literals[literals.length - 1];
-  return new SafeString(result.trim());
+  result.push(literals[literals.length - 1]);
+  return new SafeString(result.join('').trim());
 };
 
 export class DeguPlugin {
