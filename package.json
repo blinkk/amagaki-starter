@@ -27,21 +27,24 @@
   "dependencies": {
     "@amagaki/amagaki": "^1.7.2",
     "@amagaki/amagaki-plugin-page-builder": "^1.1.2",
-    "@blinkk/degu": "0.0.347",
+    "@blinkk/degu": "^1.25.1",
+    "@github/details-dialog-element": "^3.1.3",
     "browser-sync": "^2.27.5",
     "esbuild": "^0.13.15",
     "glob": "^7.1.7",
     "gts": "^3.1.0",
+    "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-dart-sass": "^1.0.2",
-    "gulp": "^4.0.2",
     "nodemon": "^2.0.12",
     "npm-run-all": "^4.1.5",
-    "typescript": "^4.3.5"
+    "nunjucks": "^3.2.3",
+    "typescript": "^4.5.2"
   },
   "devDependencies": {
+    "@types/gulp": "^4.0.9",
     "@types/gulp-autoprefixer": "0.0.33",
     "@types/gulp-dart-sass": "^1.0.1",
-    "@types/gulp": "^4.0.9"
+    "@types/nunjucks": "^3.2.0"
   }
 }

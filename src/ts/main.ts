@@ -1,15 +1,3 @@
-import * as dom from '@blinkk/degu/lib/dom/dom';
-import * as is from '@blinkk/degu/lib/is/is';
+import {DeguImage} from '@blinkk/degu/lib/lit/image';
 
-console.log('Add JS here');
-
-class App {
-  public test() {
-    if (is.mobile()) {
-      dom.event(document.documentElement, 'test', {});
-    }
-  }
-}
-
-const app = new App();
-app.test();
+window.customElements.define('degu-image', DeguImage);

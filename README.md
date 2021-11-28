@@ -14,7 +14,7 @@ A minimal starter project that uses the [Amagaki](https://amagaki.dev) website g
 - TypeScript compilation with tree-shaking for minimal payloads.
 - Opinionated autofixing and linting.
 
-## Usage
+## Commands
 
 ```shell
 # Install dependencies.
@@ -27,27 +27,23 @@ npm run dev
 npm run build
 ```
 
+## Creating pages
+
 `amagaki-starter` uses the
 [`@amagaki/amagaki-plugin-page-builder`](https://github.com/blinkk/amagaki-plugin-page-builder).
 The page builder plugin generates the core markup for each page and manages
 partials. Partials are standalone, isolated modules that can be mixed and
 matched to approach page building by assembling reusable modules.
 
-### How to build pages
-
 1. Create partials by adding files in the following locations:
 
-```
-/src/sass/partials/{partial}.sass
-/src/ts/partials/{partial}.ts
-/views/partials/{partial}.njk
-```
+- CSS: `/src/sass/partials/{partial}.sass`
+- TypeScript: `/src/ts/partials/{partial}.ts`
+- Nunjucks: `/views/partials/{partial}.njk`
 
 2. Create pages by mixing and matching partials:
 
-```
-/content/pages/{page}.yaml
-```
+- Document: `/content/pages/{page}.yaml`
 
 [github-image]: https://github.com/blinkk/amagaki-starter/workflows/Build%20site/badge.svg
 [github-url]: https://github.com/blinkk/amagaki-starter/actions

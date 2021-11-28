@@ -1,3 +1,23 @@
 {% macro button(button) %}
-    <a class="button" href="{{button.url}}">{{button.label}}</a>
+    {% set tag = "a" if button.url else "button" %}
+    {% set tag = button.tag if button.tag else tag %}
+    <{{tag}}
+        class="
+            button
+            {% for option in button.options %}
+            button--{{option}}
+            {% endfor %}
+        "
+        {% if button.url %}
+            href="{{button.url|url}}"
+        {% endif %}
+        {% if button.icon %}
+            style="--button-icon: '{{button.icon}}'"
+        {% endif %}
+        {% if button.ariaLabel %}
+            aria-label="{{button.ariaLabel}}"
+        {% endif %}
+    >
+        <span class="button__label">{{button.label}}</span>
+    </{{tag}}>
 {% endmacro %}

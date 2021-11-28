@@ -2,114 +2,68 @@
 @use '../utils/spacing'
 @use '../utils/type'
 
-$button-primary-color: color.$primary
-$button-primary-hover-color: color.$primary-hover
+=icon-font
+  content: var(--button-icon)
+  font-family: 'Material Icons'
+  font-size: 140%
+  max-height: 23px
+  max-width: 23px
+  overflow: hidden
+  position: relative
+  margin-right: -2px
 
 .button
   +type.button
   align-items: center
   appearance: none
-  background-color: $button-primary-color
-  border: 1px solid transparent
-  border-radius: 30px
-  color: white
+  background: var(--button-background)
+  border: 1px solid var(--button-border-color)
+  border-radius: 20px
+  box-shadow: var(--button-box-shadow, none)
+  color: var(--button-text-color)
   cursor: pointer
   display: inline-flex
   justify-content: center
-  padding: 12px 24px 11px
+  padding: 6px 20px 7px
   text-decoration: none
   text-rendering: optimizeLegibility
-  transition: background-color .2s, box-shadow .2s, color .2s
+  transition: all 200ms
 
-  &:visited
-    color: white
+  &:hover,
+  &:visited:hover
+    background: var(--button-background-hover)
+    border-color: var(--button-border-color-hover)
+    color: var(--button-text-color-hover, var(--button-text-color))
 
-  &:hover:not(.button--medium):not(.button--low):not(.button--tonal):not(.button--link)
-    background-color: $button-primary-hover-color
-    box-shadow: 0 1px 2px 0 rgba(60,64,67,0.3), 0 1px 3px 1px rgba(60,64,67,0.15)
-    color: white
+  &,
+  &--medium-emphasis
+    --button-border-color: rgba(0, 0, 0, .15)
+    --button-background: #fff
+    --button-background-hover: #f6f9fe
+    --button-border-color-hover: #2D74DE
+    --button-text-color-hover: #09329B
 
-  &:active:not(.button--medium):not(.button--low):not(.button--tonal):not(.button--link)
-    background-color: #174ea6
-    box-shadow: 0 0 0 2px #aecbfa
+  &--high-emphasis
+    --button-border-color: transparent
+    --button-background: #2D74DE
+    --button-text-color: #fff
+    --button-text-color-hover: #fff
+    --button-background-hover: #09329B
+    --button-border-color-hover: transparent
 
-  &:focus:not(.button--medium):not(.button--low):not(.button--tonal):not(.button--link)
-    background-color: #174ea6
-    box-shadow: 0 0 0 2px #aecbfa
+  &--low-emphasis
+    --button-background-hover: transparent
+    --button-background: transparent
+    --button-border-color: transparent
+    --button-border-color-hover: transparent
+    --button-text-color-hover: #09329B
+    --button-text-color: #2D74DE
 
-  &--medium
-    background-color: white
-    border-color: #dadce0
-    color: $button-primary-color
-    &:visited
-      color: $button-primary-color
-    &:hover
-      background-color: #f4f8fe
-      border-color: $button-primary-color
-      box-shadow: none
-      color: $button-primary-color
-    &:active
-      background-color: #e8f0fe
-      box-shadow: 0 0 0 1px $button-primary-color
-      border-color: $button-primary-color
-    &:focus
-      background-color: #f4f8fe
-      box-shadow: 0 0 0 1px $button-primary-color
-      border-color: $button-primary-color
+.button__label
+  align-items: center
+  display: inline-flex
 
-  &--low
-    background-color: transparent
-    color: $button-primary-color
-    &:visited
-      color: $button-primary-color
-    &:focus,
-    &:hover
-      background-color: #f4f8fe
-      color: $button-primary-color
-      box-shadow: none
-    &:active
-      background-color: #e8f0fe
-
-  &--tonal
-    background-color: #f4f8fe
-    color: $button-primary-color
-    &:visited
-      color: $button-primary-color
-    &:focus,
-    &:hover
-      background-color: #d2e3fc
-      color: $button-primary-color
-      box-shadow: none
-    &:active
-      background-color: #aecbfa
-
-  &--link
-    background-color: transparent
-    border-radius: 0
-    color: $button-primary-color
-    padding: 0
-    position: relative
-    &:visited
-      color: $button-primary-color
-    &:focus,
-    &:hover
-      background-color: transparent
-      box-shadow: none
-      &:after
-        background-color: $button-primary-color
-        bottom: 0
-        content: ''
-        display: block
-        height: 2px
-        left: 0
-        position: absolute
-        right: 0
-      &:focus
-        box-shadow: 0 0 0 2px #aecbfa
-    &:active
-      background-color: transparent
-    &:focus
-      background-color: transparent
-
-  & + &
-    margin-left: spacing.$size-10
+.button__label:after
+  +icon-font
+  margin-left: 6px
+  margin-right: -6px
