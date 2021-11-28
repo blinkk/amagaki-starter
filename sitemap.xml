@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
   <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
       <url>
+          <loc>http://localhost/about/</loc>
+          <xhtml:link href="http://localhost/about/" hreflang="x-default" rel="alternate" />
+          <xhtml:link href="http://localhost/about/" hreflang="en" rel="alternate" />
+      </url>
+      <url>
           <loc>http://localhost/</loc>
           <xhtml:link href="http://localhost/" hreflang="x-default" rel="alternate" />
           <xhtml:link href="http://localhost/" hreflang="en" rel="alternate" />
