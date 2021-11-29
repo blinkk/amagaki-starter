@@ -1,11 +1,11 @@
 {
   "branch": null,
   "commit": null,
-  "built": "Sun Nov 28 2021 02:07:16 GMT+0000 (Coordinated Universal Time)",
+  "built": "Mon Nov 29 2021 23:00:49 GMT+0000 (Coordinated Universal Time)",
   "files": [
     {
       "path": "/index.html",
-      "sha": "9c0bdaf051b8e4f0c4725be40e8fcbbd978940f8"
+      "sha": "cf6b117018199f4a3ad5c5e70a04ce6702ad0ce5"
     },
     {
       "path": "/static/css/main.css",
@@ -45,15 +45,15 @@
     },
     {
       "path": "/static/js/main.js",
-      "sha": "6dc2aa244a851beb0a98a3b60960580cb1ddcd42"
+      "sha": "dbdb4947520296522084a2122a1ee78bfeb9660b"
     },
     {
       "path": "/static/js/main.js.map",
-      "sha": "afd9ca1fd54d3a9f91ee8097db198425943383c8"
+      "sha": "15e69aa9dcd461f30f7211bf04f1232e5b23949d"
     },
     {
       "path": "/static/js/main.min.js",
-      "sha": "1198896e0ee9351161a66a18077909cb215f7790"
+      "sha": "56bfee5fc90ea11d2407e5619d672745719f7515"
     },
     {
       "path": "/robots.txt",

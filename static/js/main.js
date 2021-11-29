@@ -1,13 +1,10 @@
-import * as dom from '@blinkk/degu/lib/dom/dom';
-import * as is from '@blinkk/degu/lib/is/is';
-console.log('Add JS here');
+import { DeguImage } from '@blinkk/degu/lib/lit/image';
+window.customElements.define('degu-image', DeguImage);
 class App {
-    test() {
-        if (is.mobile()) {
-            dom.event(document.documentElement, 'test', {});
-        }
+    constructor() {
+        // Insert global code here.
+        // Module-specific code should be implemented using custom elements.
     }
 }
-const app = new App();
-app.test();
+new App();
 //# sourceMappingURL=main.js.map
