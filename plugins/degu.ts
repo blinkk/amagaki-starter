@@ -29,7 +29,14 @@ export class DeguPlugin {
     });
   }
 
-  /** Returns a `<degu-image>` or `<degu-video>` depending requested file. */
+  /**
+   * Returns a `<degu-image>` or `<degu-video>` depending on the requested file.
+   *
+   * Usage:
+   * ```
+   * {{degu.asset(options)}}
+   * ```
+   */
   static asset(options: {
     url: string;
     altText: string;
