@@ -2,8 +2,15 @@ partial: header
 logo:
   doc: !pod.doc /content/pages/index.yaml
   image:
+    url: !pod.staticFile '/src/static/images/amagaki.png'
     altText: 'Logo'
-    class: header__logo__image
-    url: /static/placeholder/7x3.svg
-nav:
-- !pod.doc /content/pages/index.yaml
+    width: 40
+    height: 40
+nav: !pod.docs ['/content/pages/**', {sort: 'order'}]
+buttons:
+- label: Sign up
+  url: '#'
+  options: ['high-emphasis']
+- label: Log in
+  url: '#'
+  options: ['medium-emphasis']

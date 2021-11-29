@@ -1,14 +1,54 @@
+{% import "/views/macros/button.njk" as button %}
+
 <div class="header {% for option in partial.options %}header--{{option}}{% endfor %}">
-    <div class="header__logo">
-        <a href="{{partial.logo.doc.url.path}}">
-            {{degu.asset(partial.logo.image)}}
-        </a>
-    </div>
-    <div class="header__links">
-        {% for item in partial.nav %}
-            <a href="{{item.url.path}}" class="header__links__link">
-                {{item.fields.title}}
+    <div class="header__grid">
+        <div class="header__grid__logo">
+            <a href="{{partial.logo.doc.url.path|url}}">
+                {{asset(partial.logo.image)}}
             </a>
-        {% endfor %}
+        </div>
+        <div class="header__grid__links">
+            {% for item in partial.nav %}
+                <a
+                    href="{{item.url.path|url}}"
+                    class="header__grid__links__link {{'header__grid__links__link--active' if item.url.path == doc.url.path}}"
+                >
+                    {{item.fields.navTitle or home.fields.title}}
+                </a>
+            {% endfor %}
+        </div>
+        <div class="header__grid__buttons">
+            <div class="header__grid__buttons__desktop-buttons">
+                {% for item in partial.buttons %}
+                    {{button.button(item)}}
+                {% endfor %}
+            </div>
+            <details class="header__mobile-nav">
+                <summary class="header__mobile-nav__summary">
+                    {{button.button({
+                        label: 'Menu',
+                        tag: 'div',
+                        ariaLabel: 'Toggle menu'
+                    })}}
+                </summary>
+                <details-dialog class="header__mobile-nav__dialog">
+                    <div class="header__mobile-nav__dialog__links">
+                        {% for item in partial.nav %}
+                            <a
+                                href="{{item.url.path|url}}"
+                                class="header__mobile-nav__dialog__links__link {{'header__mobile-nav__dialog__links__link--active' if item.url.path == doc.url.path}}"
+                            >
+                                {{item.fields.navTitle or home.fields.title}}
+                            </a>
+                        {% endfor %}
+                    </div>
+                    <div class="header__mobile-nav__buttons">
+                        {% for item in partial.buttons %}
+                            {{button.button(item)}}
+                        {% endfor %}
+                    </div>
+                </details-dialog>
+            </details>
+        </div>
     </div>
 </div>

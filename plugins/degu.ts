@@ -2,21 +2,31 @@
  * Plugins for using Degu elements.
  */
 
-import {NunjucksTemplateEngine, Pod} from '@amagaki/amagaki';
+import {
+  DataType,
+  NunjucksTemplateEngine,
+  Pod,
+  StaticFile,
+  TemplateContext,
+  Url,
+} from '@amagaki/amagaki';
 
 import {SafeString} from 'nunjucks/src/runtime';
 import {escape} from 'nunjucks/src/lib';
 
-/** Template tag function for escaping values used with Nunjucks templates. */
+/** Template tag function for escaping values for use with Nunjucks templates. */
 const html = (literals: TemplateStringsArray, ...substitutions: unknown[]) => {
-  const result = [];
-  for (const [i, value] of substitutions.entries()) {
-    result.push(literals[i]);
+  let result = '';
+  for (const [i, substitution] of substitutions.entries()) {
     // Avoid double-escaping when using ternary or nested expressions.
-    result.push(value instanceof SafeString ? value : escape(value));
+    if (substitution instanceof SafeString) {
+      result += literals[i] + substitution;
+    } else {
+      result += literals[i] + escape(substitution.toString());
+    }
   }
-  result.push(literals[literals.length - 1]);
-  return new SafeString(result.join('').trim());
+  result += literals[literals.length - 1];
+  return new SafeString(result.trim());
 };
 
 export class DeguPlugin {
@@ -24,9 +34,7 @@ export class DeguPlugin {
     const engine = pod.engines.getEngineByExtension(
       '.njk'
     ) as NunjucksTemplateEngine;
-    engine.env.addGlobal('degu', {
-      asset: DeguPlugin.asset,
-    });
+    engine.env.addGlobal('asset', DeguPlugin.asset);
   }
 
   /**
@@ -34,21 +42,30 @@ export class DeguPlugin {
    *
    * Usage:
    * ```
-   * {{degu.asset(options)}}
+   * {{asset(options)}}
    * ```
    */
-  static asset(options: {
-    url: string;
-    altText: string;
-    width?: number;
-    height?: number;
-    class?: string;
-  }) {
+  static asset(
+    this: any,
+    options: {
+      url: string | StaticFile;
+      altText: string;
+      width?: number;
+      height?: number;
+      class?: string;
+    }
+  ) {
+    let url = options.url;
+    if (DataType.isStaticFile(options.url)) {
+      const staticFile = options.url as StaticFile;
+      url = `${staticFile.url.path}?fingerprint=${staticFile.fingerprint}`;
+    }
+    url = Url.relative(url as string, this.ctx.doc);
     // TODO: When `degu-video` is available, check `url` extension and output
     // the appropriate element.
     return html`
       <degu-image
-        src="${options.url}"
+        src="${url}"
         alt="${options.altText ?? ''}"
         ${options.class ? html`class="${options.class}"` : ''}
         ${options.width ? html`width="${options.width}"` : ''}

@@ -2,83 +2,71 @@
 @use 'inspect'
 
 =font-family-primary
-  font-family: 'Open Sans', arial, sans-serif
+  font-family: 'Manrope', Arial, Helvetica, sans-serif
 
 =font-family-secondary
-  font-family: 'Roboto', Arial, Helvetica, sans-serif
+  font-family: 'Manrope', Arial, Helvetica, sans-serif
+
+=font($size, $lineHeight, $letterSpacing: 0)
+  font-size: $size
+  letter-spacing: $letterSpacing
+  line-height: $lineHeight
 
 =heading-1
   +inspect.annotation('Heading 1')
   +font-family-primary
-  font-size: 60px
-  line-height: 72px
+  +font(60px, 68px, -2px)
+  font-weight: 700
 
 =heading-2
   +inspect.annotation('Heading 2')
   +font-family-primary
-  font-size: 48px
-  line-height: 56px
+  +font(48px, 56px, -1px)
+  font-weight: 700
 
 =heading-3
   +inspect.annotation('Heading 3')
   +font-family-primary
-  font-size: 36px
-  line-height: 44px
+  +font(36px, 44px)
+  font-weight: 700
 
 =heading-4
   +inspect.annotation('Heading 4')
   +font-family-primary
-  font-size: 28px
-  line-height: 36px
+  +font(28px, 36px)
 
 =heading-5
-  font-size: 20px
-  line-height: 28px
+  +font(20px, 28px)
 
 =body-large
-  +inspect.annotation('Large Body')
+  +inspect.annotation('Body Large')
   +font-family-secondary
-  font-size: 18px
-  line-height: 28px
+  +font(18px, 28px)
 
 =body
   +inspect.annotation('Body')
   +font-family-secondary
-  font-size: 16px
-  line-height: 24px
+  +font(16px, 24px)
 
 =small
   +inspect.annotation('Small')
   +font-family-secondary
-  font-size: 12px
-  line-height: 24px
+  +font(12px, 24px)
 
 =eyebrow
   +inspect.annotation('Eyebrow')
-  text-transform: uppercase
-  letter-spacing: 0.5px
-  font-size: 14px
-  line-height: 20px
+  +font(14px, 20px, 0.5px)
+  font-weight: 700
 
 =label
   +inspect.annotation('Label')
   +font-family-secondary
-  font-size: 11px
-  letter-spacing: 0.5px
-  line-height: 16px
+  +font(11px, 16px, 0.5px)
 
 =button
   +inspect.annotation('Button')
-  font-size: 16px
-  line-height: 24px
+  +font(16px, 24px, 0.25px)
   font-weight: 500
-  letter-spacing: .5px
-
-=caption
-  +inspect.annotation('Caption')
-  font-size: 14px
-  line-height: 24px
-  +font-family-secondary
 
 =nav-item
   +inspect.annotation('Nav item')
@@ -94,7 +82,4 @@
 
 =footnote
   +inspect.annotation('Footnote')
-  line-height: 1.5
-  font-size: 12px
-  font-weight: 300
-  letter-spacing: .35px
+  +font(12px, 24px, .35px)
