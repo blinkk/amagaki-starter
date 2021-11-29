@@ -1,43 +1,51 @@
 {
   "branch": null,
   "commit": null,
-  "built": "Mon Nov 29 2021 23:00:49 GMT+0000 (Coordinated Universal Time)",
+  "built": "Mon Nov 29 2021 23:09:51 GMT+0000 (Coordinated Universal Time)",
   "files": [
     {
+      "path": "/about/index.html",
+      "sha": "1f8575518204b77e7f7d0655cb6e5c0e8ee811cd"
+    },
+    {
       "path": "/index.html",
-      "sha": "cf6b117018199f4a3ad5c5e70a04ce6702ad0ce5"
+      "sha": "3e1ebc45602ee0e3a51edf2a72f29cdded666a66"
+    },
+    {
+      "path": "/static/images/amagaki.png",
+      "sha": "40088144576a299df6dd54d2be64c4db4bf8cca0"
     },
     {
       "path": "/static/css/main.css",
-      "sha": "319d07953736ab6509e7faf8af57c22b03770434"
+      "sha": "d44ade8ab79d9d6e9e79400dc633aaaa26efcd91"
     },
     {
       "path": "/static/css/partials/button.css",
-      "sha": "40b29e04444d86373cf8d893c3cae0c93a3daf49"
+      "sha": "9685dd83b726c47ee88cc12b539c0902b4439864"
     },
     {
-      "path": "/static/css/partials/columns-50x50-simple.css",
-      "sha": "dad41eda7f6c07ece40794bd8c4e30465f69def3"
+      "path": "/static/css/partials/columns-50x50.css",
+      "sha": "22655bed304ca18faca2dad9cade2dabaa5b2e2f"
     },
     {
       "path": "/static/css/partials/footer.css",
-      "sha": "6c9411b2783d68f2165db81532a350c8b11bf2ce"
+      "sha": "1a0c6d0ad2e6ee0e8ddbfbf98c32f38d0d05c681"
     },
     {
       "path": "/static/css/partials/header.css",
-      "sha": "a1ef8fd2382089faac0ac2b9d96ba07645a10400"
+      "sha": "8b77ba4ac8418afed58e7adfc22be3437eaeae96"
     },
     {
       "path": "/static/css/partials/hero.css",
-      "sha": "59d0240eb3c1c6ca6921b4114bfe8ef7fe78f95c"
+      "sha": "fa86d1fecc87714a8c1a3acdffa546ea4a807344"
     },
     {
       "path": "/static/css/partials/promo-banner.css",
-      "sha": "7ed15d89d72a95a8bac3e70b0c94db547feb0de8"
+      "sha": "62a41a67194d75cee2a9983b01b93ea2cc5df2d1"
     },
     {
       "path": "/static/css/partials/simple-intro.css",
-      "sha": "d40fa419ef08b198cfbca53974b3140b41d2abc6"
+      "sha": "982fef7b4bfb598f28ad40baa8d0c359a4c16b3b"
     },
     {
       "path": "/static/css/partials/spacer.css",
@@ -61,7 +69,7 @@
     },
     {
       "path": "/sitemap.xml",
-      "sha": "b1b7c010bde3ed56478f33ad227fa2b35340a0fe"
+      "sha": "b03255247ac3d397988ef643a26c2efcfa72d602"
     },
     {
       "path": "/static/placeholder/16x9.svg",
@@ -72,12 +80,20 @@
       "sha": "877a7e4c017ffea6e4c8549869e7a602ff75c6d2"
     },
     {
+      "path": "/static/placeholder/4x3.svg",
+      "sha": "063ddb731b92b991a5600154ddd579c2c5e5a667"
+    },
+    {
       "path": "/static/placeholder/9x16.svg",
       "sha": "07bd21fa55a77ccee7070495e674fdd9b3ef1dcf"
     },
     {
       "path": "/static/placeholder/7x3.svg",
       "sha": "6dbca84fc3d5d8133bd86c04442225f046661dd9"
+    },
+    {
+      "path": "/static/placeholder/8x4.svg",
+      "sha": "63140eaa00b7e9c67b2a3a41d205f3f6fb969799"
     }
   ]
 }
