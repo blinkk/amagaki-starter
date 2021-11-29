@@ -1,9 +1,11 @@
 import {Document, NunjucksPlugin, Pod, StaticFile, Url} from '@amagaki/amagaki';
 
+import {DeguPlugin} from './plugins/degu';
 import {PageBuilder} from '@amagaki/amagaki-plugin-page-builder';
 import {PlaceholderPlugin} from './plugins/placeholder';
 
 export default (pod: Pod) => {
+  DeguPlugin.register(pod);
   PageBuilder.register(pod, {
     head: {
       siteName: 'Starter',

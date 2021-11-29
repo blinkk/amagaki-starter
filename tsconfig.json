@@ -3,14 +3,17 @@
   "compilerOptions": {
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
-    "rootDir": "src/ts/",
-    "outDir": "dist/js/",
     "declaration": false,
-    "moduleResolution": "node",
-    "module": "es2015",
-    "target": "es2018",
-    "pretty": true,
     "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "es2015",
+    "moduleResolution": "node",
+    "outDir": "dist/js/",
+    "pretty": true,
+    "rootDir": "src/ts/",
+    "skipLibCheck": true,
+    "target": "es2018",
     "lib": [
       "es2018",
       "dom"
