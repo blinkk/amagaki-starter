@@ -1,7 +1,7 @@
 {
   "branch": null,
   "commit": null,
-  "built": "Tue Nov 30 2021 05:06:48 GMT+0000 (Coordinated Universal Time)",
+  "built": "Tue Nov 30 2021 05:30:34 GMT+0000 (Coordinated Universal Time)",
   "files": [
     {
       "path": "/about/index.html",
@@ -18,10 +18,6 @@
     {
       "path": "/static/css/main.css",
       "sha": "d44ade8ab79d9d6e9e79400dc633aaaa26efcd91"
-    },
-    {
-      "path": "/static/css/partials/button.css",
-      "sha": "9685dd83b726c47ee88cc12b539c0902b4439864"
     },
     {
       "path": "/static/css/partials/columns-50x50.css",
