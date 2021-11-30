@@ -1,7 +1,7 @@
 {
   "branch": null,
   "commit": null,
-  "built": "Tue Nov 30 2021 17:39:56 GMT+0000 (Coordinated Universal Time)",
+  "built": "Tue Nov 30 2021 23:19:36 GMT+0000 (Coordinated Universal Time)",
   "files": [
     {
       "path": "/about/index.html",
@@ -49,11 +49,11 @@
     },
     {
       "path": "/static/js/main.js",
-      "sha": "244433dcd2c2a6ac86bd9bd35bf5cca46fc0d1ac"
+      "sha": "9ffaf6ec061279639be448e06504ee47fe726a91"
     },
     {
       "path": "/static/js/main.js.map",
-      "sha": "d3a7fd5bc87777c16396eefd0d8a2dc2d38300b6"
+      "sha": "3082f3b1529b0e46f70aba39d25058d0c7583d81"
     },
     {
       "path": "/static/js/main.min.js",
