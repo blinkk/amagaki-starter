@@ -6,6 +6,8 @@
 
 A minimal starter project that uses the [Amagaki](https://amagaki.dev) website generator.
 
+![Website screenshot](/.github/screenshot_1400x1024.png)
+
 ## Features
 
 - Reusable partial HTML templates (Nunjucks).
@@ -29,10 +31,12 @@ npm run build
 
 ## Creating pages
 
-`amagaki-starter` uses the
+This project uses the
 [`@amagaki/amagaki-plugin-page-builder`](https://github.com/blinkk/amagaki-plugin-page-builder).
-The page builder plugin generates the core markup for each page and manages
-partials. Partials are standalone, isolated modules that can be mixed and
+The plugin generates the core markup for each page and manages
+partials.
+
+Partials are standalone, isolated modules that can be mixed and
 matched to approach page building by assembling reusable modules.
 
 1. Create partials by adding files in the following locations:
