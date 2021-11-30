@@ -1,5 +1,5 @@
-import {DeguImage} from '@blinkk/degu/lib/lit/image';
-import {DeguVideo} from '@blinkk/degu/lib/lit/video';
+import {DeguImage} from '@blinkk/degu/lib/components/image';
+import {DeguVideo} from '@blinkk/degu/lib/components/video';
 
 window.customElements.define('degu-image', DeguImage);
 window.customElements.define('degu-video', DeguVideo);
