@@ -1,6 +1,6 @@
 {% import "/views/macros/button.njk" as button %}
 
-<header class="header {% for option in partial.options %}header--{{option}}{% endfor %}">
+<div class="header {% for option in partial.options %}header--{{option}}{% endfor %}">
     <div class="header__grid">
         <div class="header__grid__logo">
             <a href="{{partial.logo.doc.url.path|url}}">
@@ -51,4 +51,4 @@
             </details>
         </div>
     </div>
-</header>
+</div>
