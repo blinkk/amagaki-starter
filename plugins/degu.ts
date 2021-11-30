@@ -7,27 +7,10 @@ import {
   NunjucksTemplateEngine,
   Pod,
   StaticFile,
-  TemplateContext,
   Url,
 } from '@amagaki/amagaki';
 
-import {SafeString} from 'nunjucks/src/runtime';
-import {escape} from 'nunjucks/src/lib';
-
-/** Template tag function for escaping values for use with Nunjucks templates. */
-const html = (literals: TemplateStringsArray, ...substitutions: unknown[]) => {
-  let result = '';
-  for (const [i, substitution] of substitutions.entries()) {
-    // Avoid double-escaping when using ternary or nested expressions.
-    if (substitution instanceof SafeString) {
-      result += literals[i] + substitution;
-    } else {
-      result += literals[i] + escape(substitution.toString());
-    }
-  }
-  result += literals[literals.length - 1];
-  return new SafeString(result.trim());
-};
+import {html} from '@amagaki/amagaki-plugin-page-builder';
 
 export class DeguPlugin {
   static register(pod: Pod) {
@@ -61,16 +44,29 @@ export class DeguPlugin {
       url = `${staticFile.url.path}?fingerprint=${staticFile.fingerprint}`;
     }
     url = Url.relative(url as string, this.ctx.doc);
-    // TODO: When `degu-video` is available, check `url` extension and output
-    // the appropriate element.
-    return html`
-      <degu-image
-        src="${url}"
-        alt="${options.altText ?? ''}"
-        ${options.class ? html`class="${options.class}"` : ''}
-        ${options.width ? html`width="${options.width}"` : ''}
-        ${options.height ? html`height="${options.height}"` : ''}
-      ></degu-image>
-    `;
+    return url.endsWith('.mp4') || url.endsWith('.webm')
+      ? html`
+          <degu-video
+            src="${url}"
+            alt="${options.altText}"
+            ${options.width ? html`width="${options.width}"` : ''}
+            ${options.height ? html`height="${options.height}"` : ''}
+            ${options.width && options.height
+              ? html`style="aspect-ratio: ${options.width}/${options.height}"`
+              : ''}
+            aria-label="${options.altText}"
+            autoplayinview
+          >
+          </degu-video>
+        `
+      : html`
+          <degu-image
+            src="${url}"
+            alt="${options.altText ?? ''}"
+            ${options.class ? html`class="${options.class}"` : ''}
+            ${options.width ? html`width="${options.width}"` : ''}
+            ${options.height ? html`height="${options.height}"` : ''}
+          ></degu-image>
+        `;
   }
 }
