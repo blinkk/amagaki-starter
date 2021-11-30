@@ -4,6 +4,7 @@
 
 import {
   DataType,
+  Document,
   NunjucksTemplateEngine,
   Pod,
   StaticFile,
@@ -11,6 +12,12 @@ import {
 } from '@amagaki/amagaki';
 
 import {html} from '@amagaki/amagaki-plugin-page-builder';
+
+interface NunjucksEnvironmentContext {
+  ctx: {
+    doc: Document;
+  };
+}
 
 export class DeguPlugin {
   static register(pod: Pod) {
@@ -29,7 +36,7 @@ export class DeguPlugin {
    * ```
    */
   static asset(
-    this: any,
+    this: NunjucksEnvironmentContext,
     options: {
       url: string | StaticFile;
       altText: string;
