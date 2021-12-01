@@ -17,6 +17,9 @@
         {% if button.ariaLabel %}
             aria-label="{{button.ariaLabel}}"
         {% endif %}
+        {% if button.youtubeModal %}
+            youtube-modal="{{button.youtubeModal}}"
+        {% endif %}
     >
         <span class="button__label">{{button.label}}</span>
     </{{tag}}>

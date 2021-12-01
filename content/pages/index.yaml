@@ -18,7 +18,7 @@ partials:
     options: ['high-emphasis']
     icon: 'navigate_next'
   - label: Watch video
-    url: '#'
+    youtubeModal: '8Qn_spdM5Zg'
     options: ['low-emphasis']
   assets:
   - url: /static/placeholder/16x9.svg?bgColor=FFEFA4
