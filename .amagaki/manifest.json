@@ -1,15 +1,15 @@
 {
   "branch": null,
   "commit": null,
-  "built": "Wed Dec 01 2021 01:52:26 GMT+0000 (Coordinated Universal Time)",
+  "built": "Mon Jan 10 2022 16:41:20 GMT+0000 (Coordinated Universal Time)",
   "files": [
     {
       "path": "/about/index.html",
-      "sha": "cdc970fa0b770987088ace0f9d7b14a1d8889574"
+      "sha": "e133221162149d0f1b415fd9ce277eba2776f2cf"
     },
     {
       "path": "/index.html",
-      "sha": "6f10a5e3b9c35e1c88d895513cf0588285d684f9"
+      "sha": "b4ae54e9b9f0704b59f77a94b37521a4bb3eb7fa"
     },
     {
       "path": "/static/images/amagaki.png",
