@@ -1,15 +1,15 @@
 {
   "branch": null,
   "commit": null,
-  "built": "Thu Jan 13 2022 18:57:08 GMT+0000 (Coordinated Universal Time)",
+  "built": "Thu Jan 13 2022 22:52:49 GMT+0000 (Coordinated Universal Time)",
   "files": [
     {
       "path": "/about/index.html",
-      "sha": "9023bf3752603a8eb91ba20b02eec10ab683c313"
+      "sha": "7cfd2f8ef275e379a5e6ad164bf584d6e714591a"
     },
     {
       "path": "/index.html",
-      "sha": "71311e307a2fd165b031234d8c0ddd5f71b8f175"
+      "sha": "199fbcb22eb1520684751f9186deb2d9e1b68baf"
     },
     {
       "path": "/static/images/amagaki.png",
@@ -49,15 +49,15 @@
     },
     {
       "path": "/static/js/main.js",
-      "sha": "f267e06d639ffaf82d89da0be6effa9515a51a90"
+      "sha": "bc143f32c0dc134f8c6a7d186bff158e1c540a11"
     },
     {
       "path": "/static/js/main.js.map",
-      "sha": "a30ce3404dae2a6aef1d12af50e679cc0ba8c67e"
+      "sha": "edb1f66b2a360442be7e7ddda7f65cb56a38cf37"
     },
     {
       "path": "/static/js/main.min.js",
-      "sha": "19adaa4357ce8a5596411aa746cfa2efe3b2a1f8"
+      "sha": "9b3c4d6bc9d93b51cf34736514a6987f2a0059ee"
     },
     {
       "path": "/robots.txt",
