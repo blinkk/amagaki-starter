@@ -73,6 +73,9 @@ export class DeguPlugin {
             ${options.class ? html`class="${options.class}"` : ''}
             ${options.width ? html`width="${options.width}"` : ''}
             ${options.height ? html`height="${options.height}"` : ''}
+            ${options.width && options.height
+              ? html`style="aspect-ratio: ${options.width}/${options.height}"`
+              : ''}
           ></degu-image>
         `;
   }

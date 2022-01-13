@@ -1,4 +1,5 @@
 import '@github/details-dialog-element';
+
 import {DeguImage} from '@blinkk/degu/lib/components/image';
 import {DeguVideo} from '@blinkk/degu/lib/components/video';
 import {DeguYouTubeInline} from '@blinkk/degu/lib/components/youtube-inline';
