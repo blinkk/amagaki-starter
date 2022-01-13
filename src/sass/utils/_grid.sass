@@ -9,37 +9,29 @@ $grid-horizontal-padding-mobile: 16px
 $grid-horizontal-padding-tablet: 24px
 $grid-horizontal-padding-laptop: 24px
 
-$grid-max-width-tablet: 600px
-$grid-max-width-desktop: 1392px
-
-=column-gap
-  +breakpoints.mobile
-    column-gap: $grid-column-gap-mobile
-  +breakpoints.tablet
-    column-gap: $grid-column-gap-tablet
-  +breakpoints.laptop
-    column-gap: $grid-column-gap-laptop
-  +breakpoints.desktop
-    column-gap: $grid-column-gap-desktop
-
 =container
-  display: grid
-  +column-gap
+  --grid-column-count: 12
+  --grid-gutter: 24px
   +breakpoints.mobile
-    grid-template-columns: repeat(4, 1fr)
-    padding: 0 $grid-horizontal-padding-mobile
+    --grid-gutter: #{$grid-column-gap-mobile}
+    --grid-column-count: 4
   +breakpoints.tablet
-    grid-template-columns: repeat(12, 1fr)
-    padding: 0 $grid-horizontal-padding-tablet
-    max-width: $grid-max-width-tablet
-    margin: 0 auto
+    --grid-gutter: #{$grid-column-gap-tablet}
+    --grid-max-width: #{$grid-max-width-tablet}
   +breakpoints.laptop
-    grid-template-columns: repeat(12, 1fr)
-    padding: 0 $grid-horizontal-padding-laptop
+    --grid-gutter: #{$grid-column-gap-laptop}
+    --grid-max-width: #{$grid-max-width-desktop}
   +breakpoints.desktop
-    grid-template-columns: repeat(12, 1fr)
-    margin: 0 auto
-    max-width: $grid-max-width-desktop
+    --grid-gutter: #{$grid-column-gap-desktop}
+    --grid-max-width: #{$grid-max-width-desktop}
+  column-gap: var(--grid-gutter)
+  display: grid
+  grid-template-columns: repeat(var(--grid-column-count), 1fr)
+  margin-left: auto
+  margin-right: auto
+  max-width: var(--grid-max-width)
+  padding-left: var(--grid-margin)
+  padding-right: var(--grid-margin)
 
 =range($start, $end)
   grid-column-start: #{$start}
