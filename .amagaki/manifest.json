@@ -1,15 +1,15 @@
 {
   "branch": null,
   "commit": null,
-  "built": "Thu Jan 13 2022 17:45:51 GMT+0000 (Coordinated Universal Time)",
+  "built": "Thu Jan 13 2022 18:57:08 GMT+0000 (Coordinated Universal Time)",
   "files": [
     {
       "path": "/about/index.html",
-      "sha": "e133221162149d0f1b415fd9ce277eba2776f2cf"
+      "sha": "9023bf3752603a8eb91ba20b02eec10ab683c313"
     },
     {
       "path": "/index.html",
-      "sha": "b4ae54e9b9f0704b59f77a94b37521a4bb3eb7fa"
+      "sha": "71311e307a2fd165b031234d8c0ddd5f71b8f175"
     },
     {
       "path": "/static/images/amagaki.png",
@@ -17,7 +17,7 @@
     },
     {
       "path": "/static/css/main.css",
-      "sha": "d44ade8ab79d9d6e9e79400dc633aaaa26efcd91"
+      "sha": "c5c3b4db8ce2b1983a2bb0ffe42f66aaab1957bc"
     },
     {
       "path": "/static/css/partials/columns-50x50.css",
@@ -33,7 +33,7 @@
     },
     {
       "path": "/static/css/partials/hero.css",
-      "sha": "fa86d1fecc87714a8c1a3acdffa546ea4a807344"
+      "sha": "95c52e8f41de34764e0a8059a103a27e1f430fef"
     },
     {
       "path": "/static/css/partials/promo-banner.css",
@@ -53,7 +53,7 @@
     },
     {
       "path": "/static/js/main.js.map",
-      "sha": "bd96b1336c0686e60ed0ac334dec7315398e5d80"
+      "sha": "a30ce3404dae2a6aef1d12af50e679cc0ba8c67e"
     },
     {
       "path": "/static/js/main.min.js",
