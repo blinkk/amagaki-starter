@@ -6,50 +6,42 @@ order: 0
 partials:
 
 - partial: spacer
-  options:
-  - large
+  options: [large]
 
 - partial: hero
-  title: Lorem ipsum dolor
-  body: Eu mollit ullamco nisi eu ipsum aliqua occaecat excepteur ullamco magna consectetur. Adipisicing ipsum laborum sunt eu qui laborum pariatur aliqua duis dolore id.
+  title: Mollit et ullamco commodo minim
+  body: Est labore aliquip ex fugiat sit nostrud culpa occaecat cillum commodo magna. Occaecat duis amet sint nisi officia adipisicing voluptate cupidatat aute. Excepteur duis amet velit laborum adipisicing voluptate voluptate officia laborum labore nulla elit enim velit. Anim culpa voluptate sit labore. Officia dolor non minim fugiat ad ea tempor in sint quis.
   buttons:
-  - label: Learn more
-    url: '#'
+  - url: 'https://example.com'
+    label: Learn more
     options: ['high-emphasis']
-    icon: 'navigate_next'
-  - label: Watch video
-    youtubeModal: '8Qn_spdM5Zg'
-    options: ['low-emphasis']
-  assets:
-  - url: /static/placeholder/16x9.svg?bgColor=FFEFA4
-    width: 16
-    height: 9
+  - url: 'https://test.com'
+    label: Watch video
+  asset:
+    url: /static/placeholder/16x9.svg?bgColor=FFEFA4
 
 - partial: spacer
-  options:
-  - medium
+  options: [large]
 
 - partial: simple-intro
   title: Laboris commodo aliquip velit ullamco
 
 - partial: spacer
-  options:
-  - large
+  options: [large]
 
 - partial: columns-50x50
   primary:
     eyebrow: Duis laborum dolor amet excepteur
     title: Magna do magna occaecat irure.
-    body: Esse in dolor anim excepteur incididunt laborum pariatur consequat. Occaecat officia elit nisi Lorem ex ex mollit aliqua ipsum fugiat quis amet sit. Mollit dolore cillum ea commodo ullamco cillum minim nisi et reprehenderit consectetur aute fugiat.
+    body: Esse in dolor anim excepteur incididunt laborum pariatur consequat. Occaecat officia elit nisi Lorem ex ex mollit aliqua ipsum fugiat quis amet sit. In consequat labore cillum voluptate nisi eu quis et irure duis mollit est ea.
   secondary:
-    asset:
-      url: /static/placeholder/1x1.svg
+    assets:
+    - url: /static/placeholder/1x1.svg
       width: 1
       height: 1
 
 - partial: spacer
-  options:
-  - large
+  options: [large]
 
 - partial: promo-banner
   assets:
@@ -62,24 +54,15 @@ partials:
     label: Learn more
 
 - partial: spacer
-  options:
-  - large
-
-- partial: simple-intro
-  title: Adipisicing culpa tempor deserunt
-
-- partial: spacer
-  options:
-  - large
-
+  options: [large]
 - partial: columns-50x50
   primary:
     eyebrow: Eiusmod amet ea culpa
     title: Ex id reprehenderit in ullamco in nisi.
     body: Lorem incididunt anim dolore nulla enim in ea. Dolor id irure dolor adipisicing in esse enim labore occaecat proident reprehenderit. Sint enim nostrud esse anim id sint minim cupidatat.
   secondary:
-    asset:
-      url: /static/placeholder/1x1.svg
+    assets:
+    - url: /static/placeholder/1x1.svg
       width: 1
       height: 1
 
@@ -98,8 +81,8 @@ partials:
       url: '#'
       options: ['medium-emphasis']
   secondary:
-    asset:
-      url: /static/placeholder/1x1.svg
+    assets:
+    - url: /static/placeholder/1x1.svg
       width: 1
       height: 1
 

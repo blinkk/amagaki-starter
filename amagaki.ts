@@ -9,8 +9,10 @@ import {
 import {DeguPlugin} from './plugins/degu';
 import {PageBuilder} from '@amagaki/amagaki-plugin-page-builder';
 import {PlaceholderPlugin} from './plugins/placeholder';
+import {TsxPlugin} from './plugins/tsx';
 
 export default (pod: Pod) => {
+  TsxPlugin.register(pod, {});
   DeguPlugin.register(pod);
   PageBuilder.register(pod, {
     head: {
@@ -25,7 +27,7 @@ export default (pod: Pod) => {
     partialPaths: {
       css: '/dist/css/${partial.partial}/${partial.partial}.css',
       js: '/dist/js/partials/${partial.partial}/${partial.partial}.js',
-      view: '/src/partials/${partial.partial}/${partial.partial}.njk',
+      view: '/src/partials/${partial.partial}/${partial.partial}.tsx',
     },
   });
 

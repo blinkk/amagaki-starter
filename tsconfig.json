@@ -11,7 +11,7 @@
     "moduleResolution": "node",
     "outDir": "dist/js/",
     "pretty": true,
-    "rootDir": "src/ts/",
+    "rootDir": "src/",
     "skipLibCheck": true,
     "target": "es2018",
     "lib": [
@@ -20,8 +20,8 @@
     ],
   },
   "include": [
-    "src/ts/**/*.ts",
-    "test/**/*.ts"
+    "src/**/*.ts",
+    "test/**/*.ts",
   ],
   "exclude": [
     "node_modules",
