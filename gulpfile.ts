@@ -9,7 +9,7 @@ const ENTRIES = {
   js: {
     tsc_out: ['./dist/js/main.js'],
     out: './dist/js/main.min.js',
-    watch: ['./src/ts/**/*.ts'],
+    watch: ['./src/**/*.ts', './src/**/*.tsx'],
   },
   sass: {
     includePaths: ['./node_modules/', './src/sass/', './src/'],
@@ -39,6 +39,9 @@ const runEsBuild = async prod => {
           bundle: true,
           platform: 'browser',
           minify: prod,
+          define: {
+            ...(prod && {'process.env.NODE_ENV': "'production'"}),
+          },
         });
         resolve();
       }

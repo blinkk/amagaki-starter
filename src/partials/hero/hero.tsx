@@ -1,5 +1,8 @@
 import Asset, {AssetOptions} from '../../components/asset/asset';
-import Button, {ButtonOptions} from '../../components/button/button';
+import Button, {
+  ButtonOptions,
+  ButtonStyles,
+} from '../../components/button/button';
 
 import React from 'react';
 import {getClassName} from '../../utils/partials';
@@ -12,7 +15,11 @@ interface HeroOptions {
   buttons?: ButtonOptions[];
 }
 
-function Hero({partial}: {partial: HeroOptions}) {
+function activateLasers(): void {
+  console.log('it worked!');
+}
+
+function Hero({partial}: {partial: HeroOptions}): JSX.Element {
   return (
     <div className={getClassName('hero', partial.options)}>
       <div className="hero__grid">
@@ -25,10 +32,14 @@ function Hero({partial}: {partial: HeroOptions}) {
             {partial.title}
           </div>
           <div className="hero__grid__content__body">{partial.body}</div>
+          <div className="hero__grid__content__body">
+            <br />
+            <Button onClick={activateLasers} label="Activate lasers" />
+          </div>
           {partial.buttons && (
             <div className="hero__grid__content__buttons">
-              {partial.buttons.map(button => (
-                <div className="hero__grid__content__buttons__button">
+              {partial.buttons.map((button, i) => (
+                <div key={i} className="hero__grid__content__buttons__button">
                   <Button {...button} />
                 </div>
               ))}

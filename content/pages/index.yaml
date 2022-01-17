@@ -9,8 +9,8 @@ partials:
   options: [large]
 
 - partial: hero
-  title: Mollit et ullamco commodo minim
-  body: Est labore aliquip ex fugiat sit nostrud culpa occaecat cillum commodo magna. Occaecat duis amet sint nisi officia adipisicing voluptate cupidatat aute. Excepteur duis amet velit laborum adipisicing voluptate voluptate officia laborum labore nulla elit enim velit. Anim culpa voluptate sit labore. Officia dolor non minim fugiat ad ea tempor in sint quis.
+  title: Lorem ipsum dolor
+  body: Eu mollit ullamco nisi eu ipsum aliqua occaecat excepteur ullamco magna consectetur. Adipisicing ipsum laborum sunt eu qui laborum pariatur aliqua duis dolore id.
   buttons:
   - url: 'https://example.com'
     label: Learn more

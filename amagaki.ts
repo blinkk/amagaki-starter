@@ -15,6 +15,10 @@ export default (pod: Pod) => {
   TsxPlugin.register(pod, {});
   DeguPlugin.register(pod);
   PageBuilder.register(pod, {
+    inspector: {
+      enabled: true,
+    },
+    beautifyContainer: false,
     head: {
       siteName: 'Starter',
       scripts: [pod.staticFile('/dist/js/main.min.js')],

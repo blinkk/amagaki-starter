@@ -3,6 +3,7 @@ import Button, {ButtonOptions} from '../../components/button/button';
 
 import {Document} from '@amagaki/amagaki';
 import React from 'react';
+import {getClassName} from '../../utils/partials';
 
 // TODO: Improve declaration of custom elements.
 declare global {
@@ -18,33 +19,30 @@ declare global {
 }
 
 interface HeaderOptions {
+  options?: string[];
   logo: {
     doc: Document;
     image: AssetOptions;
   };
   nav: Document[];
-  buttons: {
-    label: string;
-    url?: string;
-    options?: string[];
-  }[];
+  buttons: ButtonOptions[];
 }
 
 function Header({partial, doc}: {partial: HeaderOptions; doc: Document}) {
   return (
-    <div className="header {% for option in partial.options %}header--{{option}}{% endfor %}">
+    <div className={getClassName('header', partial.options)}>
       <div className="header__grid">
         <div className="header__grid__logo">
-          <a href={partial.logo.doc.url.path}>
-            <Asset {...partial.logo.image} />
+          <a href={partial.logo?.doc?.url?.path}>
+            <Asset {...partial.logo?.image} />
           </a>
         </div>
         <div className="header__grid__links">
           {partial.nav.map(item => (
             <a
-              href={item.url.path}
+              href={item.url?.path}
               className={`header__grid__links__link ${
-                item.url.path === doc.url.path &&
+                item.url?.path === doc.url?.path &&
                 'header__grid__links__link--active'
               }`}
             >
@@ -66,7 +64,7 @@ function Header({partial, doc}: {partial: HeaderOptions; doc: Document}) {
               <div className="header__mobile-nav__dialog__links">
                 {partial.nav?.map(item => (
                   <a
-                    href={item.url.path}
+                    href={item.url?.path}
                     className="header__mobile-nav__dialog__links__link"
                   >
                     {/*  {{'header__mobile-nav__dialog__links__link--active' if item.url.path == doc.url.path}} */}

@@ -3,8 +3,10 @@ import Button, {ButtonOptions} from '../../components/button/button';
 import {Document, Pod} from '@amagaki/amagaki';
 
 import React from 'react';
+import {getClassName} from '../../utils/partials';
 
 interface FooterOptions {
+  options?: string[];
   nav: {
     url: {path: string};
     fields: Record<string, any>;
@@ -21,7 +23,7 @@ function Footer({
   pod: Pod;
 }) {
   return (
-    <div className="footer">
+    <div className={getClassName('footer', partial.options)}>
       <div className="footer__grid">
         <div className="footer__grid__links">
           {partial.nav?.map(item => (
@@ -37,7 +39,8 @@ function Footer({
                 <span className="material-icons">language</span>
               </div>
               <div className="footer__grid__aside__switcher__form">
-                <select onChange="window.location.href = this.value">
+                <select>
+                  {/* onChange="window.location.href = this.value"> */}
                   {[...doc.locales].map(locale => (
                     <option
                       value="{{localizedDoc.url.path}}"

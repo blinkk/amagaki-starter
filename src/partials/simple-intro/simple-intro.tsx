@@ -22,7 +22,7 @@ function SimpleIntro({partial}: {partial: SimpleIntroOptions; doc: Document}) {
             <div
               className="simple-intro__grid__content__title"
               role="heading"
-              aria-level="2"
+              aria-level={2}
             >
               {partial.title}
             </div>
