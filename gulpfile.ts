@@ -12,9 +12,9 @@ const ENTRIES = {
     watch: ['./src/ts/**/*.ts'],
   },
   sass: {
-    src: ['./src/sass/**/*.sass'],
+    src: ['./src/partials/**/*.sass', './src/sass/*.sass'],
     out: './dist/css/',
-    watch: ['./src/sass/**/*.sass'],
+    watch: ['./src/**/*.sass'],
   },
 };
 
@@ -55,7 +55,7 @@ gulp.task('build:sass', () => {
     .pipe(
       sass({
         outputStyle: 'compressed',
-        includePaths: ['./node_modules/'],
+        includePaths: ['./node_modules/', './src/sass/'],
       })
     )
     .on('error', sass.logError)

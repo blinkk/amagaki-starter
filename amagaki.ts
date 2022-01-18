@@ -22,6 +22,11 @@ export default (pod: Pod) => {
         pod.staticFile('/dist/css/main.css'),
       ],
     },
+    partialPaths: {
+      css: '/dist/css/${partial.partial}/${partial.partial}.css',
+      js: '/dist/js/partials/${partial.partial}/${partial.partial}.js',
+      view: '/src/partials/${partial.partial}/${partial.partial}.njk',
+    },
   });
 
   pod.configure({

@@ -51,9 +51,9 @@ matched to approach page building by assembling reusable modules.
 
 1. Create partials by adding files in the following locations:
 
-- CSS: `/src/sass/partials/{partial}.sass`
-- TypeScript: `/src/ts/partials/{partial}.ts`
-- Nunjucks: `/views/partials/{partial}.njk`
+- CSS: `/src/partials/{partial}/{partial}.sass`
+- TypeScript: `/src/partials/{partial}/{partial}.ts`
+- Nunjucks: `/src/partials/{partials}/{partial}.njk`
 
 2. Create pages by mixing and matching partials:
 
