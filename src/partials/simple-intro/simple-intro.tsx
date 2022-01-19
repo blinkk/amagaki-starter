@@ -2,8 +2,8 @@ import Asset, {AssetOptions} from '../../components/asset/asset';
 import Button, {ButtonOptions} from '../../components/button/button';
 
 import {Document} from '@amagaki/amagaki';
-import React from 'react';
 import {getClassName} from '../../utils/partials';
+import {h} from 'preact';
 
 interface SimpleIntroOptions {
   options?: string[];

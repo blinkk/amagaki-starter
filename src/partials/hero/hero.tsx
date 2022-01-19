@@ -4,8 +4,8 @@ import Button, {
   ButtonStyles,
 } from '../../components/button/button';
 
-import React from 'react';
 import {getClassName} from '../../utils/partials';
+import {h} from 'preact';
 
 interface HeroOptions {
   options?: string[];
@@ -19,7 +19,11 @@ function activateLasers(): void {
   console.log('it worked!');
 }
 
-function Hero({partial}: {partial: HeroOptions}): JSX.Element {
+function Hero({
+  partial,
+}: {
+  partial: HeroOptions;
+}): preact.createElement.JSX.Element {
   return (
     <div className={getClassName('hero', partial.options)}>
       <div className="hero__grid">

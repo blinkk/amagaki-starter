@@ -29,9 +29,9 @@ export default (pod: Pod) => {
       ],
     },
     partialPaths: {
-      css: '/dist/css/${partial.partial}/${partial.partial}.css',
-      js: '/dist/js/partials/${partial.partial}/${partial.partial}.js',
-      view: '/src/partials/${partial.partial}/${partial.partial}.tsx',
+      css: ['/dist/css/${partial.partial}/${partial.partial}.css'],
+      js: ['/dist/js/partials/${partial.partial}/${partial.partial}.js'],
+      view: ['/src/partials/${partial.partial}/${partial.partial}.tsx'],
     },
   });
 

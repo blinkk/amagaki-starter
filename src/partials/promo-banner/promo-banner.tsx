@@ -1,8 +1,8 @@
 import Asset, {AssetOptions} from '../../components/asset/asset';
 import Button, {ButtonOptions} from '../../components/button/button';
 
-import React from 'react';
 import {getClassName} from '../../utils/partials';
+import {h} from 'preact';
 
 export interface PromoBannerOptions {
   options?: string[];

@@ -1,4 +1,4 @@
-import React from 'react';
+import {h} from 'preact';
 
 interface StaticFile {
   url: {path: string};
@@ -16,7 +16,7 @@ export interface AssetOptions {
 // TODO: Improve declaration of custom elements.
 declare global {
   // eslint-disable-next-line @typescript-eslint/no-namespace
-  namespace JSX {
+  namespace preact.createElement.JSX {
     interface IntrinsicElements {
       'degu-image': {
         src: string;
@@ -31,9 +31,9 @@ declare global {
 
 function getUrl(item: any) {
   if (item?.url?.path) {
-    return item.url.path;
+    return item.url.path as string;
   }
-  return item;
+  return item as string;
 }
 
 function Asset({url, altText, width, height, className}: AssetOptions) {

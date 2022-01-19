@@ -1,5 +1,5 @@
-import React from 'react';
 import {getClassName} from '../../utils/partials';
+import {h} from 'preact';
 
 export enum ButtonStyles {
   HighEmphasis = 'high-emphasis',

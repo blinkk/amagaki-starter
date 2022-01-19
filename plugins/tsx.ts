@@ -1,6 +1,8 @@
 import {PluginComponent, Pod, TemplateEngineComponent} from '@amagaki/amagaki';
 
-import ReactDOMServer from 'react-dom/server';
+import {addHook} from 'sucrase/dist/register';
+import {h} from 'preact';
+import render from 'preact-render-to-string';
 
 export class TsxPlugin implements PluginComponent {
   config: Record<string, any>;
@@ -13,7 +15,11 @@ export class TsxPlugin implements PluginComponent {
   }
 
   static register(pod: Pod, config: any) {
-    require('sucrase/register');
+    addHook('.tsx', {
+      transforms: ['typescript', 'jsx', 'imports'],
+      jsxPragma: 'h',
+      jsxFragmentPragma: 'Fragment',
+    });
     pod.plugins.register(TsxPlugin, config);
   }
 }
@@ -37,7 +43,7 @@ class TsxTemplateEngine implements TemplateEngineComponent {
     } else {
       vDom = renderer(context);
     }
-    return ReactDOMServer.renderToStaticMarkup(vDom);
+    return render(vDom);
   }
 
   async renderFromString(template: string, context: any): Promise<string> {

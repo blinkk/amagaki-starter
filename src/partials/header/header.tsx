@@ -1,19 +1,19 @@
+/** @jsx h */
+
 import Asset, {AssetOptions} from '../../components/asset/asset';
 import Button, {ButtonOptions} from '../../components/button/button';
 
 import {Document} from '@amagaki/amagaki';
-import React from 'react';
 import {getClassName} from '../../utils/partials';
+import {h} from 'preact';
 
 // TODO: Improve declaration of custom elements.
+
 declare global {
   // eslint-disable-next-line @typescript-eslint/no-namespace
-  namespace JSX {
+  namespace preact.createElement.JSX {
     interface IntrinsicElements {
-      'details-dialog': React.DetailedHTMLProps<
-        React.HTMLAttributes<HTMLElement>,
-        HTMLElement
-      >;
+      'details-dialog': any;
     }
   }
 }
