@@ -39,6 +39,8 @@ const runEsBuild = async prod => {
           bundle: true,
           platform: 'browser',
           minify: prod,
+          jsxFactory: 'preact.h',
+          jsxFragment: 'preact.Fragment',
           define: {
             ...(prod && {'process.env.NODE_ENV': "'production'"}),
           },
