@@ -9,10 +9,10 @@ import {
 import {DeguPlugin} from './plugins/degu';
 import {PageBuilder} from '@amagaki/amagaki-plugin-page-builder';
 import {PlaceholderPlugin} from './plugins/placeholder';
-import {TsxPlugin} from './plugins/tsx';
+import {PreactEnginePlugin} from '@amagaki/amagaki-engine-preact';
 
 export default (pod: Pod) => {
-  TsxPlugin.register(pod, {});
+  PreactEnginePlugin.register(pod);
   DeguPlugin.register(pod);
   PageBuilder.register(pod, {
     inspector: {
