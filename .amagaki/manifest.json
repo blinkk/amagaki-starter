@@ -1,7 +1,7 @@
 {
   "branch": null,
   "commit": null,
-  "built": "Tue Feb 22 2022 05:42:54 GMT+0000 (Coordinated Universal Time)",
+  "built": "Tue Feb 22 2022 05:46:48 GMT+0000 (Coordinated Universal Time)",
   "files": [
     {
       "path": "/about/index.html",
@@ -44,24 +44,8 @@
       "sha": "9e7c0c8ed87b95c504a6415e1062eaaeea64243c"
     },
     {
-      "path": "/static/css/footer/footer.css",
-      "sha": "1a0c6d0ad2e6ee0e8ddbfbf98c32f38d0d05c681"
-    },
-    {
-      "path": "/static/css/header/header.css",
-      "sha": "8b77ba4ac8418afed58e7adfc22be3437eaeae96"
-    },
-    {
-      "path": "/static/css/hero/hero.css",
-      "sha": "95c52e8f41de34764e0a8059a103a27e1f430fef"
-    },
-    {
       "path": "/static/css/main.css",
       "sha": "ab13c7d1cf09e3286e4ef2200d2b086747a2a7ed"
-    },
-    {
-      "path": "/static/css/spacer/spacer.css",
-      "sha": "9e7c0c8ed87b95c504a6415e1062eaaeea64243c"
     },
     {
       "path": "/robots.txt",
@@ -73,7 +57,7 @@
     },
     {
       "path": "/preview/index.html",
-      "sha": "491d60f8c93c26bb476008d59ddfccc2468c53cb"
+      "sha": "7e9d98bde9deeb557afad230439ea023b6f528f0"
     },
     {
       "path": "/preview/Columns50x50/index.html",
