@@ -1,23 +1,23 @@
 import Asset, {AssetOptions} from '../../components/asset/asset';
-import Button, {ButtonOptions} from '../../components/button/button';
+import Button, {ButtonProps} from '../../components/button/button';
 
 import {getClassName} from '../../utils/partials';
 import {h} from 'preact';
 
-export interface Columns5050Options {
+export interface Columns5050Props {
   options?: string[];
   primary?: {
     eyebrow?: string;
     title?: string;
     body?: string;
-    buttons?: ButtonOptions[];
+    buttons?: ButtonProps[];
   };
   secondary?: {
     assets?: AssetOptions[];
   };
 }
 
-function Columns5050({partial}: {partial: Columns5050Options}) {
+function Columns5050({partial}: {partial: Columns5050Props}) {
   return (
     <div className={getClassName('columns-50x50', partial.options)}>
       <div className="columns-50x50__grid">

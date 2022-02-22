@@ -1,18 +1,18 @@
 import Asset, {AssetOptions} from '../../components/asset/asset';
-import Button, {ButtonOptions} from '../../components/button/button';
+import Button, {ButtonProps} from '../../components/button/button';
 
 import {getClassName} from '../../utils/partials';
 import {h} from 'preact';
 
-export interface PromoBannerOptions {
+export interface PromoBannerProps {
   options?: string[];
   assets?: AssetOptions[];
   title?: string;
   body?: string;
-  buttons?: ButtonOptions[];
+  buttons?: ButtonProps[];
 }
 
-function PromoBanner({partial}: {partial: PromoBannerOptions}) {
+function PromoBanner({partial}: {partial: PromoBannerProps}) {
   return (
     <div className={getClassName('promo-banner', partial.options)}>
       <div className="promo-banner__wrap">

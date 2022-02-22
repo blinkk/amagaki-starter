@@ -1,7 +1,7 @@
 /** @jsx h */
 
 import Asset, {AssetOptions} from '../../components/asset/asset';
-import Button, {ButtonOptions} from '../../components/button/button';
+import Button, {ButtonProps} from '../../components/button/button';
 
 import {Document} from '@amagaki/amagaki';
 import {getClassName} from '../../utils/partials';
@@ -18,17 +18,17 @@ declare global {
   }
 }
 
-interface HeaderOptions {
+interface HeaderProps {
   options?: string[];
   logo: {
     doc: Document;
     image: AssetOptions;
   };
   nav: Document[];
-  buttons: ButtonOptions[];
+  buttons: ButtonProps[];
 }
 
-function Header({partial, doc}: {partial: HeaderOptions; doc: Document}) {
+function Header({partial, doc}: {partial: HeaderProps; doc: Document}) {
   return (
     <div className={getClassName('header', partial.options)}>
       <div className="header__grid">

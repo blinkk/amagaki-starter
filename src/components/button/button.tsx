@@ -1,21 +1,21 @@
 import {getClassName} from '../../utils/partials';
 import {h} from 'preact';
 
-export enum ButtonStyles {
+export enum ButtonOptions {
   HighEmphasis = 'high-emphasis',
   MediumEmphasis = 'medium-emphasis',
   LowEmphasis = 'low-emphasis',
 }
 
-export interface ButtonOptions {
+export interface ButtonProps {
   label: string;
   url?: string;
   ariaLabel?: string;
   onClick?: any;
-  options?: ButtonStyles[];
+  options?: ButtonOptions[];
 }
 
-function Button({label, url, ariaLabel, options, onClick}: ButtonOptions) {
+function Button({label, url, ariaLabel, options, onClick}: ButtonProps) {
   return (
     <a
       className={getClassName('button', options)}

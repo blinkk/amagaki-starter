@@ -1,18 +1,15 @@
 import Asset, {AssetOptions} from '../../components/asset/asset';
-import Button, {
-  ButtonOptions,
-  ButtonStyles,
-} from '../../components/button/button';
+import Button, {ButtonProps} from '../../components/button/button';
 
 import {getClassName} from '../../utils/partials';
 import {h} from 'preact';
 
-interface HeroOptions {
+interface HeroProps {
   options?: string[];
   title?: string;
   body?: string;
   assets?: AssetOptions[];
-  buttons?: ButtonOptions[];
+  buttons?: ButtonProps[];
 }
 
 function activateLasers(): void {
@@ -22,7 +19,7 @@ function activateLasers(): void {
 function Hero({
   partial,
 }: {
-  partial: HeroOptions;
+  partial: HeroProps;
 }): preact.createElement.JSX.Element {
   return (
     <div className={getClassName('hero', partial.options)}>

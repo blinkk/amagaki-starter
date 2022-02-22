@@ -1,17 +1,17 @@
 import {getClassName} from '../../utils/partials';
 import {h} from 'preact';
 
-enum SpacerStyles {
+enum SpacerOptions {
   Small = 'small',
   Medium = 'medium',
   Large = 'large',
 }
 
-export interface SpacerOptions {
-  options?: SpacerStyles[];
+export interface SpacerProps {
+  options?: SpacerOptions[];
 }
 
-function Spacer({partial}: {partial: SpacerOptions}) {
+function Spacer({partial}: {partial: SpacerProps}) {
   return <div className={getClassName('spacer', partial.options)}></div>;
 }
 

@@ -1,11 +1,11 @@
 import Asset, {AssetOptions} from '../../components/asset/asset';
-import Button, {ButtonOptions} from '../../components/button/button';
+import Button, {ButtonProps} from '../../components/button/button';
 import {Document, Pod} from '@amagaki/amagaki';
 
 import {getClassName} from '../../utils/partials';
 import {h} from 'preact';
 
-interface FooterOptions {
+interface FooterProps {
   options?: string[];
   nav: {
     url: {path: string};
@@ -18,7 +18,7 @@ function Footer({
   doc,
   pod,
 }: {
-  partial: FooterOptions;
+  partial: FooterProps;
   doc: Document;
   pod: Pod;
 }) {
