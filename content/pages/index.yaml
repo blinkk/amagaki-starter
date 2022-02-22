@@ -5,11 +5,11 @@ order: 0
 
 partials:
 
-- partial: spacer
+- partial: Spacer
   options:
   - large
 
-- partial: hero
+- partial: Hero
   title: Lorem ipsum dolor
   body: Eu mollit ullamco nisi eu ipsum aliqua occaecat excepteur ullamco magna consectetur. Adipisicing ipsum laborum sunt eu qui laborum pariatur aliqua duis dolore id.
   buttons:
@@ -25,33 +25,33 @@ partials:
     width: 16
     height: 9
 
-- partial: spacer
+- partial: Spacer
   options:
   - medium
 
-- partial: simple-intro
+- partial: SimpleIntro
   title: Laboris commodo aliquip velit ullamco
 
-- partial: spacer
+- partial: Spacer
   options:
   - large
 
-- partial: columns-50x50
+- partial: Columns5050
   primary:
     eyebrow: Duis laborum dolor amet excepteur
     title: Magna do magna occaecat irure.
     body: Esse in dolor anim excepteur incididunt laborum pariatur consequat. Occaecat officia elit nisi Lorem ex ex mollit aliqua ipsum fugiat quis amet sit. Mollit dolore cillum ea commodo ullamco cillum minim nisi et reprehenderit consectetur aute fugiat.
   secondary:
-    asset:
-      url: /static/placeholder/1x1.svg
+    assets:
+    - url: /static/placeholder/1x1.svg
       width: 1
       height: 1
 
-- partial: spacer
+- partial: Spacer
   options:
   - large
 
-- partial: promo-banner
+- partial: PromoBanner
   assets:
   - url: /static/placeholder/4x3.svg?bgColor=F3492F
     width: 4
@@ -61,33 +61,33 @@ partials:
   - url: '#'
     label: Learn more
 
-- partial: spacer
+- partial: Spacer
   options:
   - large
 
-- partial: simple-intro
+- partial: SimpleIntro
   title: Adipisicing culpa tempor deserunt
 
-- partial: spacer
+- partial: Spacer
   options:
   - large
 
-- partial: columns-50x50
+- partial: Columns5050
   primary:
     eyebrow: Eiusmod amet ea culpa
     title: Ex id reprehenderit in ullamco in nisi.
     body: Lorem incididunt anim dolore nulla enim in ea. Dolor id irure dolor adipisicing in esse enim labore occaecat proident reprehenderit. Sint enim nostrud esse anim id sint minim cupidatat.
   secondary:
-    asset:
-      url: /static/placeholder/1x1.svg
+    assets:
+    - url: /static/placeholder/1x1.svg
       width: 1
       height: 1
 
-- partial: spacer
+- partial: Spacer
   options:
   - large
 
-- partial: columns-50x50
+- partial: Columns5050
   options: ['reversed']
   primary:
     eyebrow: Eu amet mollit consectetur
@@ -98,11 +98,11 @@ partials:
       url: '#'
       options: ['medium-emphasis']
   secondary:
-    asset:
-      url: /static/placeholder/1x1.svg
+    assets:
+    - url: /static/placeholder/1x1.svg
       width: 1
       height: 1
 
-- partial: spacer
+- partial: Spacer
   options:
   - large

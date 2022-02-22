@@ -1,5 +1,5 @@
-import Asset, {AssetOptions} from '../../components/asset/asset';
-import Button, {ButtonProps} from '../../components/button/button';
+import Asset, {AssetOptions} from '../../components/Asset/Asset';
+import Button, {ButtonProps} from '../../components/Button/Button';
 
 import {getClassName} from '../../utils/partials';
 import {h} from 'preact';

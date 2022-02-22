@@ -6,7 +6,7 @@ import {DeguVideo} from '@blinkk/degu/lib/components/video';
 import {DeguYouTubeInline} from '@blinkk/degu/lib/components/youtube-inline';
 import {DeguYouTubeModal} from '@blinkk/degu/lib/components/youtube-modal';
 import {PartialHydrator} from './utils/partials';
-import Hero from './partials/hero/hero';
+import Hero from './partials/Hero/Hero';
 
 window.customElements.define('degu-image', DeguImage);
 window.customElements.define('degu-video', DeguVideo);

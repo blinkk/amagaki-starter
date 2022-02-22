@@ -1,4 +1,4 @@
-partial: footer
+partial: Footer
 logo:
   title: Amagaki
 nav: !pod.docs ['/content/pages/**', {sort: 'order'}]
