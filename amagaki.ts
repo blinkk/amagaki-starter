@@ -21,7 +21,12 @@ export default (pod: Pod) => {
     beautifyContainer: false,
     head: {
       siteName: 'Starter',
-      scripts: [pod.staticFile('/dist/js/main.min.js')],
+      scripts: [
+        {
+          href: pod.staticFile('/dist/chunks/main.js'),
+          module: true,
+        },
+      ],
       icon: pod.staticFile('/src/static/images/amagaki.png'),
       stylesheets: [
         'https://fonts.googleapis.com/css?family=Manrope:400,500,600,700|Material+Icons&amp;display=swap',
@@ -29,8 +34,9 @@ export default (pod: Pod) => {
       ],
     },
     partialPaths: {
+      module: true,
       css: ['/dist/css/${partial.partial}/${partial.partial}.css'],
-      js: ['/dist/js/partials/${partial.partial}/${partial.partial}.js'],
+      js: ['/dist/chunks/partials/${partial.partial}/${partial.partial}.js'],
       view: ['/src/partials/${partial.partial}/${partial.partial}.tsx'],
     },
   });
@@ -50,8 +56,8 @@ export default (pod: Pod) => {
         staticDir: '/dist/css/',
       },
       {
-        path: '/static/js/',
-        staticDir: '/dist/js/',
+        path: '/static/chunks/',
+        staticDir: '/dist/chunks/',
       },
     ],
     environments: {
