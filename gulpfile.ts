@@ -7,7 +7,7 @@ import sass from 'gulp-dart-sass';
 
 const ENTRIES = {
   js: {
-    tsc_out: ['./dist/js/main.js'],
+    tsc_out: ['./dist/tsc/main.js'],
     out: './dist/js/main.min.js',
     watch: ['./src/**/*.ts', './src/**/*.tsx'],
   },

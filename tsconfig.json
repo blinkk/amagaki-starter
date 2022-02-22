@@ -12,7 +12,7 @@
     "jsxFragmentFactory": "Fragment",
     "module": "es2015",
     "moduleResolution": "node",
-    "outDir": "dist/js/",
+    "outDir": "dist/tsc/",
     "pretty": true,
     "rootDir": "src/",
     "skipLibCheck": true,

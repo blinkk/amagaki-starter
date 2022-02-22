@@ -16,7 +16,7 @@ export default (pod: Pod) => {
   DeguPlugin.register(pod);
   PageBuilder.register(pod, {
     inspector: {
-      enabled: true,
+      enabled: pod.env.name !== 'prod',
     },
     beautifyContainer: false,
     head: {
