@@ -36,7 +36,7 @@ partials:
   options:
   - large
 
-- partial: Columns5050
+- partial: Columns50x50
   primary:
     eyebrow: Duis laborum dolor amet excepteur
     title: Magna do magna occaecat irure.
@@ -72,7 +72,7 @@ partials:
   options:
   - large
 
-- partial: Columns5050
+- partial: Columns50x50
   primary:
     eyebrow: Eiusmod amet ea culpa
     title: Ex id reprehenderit in ullamco in nisi.
@@ -87,7 +87,7 @@ partials:
   options:
   - large
 
-- partial: Columns5050
+- partial: Columns50x50
   options: ['reversed']
   primary:
     eyebrow: Eu amet mollit consectetur

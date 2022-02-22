@@ -4,7 +4,7 @@ import Button, {ButtonProps} from '../../components/Button/Button';
 import {getClassName} from '../../utils/partials';
 import {h} from 'preact';
 
-export interface Columns5050Props {
+export interface Columns50x50Props {
   options?: string[];
   primary?: {
     eyebrow?: string;
@@ -17,7 +17,7 @@ export interface Columns5050Props {
   };
 }
 
-function Columns5050({partial}: {partial: Columns5050Props}) {
+function Columns50x50({partial}: {partial: Columns50x50Props}) {
   return (
     <div className={getClassName('columns-50x50', partial.options)}>
       <div className="columns-50x50__grid">
@@ -63,4 +63,4 @@ function Columns5050({partial}: {partial: Columns5050Props}) {
   );
 }
 
-export default Columns5050;
+export default Columns50x50;

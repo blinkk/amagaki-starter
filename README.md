@@ -10,7 +10,7 @@ A minimal starter project that uses the [Amagaki](https://amagaki.dev) website g
 
 ## Features
 
-- Reusable partial HTML templates (Nunjucks).
+- Reusable page modules in Preact (`TSX`).
 - Responsive media elements using `<degu-image>` and `<degu-video>`.
 - Per-partial CSS splitting.
 - TypeScript compilation with tree-shaking for minimal payloads.
@@ -41,11 +41,10 @@ matched to approach page building by assembling reusable modules.
 
 1. Create partials by adding files in the following locations:
 
-- CSS: `/src/sass/partials/{partial}.sass`
-- TypeScript: `/src/ts/partials/{partial}.ts`
-- Nunjucks: `/views/partials/{partial}.njk`
+- CSS: `/src/partials/{partial}.sass`
+- Preact: `/src/partials/{partial}.tsx`
 
-2. Create pages by mixing and matching partials:
+1. Create pages by mixing and matching partials:
 
 - Document: `/content/pages/{page}.yaml`
 
