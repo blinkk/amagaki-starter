@@ -22,5 +22,5 @@ jobs:
             ${{ runner.os }}-
       - name: Build site
         run: |
-                npm install
-                npm run build
+          npm install
+          npm run build

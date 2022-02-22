@@ -1,4 +1,4 @@
-partial: header
+partial: Header
 logo:
   doc: !pod.doc /content/pages/index.yaml
   image:
