@@ -1,0 +1,1 @@
+import{a as e}from"../../chunks/chunk-MH6NWV2N-min.js";import{f as r,p as t}from"../../chunks/chunk-BPKZZAH3-min.js";t();var m;(function(a){a.Small="small",a.Medium="medium",a.Large="large"})(m||(m={}));function l({partial:a}){return r("div",{className:e("spacer",a.options)})}var s=l;export{s as default};

@@ -1,15 +1,15 @@
 {
   "branch": null,
   "commit": null,
-  "built": "Tue Feb 22 2022 05:48:01 GMT+0000 (Coordinated Universal Time)",
+  "built": "Tue Feb 22 2022 22:48:16 GMT+0000 (Coordinated Universal Time)",
   "files": [
     {
       "path": "/about/index.html",
-      "sha": "a6075c84f68a773e2020abd61f8010e51d10655f"
+      "sha": "2c0c8250bf555964a8747b4e95817257373aa6f3"
     },
     {
       "path": "/index.html",
-      "sha": "8b3c221c34bdbc1199031965d761e6f34d5e3043"
+      "sha": "2851675cf71e1d64ece516498a94e0d25fcda9eb"
     },
     {
       "path": "/static/images/amagaki.png",
@@ -48,6 +48,66 @@
       "sha": "ab13c7d1cf09e3286e4ef2200d2b086747a2a7ed"
     },
     {
+      "path": "/static/chunks/chunks/chunk-52MCS33W-min.js",
+      "sha": "f7de7871053873b606c9dfea0047b5b39c385b50"
+    },
+    {
+      "path": "/static/chunks/chunks/chunk-BPKZZAH3-min.js",
+      "sha": "da81cf578b0048d598e05f5e2d5c767821a5d9d2"
+    },
+    {
+      "path": "/static/chunks/chunks/chunk-MEAK3RAH-min.js",
+      "sha": "ec6307d67a35f3d8f21a196da6c7096132820cb0"
+    },
+    {
+      "path": "/static/chunks/chunks/chunk-MH6NWV2N-min.js",
+      "sha": "9cfecb809c50365132aadf76a21ef1a578dd9240"
+    },
+    {
+      "path": "/static/chunks/chunks/chunk-WODYT7MU-min.js",
+      "sha": "785e62fa8b539ece8093e8409620508a9a82c1d6"
+    },
+    {
+      "path": "/static/chunks/components/Asset/Asset.js",
+      "sha": "d8212fb9d5d82cb8adf17962f5f8236461fd626e"
+    },
+    {
+      "path": "/static/chunks/components/Button/Button.js",
+      "sha": "5661208933e51cde647c720376a6cd775c4f12d7"
+    },
+    {
+      "path": "/static/chunks/main.js",
+      "sha": "0356de88a562262c65967213d29285f7ab79d34d"
+    },
+    {
+      "path": "/static/chunks/partials/Columns50x50/Columns50x50.js",
+      "sha": "6eee848d270e75537aa46f238339db4eda3895f0"
+    },
+    {
+      "path": "/static/chunks/partials/Footer/Footer.js",
+      "sha": "cddbe06615ba7802a23d5c608403c4b36f73f5df"
+    },
+    {
+      "path": "/static/chunks/partials/Header/Header.js",
+      "sha": "75ccfdd7ce2f91b24cd9cb0ef6dbb1c00ffbb7ba"
+    },
+    {
+      "path": "/static/chunks/partials/Hero/Hero.js",
+      "sha": "4d3361478ee8588b5403115471766ea1497f4cd8"
+    },
+    {
+      "path": "/static/chunks/partials/PromoBanner/PromoBanner.js",
+      "sha": "8c5c06ea8669f0ebd2aecf1439e9fd266816b250"
+    },
+    {
+      "path": "/static/chunks/partials/SimpleIntro/SimpleIntro.js",
+      "sha": "0566a88472854b6ead54ebe7022ff7d9b7efa64f"
+    },
+    {
+      "path": "/static/chunks/partials/Spacer/Spacer.js",
+      "sha": "903b388999369770afc9b6d443ccb9c8755e118b"
+    },
+    {
       "path": "/robots.txt",
       "sha": "8943ad27646c1df758f43a10c5aab4c33d4b6425"
     },
@@ -57,35 +117,35 @@
     },
     {
       "path": "/preview/index.html",
-      "sha": "7e9d98bde9deeb557afad230439ea023b6f528f0"
+      "sha": "313a2c298c43391ec2675ca96cc6d67632abafb9"
     },
     {
       "path": "/preview/Columns50x50/index.html",
-      "sha": "62a0cf3454d6c7c543a1b5b45cd78c80e9d414e2"
+      "sha": "124a0acb4251ab97b9bae6351499355b5c23966a"
     },
     {
       "path": "/preview/Footer/index.html",
-      "sha": "490214beadb3a13033181c607204944eb81e2830"
+      "sha": "35d467d60cf40cccd8116be603e17fc9a33b7b72"
     },
     {
       "path": "/preview/Header/index.html",
-      "sha": "edb7b8a2a1017fc50141a6bc5b1fefd0db3313a6"
+      "sha": "41379a6d67b5335c13b440a83d536dbb155c0979"
     },
     {
       "path": "/preview/Hero/index.html",
-      "sha": "60d06f11d2d8ca09d669d9eddd463e54c9c2e249"
+      "sha": "d0a7fb2901a0cb3fabe4a19e945a73f45a29dae8"
     },
     {
       "path": "/preview/PromoBanner/index.html",
-      "sha": "7fd11c83baa9a718b87c6ec80d2ee57a6a02f64d"
+      "sha": "b3b08997d6cf6a825b71e3cbae06b658c8962700"
     },
     {
       "path": "/preview/SimpleIntro/index.html",
-      "sha": "c349c1b3245120d573d6733afbe47110771bcac3"
+      "sha": "46bf93a4383d57f05c7433c61d18fb7c05aa6104"
     },
     {
       "path": "/preview/Spacer/index.html",
-      "sha": "2a262d1637ca0df4260ae49a2d57e29f4148f487"
+      "sha": "47d18556f42dc3e0277008ae1b8258c7485c8a12"
     },
     {
       "path": "/static/placeholder/16x9.svg",
@@ -110,10 +170,6 @@
     {
       "path": "/static/placeholder/8x4.svg",
       "sha": "63140eaa00b7e9c67b2a3a41d205f3f6fb969799"
-    },
-    {
-      "path": "/static/js/main.min.js",
-      "sha": "38098076072ce7ea184ebbfb53ae7be9762db445"
     },
     {
       "path": "/_page-builder/page-builder-ui.min.js",
