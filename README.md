@@ -20,7 +20,7 @@ npx create-amagaki
 
 ## Features
 
-- Reusable partial HTML templates (Nunjucks).
+- Reusable page modules in Preact (`TSX`).
 - Responsive media elements using `<degu-image>` and `<degu-video>`.
 - Per-partial CSS splitting.
 - TypeScript compilation with tree-shaking for minimal payloads.
@@ -52,10 +52,9 @@ matched to approach page building by assembling reusable modules.
 1. Create partials by adding files in the following locations:
 
 - CSS: `/src/partials/{partial}/{partial}.sass`
-- TypeScript: `/src/partials/{partial}/{partial}.ts`
-- Nunjucks: `/src/partials/{partials}/{partial}.njk`
+- Preact: `/src/partials/{partial}/{partial}.tsx`
 
-2. Create pages by mixing and matching partials:
+1. Create pages by mixing and matching partials:
 
 - Document: `/content/pages/{page}.yaml`
 

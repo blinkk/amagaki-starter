@@ -9,10 +9,16 @@ import {
 import {DeguPlugin} from './plugins/degu';
 import {PageBuilder} from '@amagaki/amagaki-plugin-page-builder';
 import {PlaceholderPlugin} from './plugins/placeholder';
+import {PreactEnginePlugin} from '@amagaki/amagaki-engine-preact';
 
 export default (pod: Pod) => {
+  PreactEnginePlugin.register(pod);
   DeguPlugin.register(pod);
   PageBuilder.register(pod, {
+    inspector: {
+      enabled: pod.env.name !== 'prod',
+    },
+    beautifyContainer: false,
     head: {
       siteName: 'Starter',
       scripts: [pod.staticFile('/dist/js/main.min.js')],
@@ -23,9 +29,9 @@ export default (pod: Pod) => {
       ],
     },
     partialPaths: {
-      css: '/dist/css/${partial.partial}/${partial.partial}.css',
-      js: '/dist/js/partials/${partial.partial}/${partial.partial}.js',
-      view: '/src/partials/${partial.partial}/${partial.partial}.njk',
+      css: ['/dist/css/${partial.partial}/${partial.partial}.css'],
+      js: ['/dist/js/partials/${partial.partial}/${partial.partial}.js'],
+      view: ['/src/partials/${partial.partial}/${partial.partial}.tsx'],
     },
   });
 

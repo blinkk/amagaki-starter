@@ -7,11 +7,14 @@
     "esModuleInterop": true,
     "experimentalDecorators": true,
     "forceConsistentCasingInFileNames": true,
+    "jsx": "react",
+    "jsxFactory": "h",
+    "jsxFragmentFactory": "Fragment",
     "module": "es2015",
     "moduleResolution": "node",
-    "outDir": "dist/js/",
+    "outDir": "dist/tsc/",
     "pretty": true,
-    "rootDir": "src/ts/",
+    "rootDir": "src/",
     "skipLibCheck": true,
     "target": "es2018",
     "lib": [
@@ -20,8 +23,10 @@
     ],
   },
   "include": [
-    "src/ts/**/*.ts",
-    "test/**/*.ts"
+    "src/main.tsx",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "test/**/*.ts",
   ],
   "exclude": [
     "node_modules",

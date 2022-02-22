@@ -7,11 +7,12 @@ import sass from 'gulp-dart-sass';
 
 const ENTRIES = {
   js: {
-    tsc_out: ['./dist/js/main.js'],
+    tsc_out: ['./dist/tsc/main.js'],
     out: './dist/js/main.min.js',
-    watch: ['./src/ts/**/*.ts'],
+    watch: ['./src/**/*.ts', './src/**/*.tsx'],
   },
   sass: {
+    includePaths: ['./node_modules/', './src/sass/', './src/'],
     src: ['./src/partials/**/*.sass', './src/sass/*.sass'],
     out: './dist/css/',
     watch: ['./src/**/*.sass'],
@@ -38,6 +39,11 @@ const runEsBuild = async prod => {
           bundle: true,
           platform: 'browser',
           minify: prod,
+          jsxFactory: 'preact.h',
+          jsxFragment: 'preact.Fragment',
+          define: {
+            ...(prod && {'process.env.NODE_ENV': "'production'"}),
+          },
         });
         resolve();
       }
@@ -55,7 +61,7 @@ gulp.task('build:sass', () => {
     .pipe(
       sass({
         outputStyle: 'compressed',
-        includePaths: ['./node_modules/', './src/sass/'],
+        includePaths: ENTRIES.sass.includePaths,
       })
     )
     .on('error', sass.logError)
