@@ -1,15 +1,15 @@
 {
   "branch": null,
   "commit": null,
-  "built": "Tue Feb 22 2022 22:48:16 GMT+0000 (Coordinated Universal Time)",
+  "built": "Thu Feb 24 2022 20:31:57 GMT+0000 (Coordinated Universal Time)",
   "files": [
     {
       "path": "/about/index.html",
-      "sha": "2c0c8250bf555964a8747b4e95817257373aa6f3"
+      "sha": "02b6fb5a202bba7de8d8eb4645da26f64bc39e32"
     },
     {
       "path": "/index.html",
-      "sha": "2851675cf71e1d64ece516498a94e0d25fcda9eb"
+      "sha": "c329ea8541b1688c141b8f39e24cc9c3452d6f6f"
     },
     {
       "path": "/static/images/amagaki.png",
@@ -48,20 +48,20 @@
       "sha": "ab13c7d1cf09e3286e4ef2200d2b086747a2a7ed"
     },
     {
-      "path": "/static/chunks/chunks/chunk-52MCS33W-min.js",
-      "sha": "f7de7871053873b606c9dfea0047b5b39c385b50"
-    },
-    {
       "path": "/static/chunks/chunks/chunk-BPKZZAH3-min.js",
       "sha": "da81cf578b0048d598e05f5e2d5c767821a5d9d2"
     },
     {
-      "path": "/static/chunks/chunks/chunk-MEAK3RAH-min.js",
-      "sha": "ec6307d67a35f3d8f21a196da6c7096132820cb0"
-    },
-    {
       "path": "/static/chunks/chunks/chunk-MH6NWV2N-min.js",
       "sha": "9cfecb809c50365132aadf76a21ef1a578dd9240"
+    },
+    {
+      "path": "/static/chunks/chunks/chunk-QDQFYKKJ-min.js",
+      "sha": "f6040407ae08e2e15ec804a7d59c7bcecabfed11"
+    },
+    {
+      "path": "/static/chunks/chunks/chunk-QXICRDFR-min.js",
+      "sha": "d14339ee8215aa2f90c6c3351cd98612ff66df37"
     },
     {
       "path": "/static/chunks/chunks/chunk-WODYT7MU-min.js",
@@ -69,7 +69,7 @@
     },
     {
       "path": "/static/chunks/components/Asset/Asset.js",
-      "sha": "d8212fb9d5d82cb8adf17962f5f8236461fd626e"
+      "sha": "873bc51d77a4426091e6fc4227f6c7bc551ef7fa"
     },
     {
       "path": "/static/chunks/components/Button/Button.js",
@@ -77,11 +77,11 @@
     },
     {
       "path": "/static/chunks/main.js",
-      "sha": "0356de88a562262c65967213d29285f7ab79d34d"
+      "sha": "63bee5e2e96dabab2c86811ddacda28532d72248"
     },
     {
       "path": "/static/chunks/partials/Columns50x50/Columns50x50.js",
-      "sha": "6eee848d270e75537aa46f238339db4eda3895f0"
+      "sha": "e0a458eb3f1a0123c404b1e0a27b1e2686aa9f40"
     },
     {
       "path": "/static/chunks/partials/Footer/Footer.js",
@@ -89,19 +89,19 @@
     },
     {
       "path": "/static/chunks/partials/Header/Header.js",
-      "sha": "75ccfdd7ce2f91b24cd9cb0ef6dbb1c00ffbb7ba"
+      "sha": "aed2dfcd2bcddaa6027d4b3400710bd1c1c171ad"
     },
     {
       "path": "/static/chunks/partials/Hero/Hero.js",
-      "sha": "4d3361478ee8588b5403115471766ea1497f4cd8"
+      "sha": "c4ed94c729bbdfa786f8bd5069f43cfa1b60b3b9"
     },
     {
       "path": "/static/chunks/partials/PromoBanner/PromoBanner.js",
-      "sha": "8c5c06ea8669f0ebd2aecf1439e9fd266816b250"
+      "sha": "4dbd4035a2d9b4fcb8ee1f2071de1fceecb98ab5"
     },
     {
       "path": "/static/chunks/partials/SimpleIntro/SimpleIntro.js",
-      "sha": "0566a88472854b6ead54ebe7022ff7d9b7efa64f"
+      "sha": "c84969eb60e8a6519066b28d24defbf19906691b"
     },
     {
       "path": "/static/chunks/partials/Spacer/Spacer.js",
@@ -117,35 +117,35 @@
     },
     {
       "path": "/preview/index.html",
-      "sha": "313a2c298c43391ec2675ca96cc6d67632abafb9"
+      "sha": "f54d83dc4e0ad30bfa296a88f171c0ac432db456"
     },
     {
       "path": "/preview/Columns50x50/index.html",
-      "sha": "124a0acb4251ab97b9bae6351499355b5c23966a"
+      "sha": "358074d2d0a0eb7ca5f1a32c08d2b88d2831c257"
     },
     {
       "path": "/preview/Footer/index.html",
-      "sha": "35d467d60cf40cccd8116be603e17fc9a33b7b72"
+      "sha": "3bb8cbcb58697c7a6025d66add9fd05c92871b72"
     },
     {
       "path": "/preview/Header/index.html",
-      "sha": "41379a6d67b5335c13b440a83d536dbb155c0979"
+      "sha": "885d3fcd3bce6c7269b0cf35eaeeb4d3a64c1d6d"
     },
     {
       "path": "/preview/Hero/index.html",
-      "sha": "d0a7fb2901a0cb3fabe4a19e945a73f45a29dae8"
+      "sha": "241a09bc4e2bcdfa3503b312e0e6a6b6463d8625"
     },
     {
       "path": "/preview/PromoBanner/index.html",
-      "sha": "b3b08997d6cf6a825b71e3cbae06b658c8962700"
+      "sha": "4c0b7f80000317510d2e17ae7479ff6c7f9d1354"
     },
     {
       "path": "/preview/SimpleIntro/index.html",
-      "sha": "46bf93a4383d57f05c7433c61d18fb7c05aa6104"
+      "sha": "72d04bd8bce4c6edde1a37cb34e42dbc92d3a00c"
     },
     {
       "path": "/preview/Spacer/index.html",
-      "sha": "47d18556f42dc3e0277008ae1b8258c7485c8a12"
+      "sha": "2d085b8630fc9ec705b07b5828346235b8b7842a"
     },
     {
       "path": "/static/placeholder/16x9.svg",

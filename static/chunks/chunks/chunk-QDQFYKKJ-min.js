@@ -1,0 +1,1 @@
+import{f as a,p as e}from"./chunk-BPKZZAH3-min.js";e();function d(r,u){var t;return((t=r==null?void 0:r.url)===null||t===void 0?void 0:t.path)?r.url.path:r}function i({url:r,altText:u,width:t,height:l,className:n,context:o}){return a("degu-image",{src:d(r,o),alt:u,width:t,height:l,className:n})}var h=i;export{h as a};
