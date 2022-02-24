@@ -1,3 +1,4 @@
+import {Document} from '@amagaki/amagaki';
 import {h} from 'preact';
 
 interface StaticFile {
@@ -11,6 +12,7 @@ export interface AssetOptions {
   width?: number;
   height?: number;
   className?: string;
+  context?: Document;
 }
 
 // TODO: Improve declaration of custom elements.
@@ -29,17 +31,25 @@ declare global {
   }
 }
 
-function getUrl(item: any) {
+function getUrl(item: any, context?: Document) {
+  // TODO: Support relative URLs.
   if (item?.url?.path) {
     return item.url.path as string;
   }
   return item as string;
 }
 
-function Asset({url, altText, width, height, className}: AssetOptions) {
+function Asset({
+  url,
+  altText,
+  width,
+  height,
+  className,
+  context,
+}: AssetOptions) {
   return (
     <degu-image
-      src={getUrl(url)}
+      src={getUrl(url, context)}
       alt={altText}
       width={width}
       height={height}

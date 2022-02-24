@@ -1,13 +1,6 @@
-import {
-  Document,
-  NunjucksTemplateEngine,
-  Pod,
-  StaticFile,
-  Url,
-} from '@amagaki/amagaki';
-
 import {DeguPlugin} from './plugins/degu';
 import {PageBuilder} from '@amagaki/amagaki-plugin-page-builder';
+import {Pod} from '@amagaki/amagaki';
 import {PlaceholderPlugin} from './plugins/placeholder';
 import {PreactEnginePlugin} from '@amagaki/amagaki-engine-preact';
 
@@ -18,7 +11,6 @@ export default (pod: Pod) => {
     inspector: {
       enabled: pod.env.name !== 'prod',
     },
-    beautifyContainer: false,
     head: {
       siteName: 'Starter',
       scripts: [
@@ -33,11 +25,20 @@ export default (pod: Pod) => {
         pod.staticFile('/dist/css/main.css'),
       ],
     },
+    beautifyContainer: false,
     partialPaths: {
       module: true,
       css: ['/dist/css/${partial.partial}/${partial.partial}.css'],
       js: ['/dist/chunks/partials/${partial.partial}/${partial.partial}.js'],
       view: ['/src/partials/${partial.partial}/${partial.partial}.tsx'],
+    },
+    header: {
+      content: '/content/partials/header.yaml',
+      view: '/src/partials/Header/Header.tsx',
+    },
+    footer: {
+      content: '/content/partials/footer.yaml',
+      view: '/src/partials/Footer/Footer.tsx',
     },
   });
 
@@ -70,27 +71,4 @@ export default (pod: Pod) => {
       sizes: ['16x9', '1x1', '4x3', '9x16', '7x3', '8x4'],
     });
   }
-
-  const engine = pod.engines.getEngineByExtension(
-    '.njk'
-  ) as NunjucksTemplateEngine;
-
-  engine.env.addFilter('languageDisplayName', lang => {
-    const languageNames = new Intl.DisplayNames(lang, {type: 'language'});
-    return languageNames.of(lang);
-  });
-
-  engine.env.addFilter(
-    'url',
-    function (object: StaticFile | Document | string) {
-      if (object instanceof StaticFile) {
-        return `${Url.relative(object.url.path, this.ctx.doc)}?fingerprint=${
-          object.fingerprint
-        }`;
-      } else if (object instanceof Document) {
-        return `${Url.relative(object.url.path, this.ctx.doc)}`;
-      }
-      return `${Url.relative(object, this.ctx.doc)}`;
-    }
-  );
 };
