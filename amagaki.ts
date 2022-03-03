@@ -1,7 +1,7 @@
 import {DeguPlugin} from './plugins/degu';
 import {PageBuilder} from '@amagaki/amagaki-plugin-page-builder';
-import {Pod} from '@amagaki/amagaki';
 import {PlaceholderPlugin} from './plugins/placeholder';
+import {Pod} from '@amagaki/amagaki';
 import {PreactEnginePlugin} from '@amagaki/amagaki-engine-preact';
 
 export default (pod: Pod) => {

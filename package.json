@@ -29,9 +29,9 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
-    "@amagaki/amagaki": "^1.12.1",
-    "@amagaki/amagaki-engine-preact": "^1.1.1",
-    "@amagaki/amagaki-plugin-page-builder": "^3.5.0",
+    "@amagaki/amagaki": "^2.0.1",
+    "@amagaki/amagaki-engine-preact": "^2.0.0",
+    "@amagaki/amagaki-plugin-page-builder": "^3.6.3",
     "@blinkk/degu": "^2.0.0",
     "@github/details-dialog-element": "^3.1.3",
     "browser-sync": "^2.27.5",
