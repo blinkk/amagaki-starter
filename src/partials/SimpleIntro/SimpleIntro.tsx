@@ -1,3 +1,5 @@
+/** @jsx h */
+
 import Asset, {AssetOptions} from '../../components/Asset/Asset';
 import Button, {ButtonProps} from '../../components/Button/Button';
 
@@ -5,7 +7,7 @@ import {Document} from '@amagaki/amagaki';
 import {getClassName} from '../../utils/partials';
 import {h} from 'preact';
 
-interface SimpleIntroProps {
+export interface SimpleIntroProps {
   options?: string[];
   images?: AssetOptions[];
   title?: string;
@@ -13,7 +15,7 @@ interface SimpleIntroProps {
   buttons?: ButtonProps[];
 }
 
-function SimpleIntro({partial}: {partial: SimpleIntroProps; doc: Document}) {
+function SimpleIntro({partial}: {partial: SimpleIntroProps; doc?: Document}) {
   return (
     <div className={getClassName('simple-intro', partial.options)}>
       <div className="simple-intro__grid">

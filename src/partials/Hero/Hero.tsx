@@ -1,10 +1,12 @@
+/** @jsx h */
+
 import Asset, {AssetOptions} from '../../components/Asset/Asset';
 import Button, {ButtonProps} from '../../components/Button/Button';
 
 import {getClassName} from '../../utils/partials';
 import {h} from 'preact';
 
-interface HeroProps {
+export interface HeroProps {
   options?: string[];
   title?: string;
   body?: string;
