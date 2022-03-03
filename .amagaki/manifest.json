@@ -1,15 +1,15 @@
 {
   "branch": null,
   "commit": null,
-  "built": "Thu Feb 24 2022 20:31:57 GMT+0000 (Coordinated Universal Time)",
+  "built": "Thu Mar 03 2022 18:04:07 GMT+0000 (Coordinated Universal Time)",
   "files": [
     {
       "path": "/about/index.html",
-      "sha": "02b6fb5a202bba7de8d8eb4645da26f64bc39e32"
+      "sha": "ffb4ed10831b0598628cf8c9005eaf4110795c8e"
     },
     {
       "path": "/index.html",
-      "sha": "c329ea8541b1688c141b8f39e24cc9c3452d6f6f"
+      "sha": "9a67db6844a1aad5cbfc33e975f555405d0c9395"
     },
     {
       "path": "/static/images/amagaki.png",
@@ -37,7 +37,7 @@
     },
     {
       "path": "/static/css/SimpleIntro/SimpleIntro.css",
-      "sha": "982fef7b4bfb598f28ad40baa8d0c359a4c16b3b"
+      "sha": "03faa70f685d2b89cbb9cbff0d999cf2749e9ba8"
     },
     {
       "path": "/static/css/Spacer/Spacer.css",
@@ -77,7 +77,7 @@
     },
     {
       "path": "/static/chunks/main.js",
-      "sha": "63bee5e2e96dabab2c86811ddacda28532d72248"
+      "sha": "0c9ec2ca005622008f92bd7f175f4a35b6ffc6b3"
     },
     {
       "path": "/static/chunks/partials/Columns50x50/Columns50x50.js",
@@ -117,35 +117,35 @@
     },
     {
       "path": "/preview/index.html",
-      "sha": "f54d83dc4e0ad30bfa296a88f171c0ac432db456"
+      "sha": "3170fc07f716e7e0f07f55b50a5d89bf63ef7bc3"
     },
     {
       "path": "/preview/Columns50x50/index.html",
-      "sha": "358074d2d0a0eb7ca5f1a32c08d2b88d2831c257"
+      "sha": "5669888c0b1e74cca9f44eff9d2c548225c3d368"
     },
     {
       "path": "/preview/Footer/index.html",
-      "sha": "3bb8cbcb58697c7a6025d66add9fd05c92871b72"
+      "sha": "9d0013ca3014f830330f603f0abf5121953bfb80"
     },
     {
       "path": "/preview/Header/index.html",
-      "sha": "885d3fcd3bce6c7269b0cf35eaeeb4d3a64c1d6d"
+      "sha": "24a275046f14902758bdebfa4cf69fb0fc7fc6a4"
     },
     {
       "path": "/preview/Hero/index.html",
-      "sha": "241a09bc4e2bcdfa3503b312e0e6a6b6463d8625"
+      "sha": "df4683eac83a5e810306514143e7e976157b065b"
     },
     {
       "path": "/preview/PromoBanner/index.html",
-      "sha": "4c0b7f80000317510d2e17ae7479ff6c7f9d1354"
+      "sha": "c67a80e53566544fa8b673cac0691fbd42d7bb6d"
     },
     {
       "path": "/preview/SimpleIntro/index.html",
-      "sha": "72d04bd8bce4c6edde1a37cb34e42dbc92d3a00c"
+      "sha": "980df30c41df86a64d985870d226376745e263c1"
     },
     {
       "path": "/preview/Spacer/index.html",
-      "sha": "2d085b8630fc9ec705b07b5828346235b8b7842a"
+      "sha": "7355ec8ecfc2ec4a90794a4995f60c3954850f22"
     },
     {
       "path": "/static/placeholder/16x9.svg",
@@ -173,7 +173,7 @@
     },
     {
       "path": "/_page-builder/page-builder-ui.min.js",
-      "sha": "c5c85e922dae6d6cec64783772dd547142472be0"
+      "sha": "83b762f45af57b73dd69ef2be5b038c918b85147"
     }
   ]
 }
