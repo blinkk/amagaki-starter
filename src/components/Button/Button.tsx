@@ -1,3 +1,5 @@
+/** @jsx h */
+
 import {getClassName} from '../../utils/partials';
 import {h} from 'preact';
 

@@ -1,3 +1,5 @@
+/** @jsx h */
+
 import {Document} from '@amagaki/amagaki';
 import {h} from 'preact';
 
