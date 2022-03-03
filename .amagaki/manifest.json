@@ -1,23 +1,23 @@
 {
   "branch": "main",
   "commit": {
-    "sha": "3c57faa2ce42757ab9c1baa2ef814b51673ac5e7",
+    "sha": "db615a30034684a115f68761a8f323825992ce8f",
     "message": "chore: update packages\n",
     "author": {
-      "timestamp": 1646332003,
+      "timestamp": 1646337138,
       "name": "Jeremy Weinstein",
       "email": "jeremydw@gmail.com"
     }
   },
-  "built": "Thu Mar 03 2022 18:27:21 GMT+0000 (Coordinated Universal Time)",
+  "built": "Thu Mar 03 2022 19:52:55 GMT+0000 (Coordinated Universal Time)",
   "files": [
     {
       "path": "/about/index.html",
-      "sha": "ffb4ed10831b0598628cf8c9005eaf4110795c8e"
+      "sha": "45c4da989da56fbfbf1a0b4c58529769d1620806"
     },
     {
       "path": "/index.html",
-      "sha": "9a67db6844a1aad5cbfc33e975f555405d0c9395"
+      "sha": "b8f61328b7a0a0f381f0263db22962450340f87f"
     },
     {
       "path": "/static/images/amagaki.png",
@@ -125,35 +125,35 @@
     },
     {
       "path": "/preview/index.html",
-      "sha": "3170fc07f716e7e0f07f55b50a5d89bf63ef7bc3"
+      "sha": "00c0b8cbc2c90af794737bc33f37a9a9f8b355aa"
     },
     {
       "path": "/preview/Columns50x50/index.html",
-      "sha": "5669888c0b1e74cca9f44eff9d2c548225c3d368"
+      "sha": "974de32d11293eb632776b910f1263104eb196c5"
     },
     {
       "path": "/preview/Footer/index.html",
-      "sha": "9d0013ca3014f830330f603f0abf5121953bfb80"
+      "sha": "55424ecdbd3d3f6eca1db7705d1ceba444e3be56"
     },
     {
       "path": "/preview/Header/index.html",
-      "sha": "24a275046f14902758bdebfa4cf69fb0fc7fc6a4"
+      "sha": "9cc48d8f97fe277e825312ddffab69f342484a98"
     },
     {
       "path": "/preview/Hero/index.html",
-      "sha": "df4683eac83a5e810306514143e7e976157b065b"
+      "sha": "51355dfea60042e0e710df21825e035fb9968ede"
     },
     {
       "path": "/preview/PromoBanner/index.html",
-      "sha": "c67a80e53566544fa8b673cac0691fbd42d7bb6d"
+      "sha": "78888e805d881fefce7237684b9502160ea6ca06"
     },
     {
       "path": "/preview/SimpleIntro/index.html",
-      "sha": "980df30c41df86a64d985870d226376745e263c1"
+      "sha": "a2fc7af6f2095955efdddc211b9c96450410fb8c"
     },
     {
       "path": "/preview/Spacer/index.html",
-      "sha": "7355ec8ecfc2ec4a90794a4995f60c3954850f22"
+      "sha": "ea2d7bc956ec5275c151cef7d82c91f4f1dc0d07"
     },
     {
       "path": "/static/placeholder/16x9.svg",
