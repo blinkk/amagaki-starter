@@ -1,7 +1,15 @@
 {
-  "branch": null,
-  "commit": null,
-  "built": "Thu Mar 03 2022 18:04:07 GMT+0000 (Coordinated Universal Time)",
+  "branch": "main",
+  "commit": {
+    "sha": "3c57faa2ce42757ab9c1baa2ef814b51673ac5e7",
+    "message": "chore: update packages\n",
+    "author": {
+      "timestamp": 1646332003,
+      "name": "Jeremy Weinstein",
+      "email": "jeremydw@gmail.com"
+    }
+  },
+  "built": "Thu Mar 03 2022 18:27:21 GMT+0000 (Coordinated Universal Time)",
   "files": [
     {
       "path": "/about/index.html",
