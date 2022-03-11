@@ -14,7 +14,9 @@ window.customElements.define('degu-youtube-inline', DeguYouTubeInline);
 window.customElements.define('degu-youtube-modal', DeguYouTubeModal);
 // Modules that require hydration must be registered.
 PartialHydrator.register({
-    components: [Hero],
+    components: {
+        'Hero': Hero
+    },
 });
 class App {
     constructor() {

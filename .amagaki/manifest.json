@@ -1,23 +1,23 @@
 {
   "branch": "main",
   "commit": {
-    "sha": "db615a30034684a115f68761a8f323825992ce8f",
-    "message": "chore: update packages\n",
+    "sha": "a0cc122f73f0c51fa98defcfa6c289c0d253497a",
+    "message": "fix: update preact plugin\n",
     "author": {
-      "timestamp": 1646337138,
+      "timestamp": 1647035273,
       "name": "Jeremy Weinstein",
       "email": "jeremydw@gmail.com"
     }
   },
-  "built": "Thu Mar 03 2022 19:52:55 GMT+0000 (Coordinated Universal Time)",
+  "built": "Fri Mar 11 2022 21:50:21 GMT+0000 (Coordinated Universal Time)",
   "files": [
     {
       "path": "/about/index.html",
-      "sha": "45c4da989da56fbfbf1a0b4c58529769d1620806"
+      "sha": "836b9420a22c14d4529233bc63e18da38f90e2ab"
     },
     {
       "path": "/index.html",
-      "sha": "b8f61328b7a0a0f381f0263db22962450340f87f"
+      "sha": "38272a599b7294c4dc2866fb83abebf8f9cbfb40"
     },
     {
       "path": "/static/images/amagaki.png",
@@ -85,7 +85,7 @@
     },
     {
       "path": "/static/chunks/main.js",
-      "sha": "0c9ec2ca005622008f92bd7f175f4a35b6ffc6b3"
+      "sha": "d13dddf7226bd798235ffbc832137fadcc3ad05f"
     },
     {
       "path": "/static/chunks/partials/Columns50x50/Columns50x50.js",
@@ -125,35 +125,35 @@
     },
     {
       "path": "/preview/index.html",
-      "sha": "00c0b8cbc2c90af794737bc33f37a9a9f8b355aa"
+      "sha": "96ffad7b8d4788b1a41464cf6f06ad07595a2cbf"
     },
     {
       "path": "/preview/Columns50x50/index.html",
-      "sha": "974de32d11293eb632776b910f1263104eb196c5"
+      "sha": "feaddd6e2399483887b91fabeb9c478b38e370f0"
     },
     {
       "path": "/preview/Footer/index.html",
-      "sha": "55424ecdbd3d3f6eca1db7705d1ceba444e3be56"
+      "sha": "b12d4f57077312a74cd8e5d92870ed2dbacdcada"
     },
     {
       "path": "/preview/Header/index.html",
-      "sha": "9cc48d8f97fe277e825312ddffab69f342484a98"
+      "sha": "855dd38eacf3d3a50622b6e9764d80dd0a477e77"
     },
     {
       "path": "/preview/Hero/index.html",
-      "sha": "51355dfea60042e0e710df21825e035fb9968ede"
+      "sha": "a60998fa2c36c6ead3a5fb5ac538590276766808"
     },
     {
       "path": "/preview/PromoBanner/index.html",
-      "sha": "78888e805d881fefce7237684b9502160ea6ca06"
+      "sha": "3bd992739368c753c6bf9b952333615395e3e7ca"
     },
     {
       "path": "/preview/SimpleIntro/index.html",
-      "sha": "a2fc7af6f2095955efdddc211b9c96450410fb8c"
+      "sha": "83c9c1f4d1f0339dc57da86457840c67758232a5"
     },
     {
       "path": "/preview/Spacer/index.html",
-      "sha": "ea2d7bc956ec5275c151cef7d82c91f4f1dc0d07"
+      "sha": "a6de8fa63c5db12663875a3a2fd30b30e286ab96"
     },
     {
       "path": "/static/placeholder/16x9.svg",
