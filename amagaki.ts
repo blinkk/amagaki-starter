@@ -62,7 +62,9 @@ export default (pod: Pod) => {
       },
     ],
     environments: {
+      preview: {},
       prod: {},
+      staging: {},
     },
   });
 
