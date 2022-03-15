@@ -1,15 +1,15 @@
 {
   "branch": "main",
   "commit": {
-    "sha": "160121b6b19d3f81a5e3f907012bd5d981e4f5e8",
+    "sha": "2b121d29e538e06d76feaad078934545bd717ac9",
     "message": "chore: update dependencies\n",
     "author": {
-      "timestamp": 1647378854,
+      "timestamp": 1647386018,
       "name": "Jeremy Weinstein",
       "email": "jeremydw@gmail.com"
     }
   },
-  "built": "Tue Mar 15 2022 21:14:55 GMT+0000 (Coordinated Universal Time)",
+  "built": "Tue Mar 15 2022 23:14:26 GMT+0000 (Coordinated Universal Time)",
   "files": [
     {
       "path": "/about/index.html",
