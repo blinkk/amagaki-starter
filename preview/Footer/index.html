@@ -29,7 +29,7 @@
       <page-module partial="Header" position="1">
         <link href="./../../static/css/Header/Header.css?fingerprint=8295ebd6e0a26d33118075be836bd5e1" rel="stylesheet" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <script src="./../../static/chunks/partials/Header/Header.js?fingerprint=eadb3b04e7539213bf5068cd2d318647" type="module"></script>
-        <page-module-inspector></page-module-inspector>
+        <page-module-inspector partial="Header" position="1"></page-module-inspector>
         <page-module-container><div class="header"><div class="header__grid"><div class="header__grid__logo"><a href="/"><degu-image src="/static/images/amagaki.png" alt="Logo" width="40" height="40"></degu-image></a></div><div class="header__grid__links"><a href="/" class="header__grid__links__link false">Home</a><a href="/about/" class="header__grid__links__link false">About</a></div><div class="header__grid__buttons"><div class="header__grid__buttons__desktop-buttons"><a href="#" class="button button--high-emphasis"><span class="button__label">Sign up</span></a><a href="#" class="button button--medium-emphasis"><span class="button__label">Log in</span></a></div><details class="header__mobile-nav"><summary class="header__mobile-nav__summary"><a aria-label="Toggle menu" class="button"><span class="button__label">Menu</span></a></summary><details-dialog class="header__mobile-nav__dialog"><div class="header__mobile-nav__dialog__links"><a href="/" class="header__mobile-nav__dialog__links__link">Home</a><a href="/about/" class="header__mobile-nav__dialog__links__link">About</a></div><div class="header__mobile-nav__buttons"><a href="#" class="button button--high-emphasis"><span class="button__label">Sign up</span></a><a href="#" class="button button--medium-emphasis"><span class="button__label">Log in</span></a></div></details-dialog></details></div></div></div></page-module-container>
         <page-module-context>
           <script type="application/json">
@@ -528,6 +528,7 @@
     </header>
     <main>
       <page-module partial="preview-spacer" position="2">
+        <page-module-inspector partial="preview-spacer" position="2" neutral></page-module-inspector>
         <page-module-container><div class="preview-spacer">
 </div>
 <style>
@@ -570,7 +571,7 @@
       <page-module partial="Footer" position="3">
         <link href="./../../static/css/Footer/Footer.css?fingerprint=f3e4c12f2ccbf88741a4bf582a3354bd" rel="stylesheet" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <script src="./../../static/chunks/partials/Footer/Footer.js?fingerprint=bab9f712ce2e54a80a5c9b3866dd785c" type="module"></script>
-        <page-module-inspector></page-module-inspector>
+        <page-module-inspector partial="Footer" position="3"></page-module-inspector>
         <page-module-container><div class="footer"><div class="footer__grid"><div class="footer__grid__links"><a href="{item.url.path}" class="header__grid__links__link">Home</a><a href="{item.url.path}" class="header__grid__links__link">About</a></div><div class="footer__grid__aside"><div class="footer__grid__aside__switcher"><div class="footer__grid__aside__switcher__label"><span class="material-icons">language</span></div><div class="footer__grid__aside__switcher__form"><select></select></div></div></div></div></div></page-module-container>
         <page-module-context>
           <script type="application/json">

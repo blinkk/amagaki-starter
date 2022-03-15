@@ -1,23 +1,23 @@
 {
   "branch": "main",
   "commit": {
-    "sha": "a0cc122f73f0c51fa98defcfa6c289c0d253497a",
-    "message": "fix: update preact plugin\n",
+    "sha": "160121b6b19d3f81a5e3f907012bd5d981e4f5e8",
+    "message": "chore: update dependencies\n",
     "author": {
-      "timestamp": 1647035273,
+      "timestamp": 1647378854,
       "name": "Jeremy Weinstein",
       "email": "jeremydw@gmail.com"
     }
   },
-  "built": "Fri Mar 11 2022 21:50:21 GMT+0000 (Coordinated Universal Time)",
+  "built": "Tue Mar 15 2022 21:14:55 GMT+0000 (Coordinated Universal Time)",
   "files": [
     {
       "path": "/about/index.html",
-      "sha": "836b9420a22c14d4529233bc63e18da38f90e2ab"
+      "sha": "5d51fbf279388f24f124e18c354ac443799ddb1a"
     },
     {
       "path": "/index.html",
-      "sha": "38272a599b7294c4dc2866fb83abebf8f9cbfb40"
+      "sha": "6031d6337e6a747cb6ccdfc48821b25e661ebc70"
     },
     {
       "path": "/static/images/amagaki.png",
@@ -125,35 +125,43 @@
     },
     {
       "path": "/preview/index.html",
-      "sha": "96ffad7b8d4788b1a41464cf6f06ad07595a2cbf"
+      "sha": "8455fe2dab6b7e4c604e05d8c846a115893feda6"
     },
     {
       "path": "/preview/Columns50x50/index.html",
-      "sha": "feaddd6e2399483887b91fabeb9c478b38e370f0"
+      "sha": "097da3f9299d04dced4972452eda190d2c88072d"
     },
     {
       "path": "/preview/Footer/index.html",
-      "sha": "b12d4f57077312a74cd8e5d92870ed2dbacdcada"
+      "sha": "7c431b004f12f615c76e3ab3efb8178a61a23281"
     },
     {
       "path": "/preview/Header/index.html",
-      "sha": "855dd38eacf3d3a50622b6e9764d80dd0a477e77"
+      "sha": "fc7d7b58c4bd0928ba8ca72c86cc2981d587ac26"
     },
     {
       "path": "/preview/Hero/index.html",
-      "sha": "a60998fa2c36c6ead3a5fb5ac538590276766808"
+      "sha": "6423aa0b5478273b56c78a0a992731c9c08fa435"
     },
     {
       "path": "/preview/PromoBanner/index.html",
-      "sha": "3bd992739368c753c6bf9b952333615395e3e7ca"
+      "sha": "8d2320259f1fbe49ccfb0d777414e6fe34a5baae"
     },
     {
       "path": "/preview/SimpleIntro/index.html",
-      "sha": "83c9c1f4d1f0339dc57da86457840c67758232a5"
+      "sha": "03dd3dae6c56a09ec86ba5c02e1cda022e5d4c84"
     },
     {
-      "path": "/preview/Spacer/index.html",
-      "sha": "a6de8fa63c5db12663875a3a2fd30b30e286ab96"
+      "path": "/_page-builder/page-builder-ui.min.css",
+      "sha": "389fdca5895600b3bca06de55d9a5a02be33700c"
+    },
+    {
+      "path": "/_page-builder/assets/check-lg.svg",
+      "sha": "5696a9a7d08667dd2fef139a97f21070ec0f25e5"
+    },
+    {
+      "path": "/_page-builder/assets/chevron-right.svg",
+      "sha": "23ef5ecf5eb61ea0682db25d30443bc1f8c2516f"
     },
     {
       "path": "/static/placeholder/16x9.svg",
@@ -180,8 +188,12 @@
       "sha": "63140eaa00b7e9c67b2a3a41d205f3f6fb969799"
     },
     {
+      "path": "/preview/Spacer/index.html",
+      "sha": "d9876684fb607ace930db7dc7f34014aa2060747"
+    },
+    {
       "path": "/_page-builder/page-builder-ui.min.js",
-      "sha": "83b762f45af57b73dd69ef2be5b038c918b85147"
+      "sha": "08d2813b678aa0510c04a97b06ee5074d5c9d3bc"
     }
   ]
 }
