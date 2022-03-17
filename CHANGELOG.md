@@ -1,5 +1,40 @@
 # Changelog
 
+## [2.0.0](https://www.github.com/blinkk/amagaki-starter/compare/v1.0.0...v2.0.0) (2022-03-17)
+
+
+### ⚠ BREAKING CHANGES
+
+* switch to preact for templates
+* group partials together
+* use page builder plugin and move to esbuild (#21)
+
+### Features
+
+* add cleaned up ui modules ([35e549a](https://www.github.com/blinkk/amagaki-starter/commit/35e549a80d2c90930e30ccc891812cf0b3dac850))
+* add degu-video support ([17e9bf0](https://www.github.com/blinkk/amagaki-starter/commit/17e9bf0edf335ac4e034385eac338db29b57b41e))
+* add quicklink [#19](https://www.github.com/blinkk/amagaki-starter/issues/19) ([16c0735](https://www.github.com/blinkk/amagaki-starter/commit/16c0735baa01fc0f5ae4089e16b863c97a6b6a60))
+* add storybook ([c6b439f](https://www.github.com/blinkk/amagaki-starter/commit/c6b439fa727aadb7ec0c4380f5084172557b5780))
+* add youtube modal support ([43b884c](https://www.github.com/blinkk/amagaki-starter/commit/43b884cadcaed8648b72a6c5d759d9bb44616006))
+* group partials together ([a290a3f](https://www.github.com/blinkk/amagaki-starter/commit/a290a3fbc14f4b03e83c29ab46353d1e15c7c70a))
+* switch to degu image away from macro ([#23](https://www.github.com/blinkk/amagaki-starter/issues/23)) ([8298d72](https://www.github.com/blinkk/amagaki-starter/commit/8298d720857160bdddb3f7c5aac491d55c9220c4))
+* switch to preact for templates ([9a4f902](https://www.github.com/blinkk/amagaki-starter/commit/9a4f902841435d7e882b0cac67694f09d20571e8))
+* use es modules and chunks ([10ff9e3](https://www.github.com/blinkk/amagaki-starter/commit/10ff9e3e5d518806e4eaab26217404d071ae16b1)), closes [#29](https://www.github.com/blinkk/amagaki-starter/issues/29)
+* use page builder landmarks for [#16](https://www.github.com/blinkk/amagaki-starter/issues/16) ([579b760](https://www.github.com/blinkk/amagaki-starter/commit/579b7606549fe444887253988629746107b384bd))
+* use page builder plugin and move to esbuild ([#21](https://www.github.com/blinkk/amagaki-starter/issues/21)) ([d43958a](https://www.github.com/blinkk/amagaki-starter/commit/d43958a8d77830ae3ab2b7ce3680cddc58640bce))
+
+
+### Bug Fixes
+
+* add missing parenthesis ([f2d064c](https://www.github.com/blinkk/amagaki-starter/commit/f2d064c1d45a38eb9a3e6f462fba79fc6e1c56bd))
+* build frontend on postinstall to fix initial server startup ([6bce117](https://www.github.com/blinkk/amagaki-starter/commit/6bce117c2e45897034ee2d4fd50c1666b0c5fb11))
+* collection path in collection paths ([7e26d13](https://www.github.com/blinkk/amagaki-starter/commit/7e26d13960fee4eb2bb695dca2421c48b9429adb))
+* ensure documents are localized when used with renderPartial ([947954d](https://www.github.com/blinkk/amagaki-starter/commit/947954d35df374743b7056b94fbba0039b71eb45))
+* header and footer TSX modules ([78b6cdc](https://www.github.com/blinkk/amagaki-starter/commit/78b6cdcbfbbee6a37b3769a14ec5ee77e5679e1b))
+* remove manual overrides for index ([56efc7f](https://www.github.com/blinkk/amagaki-starter/commit/56efc7f832430dc24937095b2b06a57b7a24b714))
+* update preact plugin ([a0cc122](https://www.github.com/blinkk/amagaki-starter/commit/a0cc122f73f0c51fa98defcfa6c289c0d253497a))
+* use iife format for rollup ([2514af8](https://www.github.com/blinkk/amagaki-starter/commit/2514af8e610fd5d4ebafaf7dd5236394a58bb9c6))
+
 ## 1.0.0 (2021-06-08)
 
 
