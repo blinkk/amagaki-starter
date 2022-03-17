@@ -1,31 +1,31 @@
 {
   "branch": "main",
   "commit": {
-    "sha": "2b121d29e538e06d76feaad078934545bd717ac9",
-    "message": "chore: update dependencies\n",
+    "sha": "d9eb22f620d6c664eb7a7e7bbacf6e7646b8f5e3",
+    "message": "chore: build storybook with static site build\n",
     "author": {
-      "timestamp": 1647386018,
+      "timestamp": 1647493595,
       "name": "Jeremy Weinstein",
       "email": "jeremydw@gmail.com"
     }
   },
-  "built": "Tue Mar 15 2022 23:14:26 GMT+0000 (Coordinated Universal Time)",
+  "built": "Thu Mar 17 2022 05:07:37 GMT+0000 (Coordinated Universal Time)",
   "files": [
     {
       "path": "/about/index.html",
-      "sha": "5d51fbf279388f24f124e18c354ac443799ddb1a"
+      "sha": "819aa7f3dbaf39ba1b85059dbdd6682bb41edd14"
     },
     {
       "path": "/index.html",
-      "sha": "6031d6337e6a747cb6ccdfc48821b25e661ebc70"
-    },
-    {
-      "path": "/static/images/amagaki.png",
-      "sha": "40088144576a299df6dd54d2be64c4db4bf8cca0"
+      "sha": "f23137d8e4b9aa172f31dd830017b4dda61dbac6"
     },
     {
       "path": "/static/css/Columns50x50/Columns50x50.css",
       "sha": "22655bed304ca18faca2dad9cade2dabaa5b2e2f"
+    },
+    {
+      "path": "/static/images/amagaki.png",
+      "sha": "40088144576a299df6dd54d2be64c4db4bf8cca0"
     },
     {
       "path": "/static/css/Footer/Footer.css",
@@ -56,12 +56,12 @@
       "sha": "ab13c7d1cf09e3286e4ef2200d2b086747a2a7ed"
     },
     {
-      "path": "/static/chunks/chunks/chunk-BPKZZAH3-min.js",
-      "sha": "da81cf578b0048d598e05f5e2d5c767821a5d9d2"
-    },
-    {
       "path": "/static/chunks/chunks/chunk-MH6NWV2N-min.js",
       "sha": "9cfecb809c50365132aadf76a21ef1a578dd9240"
+    },
+    {
+      "path": "/static/chunks/chunks/chunk-BPKZZAH3-min.js",
+      "sha": "da81cf578b0048d598e05f5e2d5c767821a5d9d2"
     },
     {
       "path": "/static/chunks/chunks/chunk-QDQFYKKJ-min.js",
@@ -82,10 +82,6 @@
     {
       "path": "/static/chunks/components/Button/Button.js",
       "sha": "5661208933e51cde647c720376a6cd775c4f12d7"
-    },
-    {
-      "path": "/static/chunks/main.js",
-      "sha": "d13dddf7226bd798235ffbc832137fadcc3ad05f"
     },
     {
       "path": "/static/chunks/partials/Columns50x50/Columns50x50.js",
@@ -114,6 +110,306 @@
     {
       "path": "/static/chunks/partials/Spacer/Spacer.js",
       "sha": "903b388999369770afc9b6d443ccb9c8755e118b"
+    },
+    {
+      "path": "/static/chunks/main.js",
+      "sha": "d13dddf7226bd798235ffbc832137fadcc3ad05f"
+    },
+    {
+      "path": "/storybook/0.18110c08.iframe.bundle.js.LICENSE.txt",
+      "sha": "bcd590b6d8b7272baf7af48168132430ef53714a"
+    },
+    {
+      "path": "/storybook/0.18110c08.iframe.bundle.js.map",
+      "sha": "13bb71f6bfe5de51da704f22bee233e2e2a50010"
+    },
+    {
+      "path": "/storybook/0.799c368cbe88266827ba.manager.bundle.js",
+      "sha": "0df6799293768529064f83edd77f9e313b7ea766"
+    },
+    {
+      "path": "/storybook/1.50bf41e3.iframe.bundle.js.LICENSE.txt",
+      "sha": "bac52fb57b6cf259a1217239b034c7f611a673e2"
+    },
+    {
+      "path": "/storybook/1.50bf41e3.iframe.bundle.js.map",
+      "sha": "e96cc0629ad1f95576190913c7f3463f67b300eb"
+    },
+    {
+      "path": "/storybook/1.9ebd2fb519f6726108de.manager.bundle.js",
+      "sha": "a5e09dfd992347038cb8ad7f3d23dacc51d62d79"
+    },
+    {
+      "path": "/storybook/10.a85ea1a67689be8e19ff.manager.bundle.js",
+      "sha": "fea766b91703bd02fbcc8ad2474e7dd6b9b63161"
+    },
+    {
+      "path": "/storybook/11.f4e922583ae35da460f3.manager.bundle.js.LICENSE.txt",
+      "sha": "43329c366df62696607753e1380b41efa67085b4"
+    },
+    {
+      "path": "/storybook/12.1415460941f0bdcb8fa8.manager.bundle.js",
+      "sha": "ee56613dd6e0aac90ed6409f784e25fa3898a1c7"
+    },
+    {
+      "path": "/storybook/3.9b7978d5.iframe.bundle.js",
+      "sha": "2fdff8106845bbb8d46f87c57c1dae8002eeff6f"
+    },
+    {
+      "path": "/storybook/5.f459d151315e6780c20f.manager.bundle.js.LICENSE.txt",
+      "sha": "bac52fb57b6cf259a1217239b034c7f611a673e2"
+    },
+    {
+      "path": "/storybook/6.3bd64d820f3745f262ff.manager.bundle.js",
+      "sha": "46b25f4225ca5c31a2baa252ceb336a6466ff3af"
+    },
+    {
+      "path": "/storybook/7.3d04765dbf3f1dcd706c.manager.bundle.js",
+      "sha": "728a0f51575750607ef78b5f7ba625f4782042c4"
+    },
+    {
+      "path": "/storybook/8.b541eadfcb9164835dfc.manager.bundle.js",
+      "sha": "8232424646965a73df926f4ed249099e5414bbbf"
+    },
+    {
+      "path": "/storybook/7.ace9b7d1.iframe.bundle.js",
+      "sha": "c5599036f04643311db212909e6b4bf2f01c62b0"
+    },
+    {
+      "path": "/storybook/8.f4f470ce.iframe.bundle.js.LICENSE.txt",
+      "sha": "43329c366df62696607753e1380b41efa67085b4"
+    },
+    {
+      "path": "/storybook/8.f4f470ce.iframe.bundle.js.map",
+      "sha": "828cfc1db0ec845ac88c88b17988a7f37849ef2a"
+    },
+    {
+      "path": "/storybook/9.411ac8e451bbb10926c7.manager.bundle.js",
+      "sha": "2a74db659e266286f2c4019542e4b4375284a0fe"
+    },
+    {
+      "path": "/storybook/9.f2fc1826.iframe.bundle.js",
+      "sha": "70c047415b1c92a948892b177313eef486b69c54"
+    },
+    {
+      "path": "/storybook/dist/chunks/chunks/chunk-BPKZZAH3-min.js",
+      "sha": "da81cf578b0048d598e05f5e2d5c767821a5d9d2"
+    },
+    {
+      "path": "/storybook/dist/chunks/chunks/chunk-MH6NWV2N-min.js",
+      "sha": "9cfecb809c50365132aadf76a21ef1a578dd9240"
+    },
+    {
+      "path": "/storybook/dist/chunks/chunks/chunk-QDQFYKKJ-min.js",
+      "sha": "f6040407ae08e2e15ec804a7d59c7bcecabfed11"
+    },
+    {
+      "path": "/storybook/dist/chunks/chunks/chunk-QXICRDFR-min.js",
+      "sha": "d14339ee8215aa2f90c6c3351cd98612ff66df37"
+    },
+    {
+      "path": "/storybook/dist/chunks/chunks/chunk-WODYT7MU-min.js",
+      "sha": "785e62fa8b539ece8093e8409620508a9a82c1d6"
+    },
+    {
+      "path": "/storybook/dist/chunks/components/Asset/Asset.js",
+      "sha": "873bc51d77a4426091e6fc4227f6c7bc551ef7fa"
+    },
+    {
+      "path": "/storybook/dist/chunks/components/Button/Button.js",
+      "sha": "5661208933e51cde647c720376a6cd775c4f12d7"
+    },
+    {
+      "path": "/storybook/dist/chunks/partials/Columns50x50/Columns50x50.js",
+      "sha": "e0a458eb3f1a0123c404b1e0a27b1e2686aa9f40"
+    },
+    {
+      "path": "/storybook/dist/chunks/partials/Footer/Footer.js",
+      "sha": "cddbe06615ba7802a23d5c608403c4b36f73f5df"
+    },
+    {
+      "path": "/storybook/dist/chunks/partials/Header/Header.js",
+      "sha": "aed2dfcd2bcddaa6027d4b3400710bd1c1c171ad"
+    },
+    {
+      "path": "/storybook/dist/chunks/partials/Hero/Hero.js",
+      "sha": "c4ed94c729bbdfa786f8bd5069f43cfa1b60b3b9"
+    },
+    {
+      "path": "/storybook/dist/chunks/partials/PromoBanner/PromoBanner.js",
+      "sha": "4dbd4035a2d9b4fcb8ee1f2071de1fceecb98ab5"
+    },
+    {
+      "path": "/storybook/dist/chunks/partials/SimpleIntro/SimpleIntro.js",
+      "sha": "c84969eb60e8a6519066b28d24defbf19906691b"
+    },
+    {
+      "path": "/storybook/dist/chunks/partials/Spacer/Spacer.js",
+      "sha": "903b388999369770afc9b6d443ccb9c8755e118b"
+    },
+    {
+      "path": "/storybook/dist/css/Columns50x50/Columns50x50.css",
+      "sha": "22655bed304ca18faca2dad9cade2dabaa5b2e2f"
+    },
+    {
+      "path": "/storybook/dist/css/Footer/Footer.css",
+      "sha": "1a0c6d0ad2e6ee0e8ddbfbf98c32f38d0d05c681"
+    },
+    {
+      "path": "/storybook/dist/css/Header/Header.css",
+      "sha": "8b77ba4ac8418afed58e7adfc22be3437eaeae96"
+    },
+    {
+      "path": "/storybook/dist/chunks/main.js",
+      "sha": "d13dddf7226bd798235ffbc832137fadcc3ad05f"
+    },
+    {
+      "path": "/storybook/dist/css/Hero/Hero.css",
+      "sha": "95c52e8f41de34764e0a8059a103a27e1f430fef"
+    },
+    {
+      "path": "/storybook/dist/css/PromoBanner/PromoBanner.css",
+      "sha": "62a41a67194d75cee2a9983b01b93ea2cc5df2d1"
+    },
+    {
+      "path": "/storybook/dist/css/SimpleIntro/SimpleIntro.css",
+      "sha": "03faa70f685d2b89cbb9cbff0d999cf2749e9ba8"
+    },
+    {
+      "path": "/storybook/dist/css/Spacer/Spacer.css",
+      "sha": "9e7c0c8ed87b95c504a6415e1062eaaeea64243c"
+    },
+    {
+      "path": "/storybook/dist/css/main.css",
+      "sha": "ab13c7d1cf09e3286e4ef2200d2b086747a2a7ed"
+    },
+    {
+      "path": "/storybook/dist/tsc/components/Asset/Asset.js",
+      "sha": "5b5cd4a69bcbbc87608b4885990a9be93affb0da"
+    },
+    {
+      "path": "/storybook/dist/tsc/components/Asset/Asset.js.map",
+      "sha": "fc35e2e5acf0a8a9ed03e53c45cb671e8092e224"
+    },
+    {
+      "path": "/storybook/dist/tsc/components/Button/Button.js",
+      "sha": "a6790c81a32769c58cfb6529f170881c1bd06c8d"
+    },
+    {
+      "path": "/storybook/dist/tsc/components/Button/Button.js.map",
+      "sha": "ebe97ae474d9ce2035f306947175d998d20d0140"
+    },
+    {
+      "path": "/storybook/dist/tsc/main.js",
+      "sha": "85c3c5cb2411723339d882898299f119320d438e"
+    },
+    {
+      "path": "/storybook/dist/tsc/main.js.map",
+      "sha": "3951faea23c73497a1592b6d281701e19c490aa2"
+    },
+    {
+      "path": "/storybook/dist/tsc/partials/Columns50x50/Columns50x50.js",
+      "sha": "4a501a9432aa7db48315e72cb165c971d3eb3513"
+    },
+    {
+      "path": "/storybook/dist/tsc/partials/Columns50x50/Columns50x50.js.map",
+      "sha": "09e5ff575f3690b339427db5c854da0018c9aaa5"
+    },
+    {
+      "path": "/storybook/dist/tsc/partials/Footer/Footer.js",
+      "sha": "f2b6b2151ba423fa519c1e64d8c1c469572bd287"
+    },
+    {
+      "path": "/storybook/dist/tsc/partials/Footer/Footer.js.map",
+      "sha": "33bc3eb762d7d762c0dc4062e6671c8a76e8735a"
+    },
+    {
+      "path": "/storybook/dist/tsc/partials/Header/Header.js.map",
+      "sha": "e284b988ab290d59e4285a779bf897cfeaa02eb1"
+    },
+    {
+      "path": "/storybook/dist/tsc/partials/Header/Header.js",
+      "sha": "ab04a3ecab4db547d3b8ca2c3e4842e0f684307d"
+    },
+    {
+      "path": "/storybook/dist/tsc/partials/Hero/Hero.js.map",
+      "sha": "e102110e79019f150ee96d19ec3ad3876ed139d9"
+    },
+    {
+      "path": "/storybook/dist/tsc/partials/Hero/Hero.js",
+      "sha": "08b8145d836a0757b58f54eef4cc31a747822f52"
+    },
+    {
+      "path": "/storybook/dist/tsc/partials/PromoBanner/PromoBanner.js",
+      "sha": "42941189c57da83c04e7d7812a4678591edc1cd6"
+    },
+    {
+      "path": "/storybook/dist/tsc/partials/PromoBanner/PromoBanner.js.map",
+      "sha": "657ba302b2a1621859f0b6ee57445a6fe88c0e00"
+    },
+    {
+      "path": "/storybook/dist/tsc/partials/SimpleIntro/SimpleIntro.js",
+      "sha": "427090bafd7e2489775ddedd3af028acd16fc51e"
+    },
+    {
+      "path": "/storybook/dist/tsc/partials/SimpleIntro/SimpleIntro.js.map",
+      "sha": "eb89353f5b7c79d894cf90a5d657b3301ab19874"
+    },
+    {
+      "path": "/storybook/dist/tsc/partials/Spacer/Spacer.js",
+      "sha": "49169be38c767beb733f2424cee66cc4ec8f67ca"
+    },
+    {
+      "path": "/storybook/dist/tsc/partials/Spacer/Spacer.js.map",
+      "sha": "9569c26c71c523cbfad59a631fc67e4884c9d0a9"
+    },
+    {
+      "path": "/storybook/dist/tsc/utils/partials.js",
+      "sha": "edc0283da88269d4b93e8728c76b12a28bb475ae"
+    },
+    {
+      "path": "/storybook/dist/tsc/utils/partials.js.map",
+      "sha": "6fb2713cbba8e3632cbf877d4c7a837dccf5b001"
+    },
+    {
+      "path": "/storybook/dist/tsc/utils/path.js",
+      "sha": "8150a5ed7cfc5b434b9a2e4f1a83a44369034b6b"
+    },
+    {
+      "path": "/storybook/dist/tsc/utils/path.js.map",
+      "sha": "b4aa833106d92018d5f30cf36fb3149268e69e64"
+    },
+    {
+      "path": "/storybook/iframe.html",
+      "sha": "34ac50ab8f4ecb5bd9ee8a3879bfb53535199636"
+    },
+    {
+      "path": "/storybook/index.html",
+      "sha": "2d74b740ace21bddc6f5e1d6c4016d041f34a011"
+    },
+    {
+      "path": "/storybook/favicon.ico",
+      "sha": "2055e689cfb3301ed2705569dfff27bf5fbf09e8"
+    },
+    {
+      "path": "/storybook/main.e133bc1f.iframe.bundle.js",
+      "sha": "70a79dbb862aa200a03d009e83d4b672dd18c636"
+    },
+    {
+      "path": "/storybook/runtime~main.de1a9aae.iframe.bundle.js",
+      "sha": "b478e8c3111b09d660b4a2712001fdc62dac7845"
+    },
+    {
+      "path": "/storybook/vendors~main.57548642.iframe.bundle.js.LICENSE.txt",
+      "sha": "7878f30e39ccbfb69b5c2c136ac367498a04b6f6"
+    },
+    {
+      "path": "/storybook/vendors~main.57548642.iframe.bundle.js.map",
+      "sha": "c817e97666be9ba330ab3155297511675cb7397f"
+    },
+    {
+      "path": "/storybook/vendors~main.f7f16cebbf3aa96a4f89.manager.bundle.js.LICENSE.txt",
+      "sha": "5223ce7357a7b01388ca89726dc72c18b7bde9ff"
     },
     {
       "path": "/robots.txt",
@@ -180,20 +476,60 @@
       "sha": "07bd21fa55a77ccee7070495e674fdd9b3ef1dcf"
     },
     {
-      "path": "/static/placeholder/7x3.svg",
-      "sha": "6dbca84fc3d5d8133bd86c04442225f046661dd9"
-    },
-    {
       "path": "/static/placeholder/8x4.svg",
       "sha": "63140eaa00b7e9c67b2a3a41d205f3f6fb969799"
     },
     {
+      "path": "/static/placeholder/7x3.svg",
+      "sha": "6dbca84fc3d5d8133bd86c04442225f046661dd9"
+    },
+    {
+      "path": "/storybook/1.50bf41e3.iframe.bundle.js",
+      "sha": "7f1fa95f5d9a243743b881d475600febf327f945"
+    },
+    {
+      "path": "/storybook/2.0bae2a87.iframe.bundle.js",
+      "sha": "9158f8a1e9adc12211afef4201ce2dd217ba083b"
+    },
+    {
+      "path": "/storybook/5.f459d151315e6780c20f.manager.bundle.js",
+      "sha": "bdf2d252e2565c997f27f3e0d42a7e31a8504f02"
+    },
+    {
+      "path": "/storybook/runtime~main.91a0c7330ab317d35c4a.manager.bundle.js",
+      "sha": "312657578756426158f871e25c99c1875308a22b"
+    },
+    {
       "path": "/preview/Spacer/index.html",
-      "sha": "d9876684fb607ace930db7dc7f34014aa2060747"
+      "sha": "b2a56e12f4a1e3ccccfb42b9e7ddb12ab21c39d2"
+    },
+    {
+      "path": "/storybook/11.f4e922583ae35da460f3.manager.bundle.js",
+      "sha": "9c1c144cc391b8c5df97769af976de8b90c01e69"
+    },
+    {
+      "path": "/storybook/8.f4f470ce.iframe.bundle.js",
+      "sha": "7a27e903026a18525772ed80b8d33d26091fabc1"
     },
     {
       "path": "/_page-builder/page-builder-ui.min.js",
-      "sha": "08d2813b678aa0510c04a97b06ee5074d5c9d3bc"
+      "sha": "b8e54c5715d7053ecca224a3ee1a40d6846c3fae"
+    },
+    {
+      "path": "/storybook/0.18110c08.iframe.bundle.js",
+      "sha": "0f03e69ddc70eae2d850392647f22e86ea8a48c6"
+    },
+    {
+      "path": "/storybook/main.e2663b1cf842947d1a59.manager.bundle.js",
+      "sha": "31216c3081c39449f5337b910dfd6abe56ab9e92"
+    },
+    {
+      "path": "/storybook/vendors~main.57548642.iframe.bundle.js",
+      "sha": "08f97f0f38261a8b373a00f36cbe0e13ee8e9997"
+    },
+    {
+      "path": "/storybook/vendors~main.f7f16cebbf3aa96a4f89.manager.bundle.js",
+      "sha": "a42ba13acbc11c34887f9dce075e2daf5ff95e73"
     }
   ]
 }
