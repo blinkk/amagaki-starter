@@ -60,6 +60,14 @@ export default (pod: Pod) => {
         path: '/static/chunks/',
         staticDir: '/dist/chunks/',
       },
+      ...(pod.env.name !== 'prod'
+        ? [
+            {
+              path: '/storybook/',
+              staticDir: '/.storybook/dist/',
+            },
+          ]
+        : []),
     ],
     environments: {
       preview: {},
