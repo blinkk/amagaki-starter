@@ -29,6 +29,19 @@ const ENTRIES = {
 };
 
 /**
+ * Aliasing React to Preact for cross-compatibility
+ */
+const preactCompatPlugin = {
+  name: 'preact-compat',
+  setup(build) {
+    const preact = require.resolve('preact/compat');
+    build.onResolve({filter: /^(react-dom|react)$/}, () => {
+      return {path: preact};
+    });
+  },
+};
+
+/**
  * esBuild does not do type checks and can build with type errors so we first run
  * `tsc` and generate a JS file. esBuild is then run on the outputted JS file.
  *
